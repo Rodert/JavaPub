@@ -25,7 +25,7 @@
   <a href="#公众号"><img src="https://img.shields.io/badge/关注公众号-JavaPub-blue.svg" alt="公众号"></a>
   <a href="https://juejin.im/user/5c00ce5a5188256d9832cb5f"><img src="https://img.shields.io/badge/关注-掘金-lightgrey.svg" alt="掘金"></a>
   <a href="https://www.zhihu.com/people/zhui-ma-7-49"><img src="https://img.shields.io/badge/关注-知乎-critical.svg" alt="知乎"></a>
-  <a href="https://segmentfault.com/blog/JavaPub"><img src="https://img.shields.io/badge/推荐阅读-思否-brightgreen.svg" alt="推荐阅读"></a>
+  <a href="https://segmentfault.com/blog/JavaPub"><img src="https://img.shields.io/badge/推荐阅读-思否-brightgreen.svg" alt="思否"></a>
   <a href="">	
 </p>
 
