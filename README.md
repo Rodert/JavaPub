@@ -92,7 +92,11 @@
 - [手把手整合SSM框架](http://mp.weixin.qq.com/s?__biz=MzUzNDUyOTY0Nw==&mid=100000711&idx=1&sn=a79510a8e6a958dad4019586e77f21ea&chksm=7a9210c74de599d14b070fce68a281d4d882d6c271e86ac7b36786d2e592d4cab94fe8459e7f#rd)
   - 代码位置：https://github.com/Rodert/JavaPub/tree/master/code/ssm_helloworld_web
 - []()
-- 
+
+#### Spring Boot ####
+
+- [SpringBoot快速入门](https://mp.weixin.qq.com/s/jtnwb1pTrjXiFc9EvWwLnQ)
+  - 代码位置：https://github.com/Rodert/JavaPub/tree/master/code/springboot/springbootfirstdemo
 
 
 
