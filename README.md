@@ -1,5 +1,9 @@
 【Java学习+实战+面试】一份涵盖大部分Java程序员需要掌握的核心知识，从java基础到java组件到项目源码。
 
+
+`善于使用 ctrl + f`
+
+
 [toc]
 
 # JavaPub
@@ -72,40 +76,48 @@
 
 ###  📣Mybatis  ###
 
+
 - [rodert熬夜写了一份Mybatis总结](https://mp.weixin.qq.com/s/op9ADw_6U5MhbcUlkFtOUQ)
 
 
 
 
 ###  🔬搜索  ###
+####  Lucene  ####
 
 - [Lucene就是这么容易](https://mp.weixin.qq.com/s/AhirDnW4ul5xR1bBtKqtFQ)
+
+####  Elasticsearch  ####
+
 - [Springboot2.x整合ElasticSearch7.x实战目录](https://mp.weixin.qq.com/s/nSWEIfbpRf-4txJqRz60gQ)
+- [Springboot2.x整合ElasticSearch7.x实战（一）](https://mp.weixin.qq.com/s/4azw3QycpqrprABNdo44Zg)
+- [Springboot2.x整合ElasticSearch7.x实战（二）](https://mp.weixin.qq.com/s/R7bFN9pSA4XFVdZMfzYz_w)
 
 
 
 ###  🎩Spring  ###
 
-- [Spring 学习路线图](https://mmbiz.qpic.cn/mmbiz_png/N6veftbBMWBicxTiaiaGW5AyGVMickE4AVuZ1Nre8maxhs1IKO605rcajQibudicD72fGShKr8hiaHbdTNCPFMcFGZtCg/0?wx_fmt=png)
+- [Spring 学习路线图](https://img-blog.csdnimg.cn/20201230220120483.png)
 - [一篇告诉你什么是Spring](https://mp.weixin.qq.com/s/5nj-AAekF8j5KL6J67UZKA)
 - [第一个Spring程序(代码篇)](https://mp.weixin.qq.com/s/_T9g67UUI3ao33Ug1PNo_Q)
-- [手把手整合SSM框架](http://mp.weixin.qq.com/s?__biz=MzUzNDUyOTY0Nw==&mid=100000711&idx=1&sn=a79510a8e6a958dad4019586e77f21ea&chksm=7a9210c74de599d14b070fce68a281d4d882d6c271e86ac7b36786d2e592d4cab94fe8459e7f#rd)
-  - 代码位置：https://github.com/Rodert/JavaPub/tree/master/code/ssm_helloworld_web
-- []()
+- [手把手整合SSM框架-附源码](https://mp.weixin.qq.com/s/qikPY9ymX4LTgLunrD8vUQ)
+
+
 
 #### Spring Boot ####
 
-- [SpringBoot快速入门](https://mp.weixin.qq.com/s/jtnwb1pTrjXiFc9EvWwLnQ)
-  - 代码位置：https://github.com/Rodert/JavaPub/tree/master/code/springboot/springbootfirstdemo
+- [SpringBoot快速入门-附源码](https://mp.weixin.qq.com/s/jtnwb1pTrjXiFc9EvWwLnQ)
 
 
 
 
-###  💞常用组件  ###
 
+###  💞中间件  ###
+####  zookeeper  ####
 - [rodert熬夜写了一份zookeeper总结](https://mp.weixin.qq.com/s/HfZ3nmTqCYHRhUkoSMEZAg)
 
-
+####  RocketMQ  ####
+- [RocketMq 快速入门教程](https://mp.weixin.qq.com/s/kmUlX-5CtWVn0Qli1iyWng)
 
 
 
@@ -118,24 +130,34 @@
 - [rodert熬夜写了一份BloomFilter总结](https://mp.weixin.qq.com/s/6b5y8l9qIoD6VXdDZuIgBQ)
 
 
-###  ⚡️常用工具  ###
-
-#### Git ####
-
-- [Git【入门】这一篇就够了](https://mp.weixin.qq.com/s/keQpwkwXbiUxsjQNxse2mw)
-
-#### 杂文 ####
-
-- [百度网盘更新，不限速了？](https://mp.weixin.qq.com/s/R_2L62mU-xODZmXL7vvshA)
-
-
 ###  🌋shell  ###
 
 - [jar包shell启动脚本](https://mp.weixin.qq.com/s/j6BeXX9sYUop-AomkQY4-Q)
 
-###  🌊关于JavaPub  ###
+
+###  ⚡️常用工具  ###
+#### Git ####
+
+- [Git【入门】这一篇就够了](https://mp.weixin.qq.com/s/keQpwkwXbiUxsjQNxse2mw)
+
+
+###  实战面试  ###
+- [Java 同学注意！这不是演习](https://mp.weixin.qq.com/s/RfQNwMdSLhvzza9zggjjaQ)
+
+
+### 🌊杂文随笔 ###
 
 - [拒绝网贷](https://mp.weixin.qq.com/s/Qfz3ZwIRkKeigH8RxT_cbQ)
+- [我的炒股生涯（非广告）](https://mp.weixin.qq.com/s/GsdjlkdOYkQbAEV2w6o01A)
+- [平安夜有话想对你说](https://mp.weixin.qq.com/s/dog6TAbLUIHpVazmnhxC5Q)
+
+####  福利  ####
+
+- [100个实战项目免费领取（非广告）](https://mp.weixin.qq.com/s/-MKinm7PLPxfcQwCJte6AQ)
+
+
+##  关于JavaPub  ##
+
 
 >**纯手打原创电子书**，**致力于最实用教程**，不需要什么奖励，只希望多多**转发支持**。
 
