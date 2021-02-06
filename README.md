@@ -42,11 +42,11 @@
 > 下面是**PDF**干货版，持续更新中。
 
 
+- [51页的MyBatis](https://mp.weixin.qq.com/s/op9ADw_6U5MhbcUlkFtOUQ)
 
-- [rodert熬夜写了一份Mybatis总结](https://mp.weixin.qq.com/s/op9ADw_6U5MhbcUlkFtOUQ)
-- [rodert熬夜写了一份zookeeper总结](https://mp.weixin.qq.com/s/HfZ3nmTqCYHRhUkoSMEZAg)
+- [14页的zookeeper总结](https://mp.weixin.qq.com/s/HfZ3nmTqCYHRhUkoSMEZAg)
 
-
+...
 
 
 ###  ☕️Java基础  ###
@@ -68,7 +68,7 @@
 8. [计数排序就是这么容易](https://mp.weixin.qq.com/s/7lphoHUgfDu0Cb1cO8ExKA)
 9. [桶排序就是这么容易](https://mp.weixin.qq.com/s/10GFjOZ2VgA06hWe_wkmwQ)
 10. [基数排序就是这么容易](https://mp.weixin.qq.com/s/z4jzP2cew8lMWRgD7H-6JA)
-- [rodert熬夜写了一份BloomFilter总结](https://mp.weixin.qq.com/s/6b5y8l9qIoD6VXdDZuIgBQ)
+- [rodert熬夜写了一份BloomFilter总结](https://mp.weixin.qq.com/s/6S9eu_eLBDxeetygulmHBw)
 
 
 
@@ -92,12 +92,14 @@
 - [Springboot2.x整合ElasticSearch7.x实战目录](https://mp.weixin.qq.com/s/nSWEIfbpRf-4txJqRz60gQ)
 - [Springboot2.x整合ElasticSearch7.x实战（一）](https://mp.weixin.qq.com/s/4azw3QycpqrprABNdo44Zg)
 - [Springboot2.x整合ElasticSearch7.x实战（二）](https://mp.weixin.qq.com/s/R7bFN9pSA4XFVdZMfzYz_w)
+- [Springboot2.x整合ElasticSearch7.x实战（三）](https://mp.weixin.qq.com/s/6qSSWGnxmiLjnaM-m1_wUQ)
 
 
 
 ###  🎩Spring  ###
 
-- [Spring 学习路线图](https://img-blog.csdnimg.cn/20201230220120483.png)
+Spring 学习路线图：
+https://img-blog.csdnimg.cn/20201230220120483.png
 - [一篇告诉你什么是Spring](https://mp.weixin.qq.com/s/5nj-AAekF8j5KL6J67UZKA)
 - [第一个Spring程序(代码篇)](https://mp.weixin.qq.com/s/_T9g67UUI3ao33Ug1PNo_Q)
 - [手把手整合SSM框架-附源码](https://mp.weixin.qq.com/s/qikPY9ymX4LTgLunrD8vUQ)
@@ -130,6 +132,20 @@
 - [rodert熬夜写了一份BloomFilter总结](https://mp.weixin.qq.com/s/6b5y8l9qIoD6VXdDZuIgBQ)
 
 
+
+###  📚sql  ###
+
+
+- [求求你不要再用offset和limit了](https://mp.weixin.qq.com/s/I6MJRMNy4G2yj3BlXghyFA)
+
+
+
+###  🔒分布式  ###
+
+- [分布式唯一ID解决方案-雪花算法](https://mp.weixin.qq.com/s/k-x6Wz7ibEIGbRWN55YpnQ)
+
+
+
 ###  🌋shell  ###
 
 - [jar包shell启动脚本](https://mp.weixin.qq.com/s/j6BeXX9sYUop-AomkQY4-Q)
@@ -141,8 +157,22 @@
 - [Git【入门】这一篇就够了](https://mp.weixin.qq.com/s/keQpwkwXbiUxsjQNxse2mw)
 
 
-###  实战面试  ###
+###  🤖web实战  ###
+
+- [SSM项目合集（公众号领取）]()
+- [基于SSM图书馆管理系统](https://mp.weixin.qq.com/s/rydMsMCGZG5F-F-LpXS_0A)
+
+
+github地址：https://github.com/Rodert/JavaPub-Web
+
+
+
+###  🚀实战面试  ###
 - [Java 同学注意！这不是演习](https://mp.weixin.qq.com/s/RfQNwMdSLhvzza9zggjjaQ)
+
+####  20212021Java面试题系列教程  ####
+
+- [Java基础--2021面试题系列教程--大白话解读--JavaPUb版本](https://mp.weixin.qq.com/s/Ogxm1whPUyCnnuBmBWUK1A)
 
 
 ### 🌊杂文随笔 ###
