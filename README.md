@@ -172,7 +172,7 @@ github地址：https://github.com/Rodert/JavaPub-Web
 
 ####  20212021Java面试题系列教程  ####
 
-- [Java基础--2021面试题系列教程--大白话解读--JavaPUb版本](https://mp.weixin.qq.com/s/Ogxm1whPUyCnnuBmBWUK1A)
+- [Java基础--2021面试题系列教程--大白话解读--JavaPub版本](https://mp.weixin.qq.com/s/Ogxm1whPUyCnnuBmBWUK1A)
 
 
 ### 🌊杂文随笔 ###
