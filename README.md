@@ -104,6 +104,11 @@ https://img-blog.csdnimg.cn/20201230220120483.png
 - [第一个Spring程序(代码篇)](https://mp.weixin.qq.com/s/_T9g67UUI3ao33Ug1PNo_Q)
 - [手把手整合SSM框架-附源码](https://mp.weixin.qq.com/s/qikPY9ymX4LTgLunrD8vUQ)
 
+- [公司这套架构统一处理 try...catch 这么香，求求你不要再满屏写了，再发现扣绩效！(全局异常处理)](https://mp.weixin.qq.com/s/KjpZQX5-cHDWyiytkAQbFw)
+- [CTO 说了，如果发现谁用 kill -9 关闭程序就开除](https://mp.weixin.qq.com/s/1Oyt8mn11wztY3zBWTEKkg)
+- [spring的controller是单例还是多例？怎么保证并发的安全](https://mp.weixin.qq.com/s/z8OmcbgGI7GGBrbCqCNXbw)
+- []()
+
 
 
 #### Spring Boot ####
@@ -172,7 +177,10 @@ github地址：https://github.com/Rodert/JavaPub-Web
 
 ####  20212021Java面试题系列教程  ####
 
-- [Java基础--2021面试题系列教程--大白话解读--JavaPub版本](https://mp.weixin.qq.com/s/Ogxm1whPUyCnnuBmBWUK1A)
+- [Java基础--2021面试题系列教程--大白话解读--JavaPUb版本](https://mp.weixin.qq.com/s/Ogxm1whPUyCnnuBmBWUK1A)
+- [Java容器--2021面试题系列教程（附答案解析）--大白话解读--JavaPub版本](https://mp.weixin.qq.com/s/6zjw2coKzlkoKATNMJ43lQ)
+- [Java反射--2021面试题系列教程--大白话解读--JavaPub版本](https://mp.weixin.qq.com/s/xk7eU4uhDcCJRZNbcweqLw)
+- 
 
 
 ### 🌊杂文随笔 ###
@@ -180,6 +188,9 @@ github地址：https://github.com/Rodert/JavaPub-Web
 - [拒绝网贷](https://mp.weixin.qq.com/s/Qfz3ZwIRkKeigH8RxT_cbQ)
 - [我的炒股生涯（非广告）](https://mp.weixin.qq.com/s/GsdjlkdOYkQbAEV2w6o01A)
 - [平安夜有话想对你说](https://mp.weixin.qq.com/s/dog6TAbLUIHpVazmnhxC5Q)
+- [没有一个人可以瘦着过完春节](https://mp.weixin.qq.com/s/0GRESHMDI5r1pxj94E7cEA)
+- [一个中科大差生的8年程序员工作总结](https://mp.weixin.qq.com/s/SnsH9klKQM96fd2vYZpw4Q)
+- [国企程序员是一种怎样的体验](https://mp.weixin.qq.com/s/XJ4r-Xhkyu6fpoPbq2PW6g)
 
 ####  福利  ####
 
@@ -195,4 +206,3 @@ github地址：https://github.com/Rodert/JavaPub-Web
 
 
 <a name="公众号"><img src="https://image-static.segmentfault.com/491/705/49170540-93468a3482cd080d_articlex" alt="公众号"></a>
-
