@@ -51,8 +51,9 @@ https://gitee.com/rodert/JavaPub
 
 ###  ☕️Java基础  ###
 
+#### 锁 ####
 
-
+- [volatile关键字的作用](https://mp.weixin.qq.com/s/nNHr4bTLLVht_PiLWr0kQA)
 
 
 
@@ -100,6 +101,7 @@ https://gitee.com/rodert/JavaPub
 
 Spring 学习路线图：
 https://img-blog.csdnimg.cn/20201230220120483.png
+
 - [一篇告诉你什么是Spring](https://mp.weixin.qq.com/s/5nj-AAekF8j5KL6J67UZKA)
 - [第一个Spring程序(代码篇)](https://mp.weixin.qq.com/s/_T9g67UUI3ao33Ug1PNo_Q)
 - [手把手整合SSM框架-附源码](https://mp.weixin.qq.com/s/qikPY9ymX4LTgLunrD8vUQ)
@@ -114,6 +116,7 @@ https://img-blog.csdnimg.cn/20201230220120483.png
 #### Spring Boot ####
 
 - [SpringBoot快速入门-附源码](https://mp.weixin.qq.com/s/jtnwb1pTrjXiFc9EvWwLnQ)
+- [Springboot项目的接口防刷](https://mp.weixin.qq.com/s/ihqyJTievMCTBXlA6QgaBA)
 
 
 
@@ -135,6 +138,8 @@ https://img-blog.csdnimg.cn/20201230220120483.png
 - [rodert 单排学习 redis 进阶【青铜】](https://mp.weixin.qq.com/s/S2qZiJG-_HgW3ET9Sl0EAg)
 - [rodert单排学习redis进阶【白银一】](https://mp.weixin.qq.com/s/hXkoUOJCl8zxDinS878Sqw)
 - [rodert熬夜写了一份BloomFilter总结](https://mp.weixin.qq.com/s/6b5y8l9qIoD6VXdDZuIgBQ)
+- [了解Redis过期策略及实现原理])(https://mp.weixin.qq.com/s/GFtaDZb68XcoVQn6F2U_0Q)
+- [缓存：热点key重建优化](https://mp.weixin.qq.com/s/_AfOygfCd-pCJ1lh2p-q0A)
 
 
 
@@ -142,6 +147,8 @@ https://img-blog.csdnimg.cn/20201230220120483.png
 
 
 - [求求你不要再用offset和limit了](https://mp.weixin.qq.com/s/I6MJRMNy4G2yj3BlXghyFA)
+- [慢查询优化方案-SQL篇【JavaPub版】](https://mp.weixin.qq.com/s/2ZoMtoA4MQVxOun2HPbVfQ)
+- [分表分库解决思路](https://mp.weixin.qq.com/s/jt5oyx3oyC2uORXx8bk4UA)
 
 
 
@@ -160,6 +167,7 @@ https://img-blog.csdnimg.cn/20201230220120483.png
 #### Git ####
 
 - [Git【入门】这一篇就够了](https://mp.weixin.qq.com/s/keQpwkwXbiUxsjQNxse2mw)
+- [国内加速访问Github的办法，超级简单](https://mp.weixin.qq.com/s/Wx1Q-pFUi5SWHoGKAFd3pg)
 
 
 ###  🤖web实战  ###
