@@ -142,7 +142,7 @@ https://img-blog.csdnimg.cn/20201230220120483.png
 - [rodert 单排学习 redis 进阶【青铜】](https://mp.weixin.qq.com/s/S2qZiJG-_HgW3ET9Sl0EAg)
 - [rodert单排学习redis进阶【白银一】](https://mp.weixin.qq.com/s/hXkoUOJCl8zxDinS878Sqw)
 - [rodert熬夜写了一份BloomFilter总结](https://mp.weixin.qq.com/s/6b5y8l9qIoD6VXdDZuIgBQ)
-- [了解Redis过期策略及实现原理])(https://mp.weixin.qq.com/s/GFtaDZb68XcoVQn6F2U_0Q)
+- [了解Redis过期策略及实现原理](https://mp.weixin.qq.com/s/GFtaDZb68XcoVQn6F2U_0Q)
 - [缓存：热点key重建优化](https://mp.weixin.qq.com/s/_AfOygfCd-pCJ1lh2p-q0A)
 
 
