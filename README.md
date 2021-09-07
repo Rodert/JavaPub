@@ -55,7 +55,9 @@ https://gitee.com/rodert/JavaPub
 
 - [volatile关键字的作用](https://mp.weixin.qq.com/s/nNHr4bTLLVht_PiLWr0kQA)
 
+#### jdk8 ####
 
+- [原来ThreadLocal的Lambda构造方式这么简单](https://mp.weixin.qq.com/s/bXx5jBpghfR83uo6zrilrQ)
 
 ###  📝数据结构与算法  ###
 
@@ -79,7 +81,8 @@ https://gitee.com/rodert/JavaPub
 
 
 - [rodert熬夜写了一份Mybatis总结](https://mp.weixin.qq.com/s/op9ADw_6U5MhbcUlkFtOUQ)
-
+- [MyBatis SQL 批量更新（代码+案例）](https://mp.weixin.qq.com/s/VYvciG9iOz1VwCPBzoQdhw)
+- 
 
 
 
@@ -109,7 +112,7 @@ https://img-blog.csdnimg.cn/20201230220120483.png
 - [公司这套架构统一处理 try...catch 这么香，求求你不要再满屏写了，再发现扣绩效！(全局异常处理)](https://mp.weixin.qq.com/s/KjpZQX5-cHDWyiytkAQbFw)
 - [CTO 说了，如果发现谁用 kill -9 关闭程序就开除](https://mp.weixin.qq.com/s/1Oyt8mn11wztY3zBWTEKkg)
 - [spring的controller是单例还是多例？怎么保证并发的安全](https://mp.weixin.qq.com/s/z8OmcbgGI7GGBrbCqCNXbw)
-- []()
+- [真的！@Autowired和@Resource注解别再用错了！](https://mp.weixin.qq.com/s/6FycP6xVm5KQ9XoVn0KZ0Q)
 
 
 
@@ -117,6 +120,7 @@ https://img-blog.csdnimg.cn/20201230220120483.png
 
 - [SpringBoot快速入门-附源码](https://mp.weixin.qq.com/s/jtnwb1pTrjXiFc9EvWwLnQ)
 - [Springboot项目的接口防刷](https://mp.weixin.qq.com/s/ihqyJTievMCTBXlA6QgaBA)
+- [SpringBoot 中的线程池，你真的会用么](https://mp.weixin.qq.com/s/kqFEKJ_PrlhqnrkCYBomYQ)
 
 
 
@@ -149,8 +153,12 @@ https://img-blog.csdnimg.cn/20201230220120483.png
 - [求求你不要再用offset和limit了](https://mp.weixin.qq.com/s/I6MJRMNy4G2yj3BlXghyFA)
 - [慢查询优化方案-SQL篇【JavaPub版】](https://mp.weixin.qq.com/s/2ZoMtoA4MQVxOun2HPbVfQ)
 - [分表分库解决思路](https://mp.weixin.qq.com/s/jt5oyx3oyC2uORXx8bk4UA)
+- [如果mysql磁盘满了，会发生什么？还真被我遇到了！](https://mp.weixin.qq.com/s/mucnXyAcyFHGmA47GT-uig)
 
+###  📚设计模式  ###
 
+- [优雅的替换if-else语句](https://mp.weixin.qq.com/s/nVl2wb1Pr2tChy6kYw51MQ)
+- 	
 
 ###  🔒分布式  ###
 
@@ -169,11 +177,22 @@ https://img-blog.csdnimg.cn/20201230220120483.png
 - [Git【入门】这一篇就够了](https://mp.weixin.qq.com/s/keQpwkwXbiUxsjQNxse2mw)
 - [国内加速访问Github的办法，超级简单](https://mp.weixin.qq.com/s/Wx1Q-pFUi5SWHoGKAFd3pg)
 
+#### shell ####
+
+- [代替xshell的国产免费工具](https://mp.weixin.qq.com/s/IKgP9ZlHBj0yo1mnLtjVWg)
+
+#### linux  ####
+
+- [史上最全win10下Linux子系统的安装及优化方案](https://mp.weixin.qq.com/s/jq6oz7L07WZqLS8WPwzGyA)
 
 ###  🤖web实战  ###
 
 - [SSM项目合集（公众号领取）]()
 - [基于SSM图书馆管理系统](https://mp.weixin.qq.com/s/rydMsMCGZG5F-F-LpXS_0A)
+- [私活利器 时薪翻一番，推荐几个SpringBoot项目，建议你改改](https://mp.weixin.qq.com/s/_98QkdxnDZcORMCGWb44VQ)
+- [16K点赞 基于Spring + Vue的前后端分离管理系统ELAdmin，真香](https://mp.weixin.qq.com/s/xW6H7Zv06jQYPbFPzHmcsw)
+- [Spring Boot + Security + MyBatis + Thymeleaf + Activiti 快速开发平台项目](https://mp.weixin.qq.com/s/2ER31ZqgakXM6HjHI7-ckg)
+- [一款基于 Spring Boot 的现代化社区（论坛/问答/社交网络/博客）](https://mp.weixin.qq.com/s/iyaD_KL-QCmhkhdNgPcQlg)
 
 
 github地址：https://github.com/Rodert/JavaPub-Web
@@ -183,12 +202,20 @@ github地址：https://github.com/Rodert/JavaPub-Web
 ###  🚀实战面试  ###
 - [Java 同学注意！这不是演习](https://mp.weixin.qq.com/s/RfQNwMdSLhvzza9zggjjaQ)
 
-####  20212021Java面试题系列教程  ####
+####  20212021 Java面试题系列教程  ####
 
 - [Java基础--2021面试题系列教程--大白话解读--JavaPUb版本](https://mp.weixin.qq.com/s/Ogxm1whPUyCnnuBmBWUK1A)
 - [Java容器--2021面试题系列教程（附答案解析）--大白话解读--JavaPub版本](https://mp.weixin.qq.com/s/6zjw2coKzlkoKATNMJ43lQ)
 - [Java反射--2021面试题系列教程--大白话解读--JavaPub版本](https://mp.weixin.qq.com/s/xk7eU4uhDcCJRZNbcweqLw)
 - 
+
+### 🚀源码 ###
+
+#### guava ####
+
+- [guava中Lists.newArrayListWithCapacity()的作用和实现原理](https://mp.weixin.qq.com/s/xwbx43fLL0I0CjCqz_jvhg)
+- 
+
 
 
 ### 🌊杂文随笔 ###
@@ -199,6 +226,8 @@ github地址：https://github.com/Rodert/JavaPub-Web
 - [没有一个人可以瘦着过完春节](https://mp.weixin.qq.com/s/0GRESHMDI5r1pxj94E7cEA)
 - [一个中科大差生的8年程序员工作总结](https://mp.weixin.qq.com/s/SnsH9klKQM96fd2vYZpw4Q)
 - [国企程序员是一种怎样的体验](https://mp.weixin.qq.com/s/XJ4r-Xhkyu6fpoPbq2PW6g)
+- [越努力，](https://mp.weixin.qq.com/s/YdeXrlSNSgqcALL-ZURYmg)
+- [一个员工的离职成本到底有多高？](https://mp.weixin.qq.com/s/TCUP-LSzM3EEBdOTb9FaNA)
 
 ####  福利  ####
 
@@ -211,6 +240,5 @@ github地址：https://github.com/Rodert/JavaPub-Web
 >**纯手打原创电子书**，**致力于最实用教程**，不需要什么奖励，只希望多多**转发支持**。
 
 欢迎来我公众号，希望可以结识你，也可以催更，微信搜索：**JavaPub**，回复：【**666**】即可领取
-
 
 <a name="公众号"><img src="https://image-static.segmentfault.com/491/705/49170540-93468a3482cd080d_articlex" alt="公众号"></a>
