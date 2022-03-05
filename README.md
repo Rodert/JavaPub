@@ -19,7 +19,7 @@ https://gitee.com/rodert/JavaPub
 
 > web项目在另一个仓库：https://github.com/Rodert/JavaPub-Web
 
-
+>  SpringBoot最新版常用案例整合，持续更新中 https://github.com/Rodert/SpringBoot-javapub
 
 
 
@@ -72,7 +72,8 @@ https://gitee.com/rodert/JavaPub
 9. [桶排序就是这么容易](https://mp.weixin.qq.com/s/10GFjOZ2VgA06hWe_wkmwQ)
 10. [基数排序就是这么容易](https://mp.weixin.qq.com/s/z4jzP2cew8lMWRgD7H-6JA)
 - [rodert熬夜写了一份BloomFilter总结](https://mp.weixin.qq.com/s/6S9eu_eLBDxeetygulmHBw)
-
+- [哈希算法篇 - 布隆过滤器](https://mp.weixin.qq.com/s/bj5s0jBSu4P9WbSN1sTFPA)
+- [B树和B+树的区别](https://mp.weixin.qq.com/s/RWkc2lNarKnn8Dc0HrP58g)
 
 
 
@@ -118,11 +119,13 @@ https://img-blog.csdnimg.cn/20201230220120483.png
 
 #### Spring Boot ####
 
+SpringBoot最新版常用案例整合，持续更新中 **https://github.com/Rodert/SpringBoot-javapub**
+
 - [SpringBoot快速入门-附源码](https://mp.weixin.qq.com/s/jtnwb1pTrjXiFc9EvWwLnQ)
 - [Springboot项目的接口防刷](https://mp.weixin.qq.com/s/ihqyJTievMCTBXlA6QgaBA)
 - [SpringBoot 中的线程池，你真的会用么](https://mp.weixin.qq.com/s/kqFEKJ_PrlhqnrkCYBomYQ)
-
-
+- [docker 打包 springboot 项目快速入门](https://mp.weixin.qq.com/s/kCdqHqPqiqXYGvsD267Adw)
+- [自定义注解+AOP切面日志+源码](https://mp.weixin.qq.com/s/onYeB2EMRIsZS1j86X0ijA)
 
 
 
@@ -158,7 +161,7 @@ https://img-blog.csdnimg.cn/20201230220120483.png
 ###  📚设计模式  ###
 
 - [优雅的替换if-else语句](https://mp.weixin.qq.com/s/nVl2wb1Pr2tChy6kYw51MQ)
-- 	
+- [单例模式 --- 生产环境怎么用](https://mp.weixin.qq.com/s/s1cwut9WvUSrMYw_6UK3sg)
 
 ###  🔒分布式  ###
 
@@ -187,15 +190,18 @@ https://img-blog.csdnimg.cn/20201230220120483.png
 
 ###  🤖web实战  ###
 
+github地址：https://github.com/Rodert/JavaPub-Web
+
 - [SSM项目合集（公众号领取）]()
 - [基于SSM图书馆管理系统](https://mp.weixin.qq.com/s/rydMsMCGZG5F-F-LpXS_0A)
 - [私活利器 时薪翻一番，推荐几个SpringBoot项目，建议你改改](https://mp.weixin.qq.com/s/_98QkdxnDZcORMCGWb44VQ)
 - [16K点赞 基于Spring + Vue的前后端分离管理系统ELAdmin，真香](https://mp.weixin.qq.com/s/xW6H7Zv06jQYPbFPzHmcsw)
 - [Spring Boot + Security + MyBatis + Thymeleaf + Activiti 快速开发平台项目](https://mp.weixin.qq.com/s/2ER31ZqgakXM6HjHI7-ckg)
 - [一款基于 Spring Boot 的现代化社区（论坛/问答/社交网络/博客）](https://mp.weixin.qq.com/s/iyaD_KL-QCmhkhdNgPcQlg)
+- [决定做一个开源项目](https://mp.weixin.qq.com/s/EcstWlAPtGbE9enfUGrqpA)
 
 
-github地址：https://github.com/Rodert/JavaPub-Web
+
 
 
 
@@ -239,6 +245,6 @@ github地址：https://github.com/Rodert/JavaPub-Web
 
 >**纯手打原创电子书**，**致力于最实用教程**，不需要什么奖励，只希望多多**转发支持**。
 
-欢迎来我公众号，希望可以结识你，也可以催更，微信搜索：**JavaPub**，回复：【**666**】即可领取
+欢迎来到我公众号，微信搜索：**JavaPub**，回复：【**666**】即可领取
 
 <a name="公众号"><img src="https://image-static.segmentfault.com/491/705/49170540-93468a3482cd080d_articlex" alt="公众号"></a>
