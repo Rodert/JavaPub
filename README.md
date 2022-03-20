@@ -147,6 +147,8 @@ SpringBoot最新版常用案例整合，持续更新中 **https://github.com/Rod
 - [rodert熬夜写了一份BloomFilter总结](https://mp.weixin.qq.com/s/6b5y8l9qIoD6VXdDZuIgBQ)
 - [了解Redis过期策略及实现原理](https://mp.weixin.qq.com/s/GFtaDZb68XcoVQn6F2U_0Q)
 - [缓存：热点key重建优化](https://mp.weixin.qq.com/s/_AfOygfCd-pCJ1lh2p-q0A)
+- [记一次redis线上问题](https://mp.weixin.qq.com/s/blf1a6cP-oJQ9FmnpU_ocw)
+- [了解Redis过期策略及实现原理](https://mp.weixin.qq.com/s/GFtaDZb68XcoVQn6F2U_0Q)
 
 
 
