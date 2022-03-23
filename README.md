@@ -1,5 +1,12 @@
-【Java学习+实战+面试】一份涵盖大部分Java程序员需要掌握的核心知识，从java基础到java组件到项目源码。
-https://gitee.com/rodert/JavaPub
+**声明：**
+
+为了加快访问速度，提升各位新老股东阅读体验，我对JavaPub做了一些完善，文末加p哥微信，看最少必要面试题。
+
+
+
+**【Java学习+实战+面试】一份涵盖大部分Java程序员需要掌握的核心知识，从java基础到java组件到项目源码。**
+
+
 
 `善于使用 ctrl + f`
 
@@ -11,15 +18,10 @@ https://gitee.com/rodert/JavaPub
 ## 声明
 
 
->声明：参考来源互联网，有任何争议可以留言。站在前人的肩上，我们才能看的更远。
-
-
-
-
-
-> web项目在另一个仓库：https://github.com/Rodert/JavaPub-Web
 
 >  SpringBoot最新版常用案例整合，持续更新中 https://github.com/Rodert/SpringBoot-javapub
+>
+>  国内访问：https://gitee.com/rodert/SpringBoot-javapub
 
 
 
@@ -37,9 +39,17 @@ https://gitee.com/rodert/JavaPub
 
 ## 文章列表
 
+###  📚最少必要面试题  ###
+
+- [Java基础](https://rodert.gitee.io/javapub-interview/#/src/willbe/10%E9%81%93%E4%B8%8D%E5%BE%97%E4%B8%8D%E4%BC%9A%E7%9A%84Java%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98)
+- [Java并发](https://rodert.gitee.io/javapub-interview/#/src/willbe/10%E9%81%93%E4%B8%8D%E5%BE%97%E4%B8%8D%E4%BC%9A%E7%9A%84Java%E5%B9%B6%E5%8F%91%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98)
+- [MySQL](https://rodert.gitee.io/javapub-interview/#/src/willbe/10%E9%81%93%E4%B8%8D%E5%BE%97%E4%B8%8D%E4%BC%9A%E7%9A%84MySQL%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98)
+
+
+
 ###  📖知识点总结  ###
 
-> 下面是**PDF**干货版，持续更新中。
+> 下面是原创**PDF**干货版，持续更新中。
 
 
 - [51页的MyBatis](https://mp.weixin.qq.com/s/op9ADw_6U5MhbcUlkFtOUQ)
@@ -249,4 +259,16 @@ github地址：https://github.com/Rodert/JavaPub-Web
 
 欢迎来到我公众号，微信搜索：**JavaPub**，回复：【**666**】即可领取
 
-<a name="公众号"><img src="https://image-static.segmentfault.com/491/705/49170540-93468a3482cd080d_articlex" alt="公众号"></a>
+<a name="公众号"><img src="https://tva4.sinaimg.cn/mw690/007F3CC8ly1h0jpebzb51j3076076glw.jpg" alt="公众号"></a>
+
+
+
+---
+
+---
+
+
+
+P哥微信：
+
+<a name="P哥微信"><img src="https://tva2.sinaimg.cn/mw690/007F3CC8ly1h0jpmrt2fcj30by0byq3j.jpg" alt="P哥微信"></a>
