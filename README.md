@@ -41,10 +41,10 @@
 
 ###  📚最少必要面试题  ###
 
-- [Java基础](https://rodert.gitee.io/javapub-interview/#/src/willbe/10%E9%81%93%E4%B8%8D%E5%BE%97%E4%B8%8D%E4%BC%9A%E7%9A%84Java%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98)
-- [Java并发](https://rodert.gitee.io/javapub-interview/#/src/willbe/10%E9%81%93%E4%B8%8D%E5%BE%97%E4%B8%8D%E4%BC%9A%E7%9A%84Java%E5%B9%B6%E5%8F%91%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98)
-- [MySQL](https://rodert.gitee.io/javapub-interview/#/src/willbe/10%E9%81%93%E4%B8%8D%E5%BE%97%E4%B8%8D%E4%BC%9A%E7%9A%84MySQL%E5%9F%BA%E7%A1%80%E9%9D%A2%E8%AF%95%E9%A2%98)
-
+- [Java基础](https://mp.weixin.qq.com/s?__biz=MzUzNDUyOTY0Nw==&mid=2247485967&idx=1&sn=d388e0b9c58e1c8344acd9f5f2d309bc&chksm=fa92190fcde590193f16dac886dc3f900cbd55c1c140476b7123b20bdc9f72b6280892449aeb&token=1494980440&lang=zh_CN#rd)
+- [Java并发入门](https://mp.weixin.qq.com/s?__biz=MzUzNDUyOTY0Nw==&mid=2247486003&idx=1&sn=1c537d81d55cc4bdeeb98e159f77e3b3&chksm=fa921933cde590257baeb2e404fc24ffd2c91617459d39e115838d7f71c7e571cd1750d835c4&token=1494980440&lang=zh_CN#rd)
+- [MySQL](https://mp.weixin.qq.com/s?__biz=MzUzNDUyOTY0Nw==&mid=2247486012&idx=1&sn=8b2ef30d6a43170a961fcb9cb219a3d5&chksm=fa92193ccde5902a978956cfe25c487322091fcb5bd8838a35aad2834d4b92e743a9bfb87a2d&token=1494980440&lang=zh_CN#rd)
+- [ElasticSearch](https://mp.weixin.qq.com/s?__biz=MzUzNDUyOTY0Nw==&mid=2247486210&idx=1&sn=195b65bb00192069b497c1322ea9322c&chksm=fa921802cde59114a659967b893e85f201926473673f30ffc986d22193c4e174272668744e07&token=1494980440&lang=zh_CN#rd)
 
 
 ###  📖知识点总结  ###
