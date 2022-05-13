@@ -13,6 +13,18 @@ spider
 `善于使用 ctrl + f`
 
 
+
+| 收录     | 地址                                       |
+| -------- | ------------------------------------------ |
+| 谷歌收录 | https://www.google.com.hk/search?q=javapub |
+| 百度收录 | https://www.baidu.com/s?wd=javapub         |
+| 必应收录 | https://www4.bing.com/search?q=javapub     |
+| 360收录  | https://www.so.com/s?q=javapub             |
+| 搜狗收录 | https://www.sogou.com/web?query=javapub    |
+
+
+
+
 [toc]
 
 # JavaPub
