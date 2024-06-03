@@ -1,11 +1,4 @@
+新版本更新中
 
-### 框架开发文档
 
-https://theme-hope.vuejs.press/zh/get-started/
-
-```bash
-cd docs
-
-pnpm run docs:dev
-```
-
+临时阅读目录：[README.md](https://github.com/Rodert/JavaPub-Blog/blob/main/docs/posts/all.md)
