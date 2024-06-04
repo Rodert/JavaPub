@@ -47,8 +47,8 @@ export default navbar([
     ],
   },
   {
-    text: "V2 文档",
+    text: "学习路线图",
     icon: "book",
-    link: "https://theme-hope.vuejs.press/zh/", // 超链接到其他网网站
+    link: "http://luxian.javapub.net.cn/", // 超链接到其他网网站
   },
 ]);

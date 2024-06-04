@@ -12,7 +12,7 @@ export default hopeTheme({
 
   iconAssets: "fontawesome-with-brands",
 
-  logo: "https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/202406031512353.jpeg",
+  logo: "https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/202406041727899.png",
 
   repo: "vuepress-theme-hope/vuepress-theme-hope",
 
@@ -22,7 +22,21 @@ export default hopeTheme({
   navbar,
 
   // 侧边栏
-  sidebar,
+  // sidebar,
+  sidebar: {
+    "/posts/": "structure",
+    "/book/": "structure",
+    "/project/": "structure",
+    "/star/": "structure",
+    "/system/": "structure",
+    
+    "/guide/": "structure",
+    "/": [
+        "" /* / */,
+        "contact" /* /contact.html */,
+        "about" /* /about.html */,
+      ],
+  },
 
   // 页脚
   footer: "默认页脚",

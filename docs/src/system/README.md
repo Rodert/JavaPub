@@ -1,6 +1,5 @@
 ---
 title: 关于网站
-index: false
 icon: laptop-code
 category:
   - 网站信息
