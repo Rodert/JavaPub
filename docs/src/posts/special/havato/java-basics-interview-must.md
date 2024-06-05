@@ -708,11 +708,3 @@ Employee emp5 = (Employee) in.readObject();
 
 
 
-
-公众号二维码
-
-![](/accounts/wechat.jpg)
-
-个人微信
-
-![](/accounts/QRcode.jpg)
