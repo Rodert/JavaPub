@@ -491,7 +491,7 @@ SpringBoot最新版常用案例整合，持续更新中 **https://github.com/Rod
 
 **我的原创电子书**
 
-![image](https://upload-images.jianshu.io/upload_images/15828361-33451952716f5add.jpg)
+![image](img/baiduwangpanjietu.webp)
 
 链接：https://pan.baidu.com/s/11kIaq5V6A_pFX3yVoTUvzA 提取码：java
 
