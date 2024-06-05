@@ -140,7 +140,7 @@ JavaPub 这个号已经原创了上百篇文章了，超 10 万字！内容也�
 ###  🎩Spring  ###
 
 Spring 学习路线图：
-![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/202406030950441.png)
+![](img/2024060.png)
 
 - [一篇告诉你什么是Spring](https://mp.weixin.qq.com/s/5nj-AAekF8j5KL6J67UZKA)
 - [第一个Spring程序(代码篇)](https://mp.weixin.qq.com/s/_T9g67UUI3ao33Ug1PNo_Q)
