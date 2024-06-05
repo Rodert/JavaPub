@@ -14,7 +14,7 @@ export default hopeTheme({
 
   logo: "https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/202406041727899.png",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  repo: "Rodert/JavaPub",
 
   docsDir: "src",
 
@@ -26,10 +26,8 @@ export default hopeTheme({
   sidebar: {
     "/posts/": "structure",
     "/book/": "structure",
-    "/project/": "structure",
     "/star/": "structure",
     "/system/": "structure",
-    
     "/guide/": "structure",
     "/": [
         "" /* / */,
