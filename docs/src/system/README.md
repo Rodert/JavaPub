@@ -8,17 +8,4 @@ category:
 <Catalog />
 
 
-## 关于网站
-
-### Bar
-
-- [baz](bar/baz.md)
-- ...
-
-### Foo
-
-- [ray](foo/ray.md)
-- ...
-
-
 

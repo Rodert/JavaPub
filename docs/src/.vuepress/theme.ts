@@ -6,8 +6,8 @@ export default hopeTheme({
   hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
 
   author: {
-    name: "Mr.Hope",
-    url: "https://mister-hope.com",
+    name: "Mr.Wang",
+    url: "https://javapub.net.cn",
   },
 
   iconAssets: "fontawesome-with-brands",
@@ -37,7 +37,7 @@ export default hopeTheme({
   },
 
   // 页脚
-  footer: "默认页脚",
+  footer: '<a href="https://beian.miit.gov.cn/" target="_blank">京ICP备2021007111号-2</a>',
   displayFooter: true,
 
   // 加密配置

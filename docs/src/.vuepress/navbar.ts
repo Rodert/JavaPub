@@ -17,7 +17,7 @@ export default navbar([
         text: "专题合集",
         icon: "lightbulb",
         prefix: "special/",
-        children: ["special", { text: "...", icon: "ellipsis", link: "" }],
+        children: [{ text: "...", icon: "ellipsis", link: "" }],
       },
     ],
   },

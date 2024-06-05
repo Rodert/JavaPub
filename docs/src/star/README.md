@@ -10,14 +10,14 @@ category:
 
 ## 知识星球
 
-### Bar
+### 星球介绍
 
-- [baz](bar/baz.md)
+- [星球🌍](./star-introduce/star-introduce.md)
 - ...
 
-### Foo
+### 项目实战
 
-- [ray](foo/ray.md)
+- [实战项目](./project/project.md)
 - ...
 
 
