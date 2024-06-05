@@ -1,11 +1,7 @@
 JavaPub 网站改版。
 
 
-[点击访问JavaPub官网地址](https://javapub.net.cn)，更能流畅。
-
-临时阅读目录：[README.md](https://github.com/Rodert/JavaPub-Blog/blob/main/docs/posts/all.md)
-
-
+点击访问JavaPub官网地址 [https://javapub.net.cn](https://javapub.net.cn)，更能流畅。
 
 
 
