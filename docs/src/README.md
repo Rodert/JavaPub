@@ -317,7 +317,7 @@ actions:
 #         link: https://theme-hope.vuejs.press/zh/guide/advanced/pwa.html
 
 copyright: false
-footer: 备案 <a href="https://beian.miit.gov.cn/" target="_blank">鄂ICP备2020015769号-1</a> 使用 <a href="https://theme-hope.vuejs.press/zh/" target="_blank">VuePress Theme Hope</a> 主题 | © 2017-至今 Mr.Wang
+footer: 备案 <a href="https://beian.miit.gov.cn/" target="_blank">京ICP备2021007111号-2</a> 使用 <a href="https://theme-hope.vuejs.press/zh/" target="_blank">VuePress Theme Hope</a> 主题 | © 2017-至今 Mr.Wang
 ---
 
 
@@ -350,5 +350,5 @@ JavaPub 的新版网站，之后的更新都会在这里，计划运营到 2050 
 
 所有的内容会公众号第一时间更新，其他平台也会同步。此外，通过公众号可以获得站长联系方式。
 
-![JavaPub公众号]()
+![JavaPub官方公众号]()
 
