@@ -3,8 +3,6 @@ home: true
 icon: home
 title: 项目主页
 heroImage: https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/202406041727899.png
-# bgImage: https://theme-hope-assets.vuejs.press/bg/6-light.svg
-# bgImageDark: https://theme-hope-assets.vuejs.press/bg/6-dark.svg
 bgImageStyle:
   background-attachment: fixed
 heroText: JavaPub
@@ -317,7 +315,7 @@ actions:
 #         link: https://theme-hope.vuejs.press/zh/guide/advanced/pwa.html
 
 copyright: false
-footer: 备案 <a href="https://beian.miit.gov.cn/" target="_blank">京ICP备2021007111号-2</a> 使用 <a href="https://theme-hope.vuejs.press/zh/" target="_blank">VuePress Theme Hope</a> 主题 | © 2017-至今 Mr.Wang
+footer: 备案 <a href="https://beian.miit.gov.cn/" target="_blank">京ICP备2021007111号-2</a> ｜ 主题 <a href="https://theme-hope.vuejs.press/zh/" target="_blank">VuePress Theme Hope</a> | © 2017-至今 Mr.Wang
 ---
 
 
