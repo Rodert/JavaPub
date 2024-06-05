@@ -84,6 +84,6 @@ export default navbar([
   {
     text: "学习路线图",
     icon: "book",
-    link: "http://luxian.javapub.net.cn/", // 超链接到其他网网站
+    link: "https://code-route-h3xxxsggd-roderts-projects.vercel.app", // 超链接到其他网网站
   },
 ]);
