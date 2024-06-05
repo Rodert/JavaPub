@@ -508,5 +508,5 @@ SpringBoot最新版常用案例整合，持续更新中 **https://github.com/Rod
 
 欢迎来到我公众号，微信搜索：**JavaPub**，回复：【**666**】即可领取
 
-<a name="公众号"><img src="https://tva4.sinaimg.cn/mw690/007F3CC8ly1h0jpebzb51j3076076glw.jpg" alt="公众号"></a>
+<a name="公众号"><img src="img/qrcode_for_gh_e4925da5b058_258.jpg" alt="公众号"></a>
 
