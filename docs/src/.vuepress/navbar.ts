@@ -55,8 +55,13 @@ export default navbar([
       {
         text: "更新历史",
         icon: "lightbulb",
-        prefix: "timeline/",
-        children: ["timeline", { text: "...", icon: "ellipsis", link: "" }],
+        prefix: "website-record/",
+        children: ["website-record", { text: "...", icon: "ellipsis", link: "" }],
+      },
+      {
+        text: "更新历史",
+        icon: "history",
+        link: "/timeline/",
       },
     ],
   },

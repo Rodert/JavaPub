@@ -16,8 +16,7 @@ category:
 tag:
   - redis
   - 面试题
-# 此页面会出现在首页的文章板块中
-star: true
+
 ---
 
 Redis

@@ -348,5 +348,5 @@ JavaPub 的新版网站，之后的更新都会在这里，计划运营到 2050 
 
 所有的内容会公众号第一时间更新，其他平台也会同步。此外，通过公众号可以获得站长联系方式。
 
-![JavaPub官方公众号]()
+![JavaPub官方公众号](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/static/fengmiansheji.png)
 
