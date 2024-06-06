@@ -40,6 +40,8 @@ export default hopeTheme({
   footer: '<a href="https://beian.miit.gov.cn/" target="_blank">京ICP备2021007111号-2</a>',
   displayFooter: true,
 
+
+
   // 加密配置
   encrypt: {
     config: {

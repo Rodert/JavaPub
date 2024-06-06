@@ -17,7 +17,7 @@ actions:
     link: ./star/
 
 
-# highlights:
+highlights:
 #   - header: 易于安装
 #     image: /assets/image/box.svg
 #     bgImage: https://theme-hope-assets.vuejs.press/bg/3-light.svg
@@ -262,31 +262,31 @@ actions:
 #         details: 像相册一样允许你浏览、缩放并分享你的页面图片
 #         link: https://theme-hope.vuejs.press/zh/guide/feature/photo-swipe.html
 
-#   - header: 博客
-#     description: 通过主题创建个人博客
-#     image: /assets/image/blog.svg
-#     bgImage: https://theme-hope-assets.vuejs.press/bg/5-light.svg
-#     bgImageDark: https://theme-hope-assets.vuejs.press/bg/5-dark.svg
-#     highlights:
-#       - title: 博客功能
-#         icon: blog
-#         details: 通过文章的日期、标签和分类展示文章
-#         link: https://theme-hope.vuejs.press/zh/guide/blog/intro.html
+  # - header: 博客
+  #   description: 通过主题创建个人博客
+  #   image: /assets/image/blog.svg
+  #   bgImage: https://theme-hope-assets.vuejs.press/bg/5-light.svg
+  #   bgImageDark: https://theme-hope-assets.vuejs.press/bg/5-dark.svg
+  #   highlights:
+  #     - title: 博客功能
+  #       icon: blog
+  #       details: 通过文章的日期、标签和分类展示文章
+  #       link: https://theme-hope.vuejs.press/zh/guide/blog/intro.html
 
-#       - title: 博客主页
-#         icon: home
-#         details: 全新博客主页
-#         link: https://theme-hope.vuejs.press/zh/guide/blog/home.html
+  #     - title: 博客主页
+  #       icon: home
+  #       details: 全新博客主页
+  #       link: https://theme-hope.vuejs.press/zh/guide/blog/home.html
 
-#       - title: 博主信息
-#         icon: home
-#         details: 自定义名称、头像、座右铭和社交媒体链接
-#         link: https://theme-hope.vuejs.press/zh/guide/blog/blogger.html
+  #     - title: 博主信息
+  #       icon: home
+  #       details: 自定义名称、头像、座右铭和社交媒体链接
+  #       link: https://theme-hope.vuejs.press/zh/guide/blog/blogger.html
 
-#       - title: 时间线
-#         icon: home
-#         details: 在时间线中浏览和通读博文
-#         link: https://theme-hope.vuejs.press/zh/guide/blog/timeline.html
+  #     - title: 时间线
+  #       icon: home
+  #       details: 在时间线中浏览和通读博文
+  #       link: https://theme-hope.vuejs.press/zh/guide/blog/timeline.html
 
 #   - header: 高级
 #     description: 增强站点与用户体验的高级功能
