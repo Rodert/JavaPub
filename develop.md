@@ -7,6 +7,8 @@ https://theme-hope.vuejs.press/zh/get-started/
 ```bash
 cd docs
 
+pnpm i
+
 pnpm run docs:dev
 ```
 
