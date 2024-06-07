@@ -1,8 +1,10 @@
-JavaPub 网站改版。
+
+## [点击访问JavaPub官网网站](https://javapub.net.cn)
 
 
-点击访问JavaPub官网地址 [https://javapub.net.cn](https://javapub.net.cn)，更能流畅。
 
+
+---
 
 
 
