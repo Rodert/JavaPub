@@ -1,6 +1,6 @@
 ---
 title: 关于网站
-icon: laptop-code
+icon: message
 category:
   - 网站信息
 ---

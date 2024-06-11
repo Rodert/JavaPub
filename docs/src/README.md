@@ -14,11 +14,11 @@ actions:
     type: primary
 
   - text: 知识星球🌍
-    link: ./star/
+    link: ./star/star-introduce/star-introduce.md
 
 
 highlights:
-#   - header: 易于安装
+#   - header: 易于安装·
 #     image: /assets/image/box.svg
 #     bgImage: https://theme-hope-assets.vuejs.press/bg/3-light.svg
 #     bgImageDark: https://theme-hope-assets.vuejs.press/bg/3-dark.svg

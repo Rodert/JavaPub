@@ -1,6 +1,6 @@
 ---
 title: 知识星球
-icon: laptop-code
+icon: globe
 category:
   - 知识星球
 ---

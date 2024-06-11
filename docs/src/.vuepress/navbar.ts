@@ -24,7 +24,7 @@ export default navbar([
   "/book/",
   {
     text: "知识星球",
-    icon: "lightbulb",
+    icon: "globe",
     prefix: "/star/",
     children: [
       {
@@ -43,7 +43,7 @@ export default navbar([
   },
   {
     text: "网站信息",
-    icon: "lightbulb",
+    icon: "message",
     prefix: "/system/",
     children: [
       {
@@ -88,7 +88,7 @@ export default navbar([
   // },
   {
     text: "学习路线图",
-    icon: "book",
+    icon: "route",
     link: "https://code-route-h3xxxsggd-roderts-projects.vercel.app", // 超链接到其他网网站
   },
 ]);

@@ -1,6 +1,6 @@
 ---
 title: 技术书籍
-icon: lightbulb
+icon: book
 ---
 
 

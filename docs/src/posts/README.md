@@ -1,9 +1,10 @@
 ---
 title: 编程指南
 icon: lightbulb
-index: false
+# index: false
 ---
 
 
 
 
+<Catalog />
