@@ -1,5 +1,5 @@
 
-## [点击访问JavaPub官网网站](https://javapub.net.cn)
+## [点击访问JavaPub官网网站 javapub.net.cn](https://javapub.net.cn)
 
 
 
@@ -9,7 +9,7 @@
 
 ---
 
-
+[GitHub](https://github.com/Rodert/JavaPub) | [Gitee](https://gitee.com/rodert/JavaPub)
 
 
 直接上干货，几百篇原创笔记都在这。
