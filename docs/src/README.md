@@ -332,7 +332,6 @@ JavaPub 的新版网站，之后的更新都会在这里，计划运营到 2050 
 ## 关于站长
 
 
-
 [linktr](https://linktr.ee/javapub) | [个人站点](https://javapub.net.cn/) | [微信公众号](https://mp.weixin.qq.com/s/selkBT2ilq0KdA9KjO7ZLA) | [知乎](https://www.zhihu.com/people/zhui-ma-7-49) | [GitHub](https://github.com/Rodert/) | [掘金](https://juejin.cn/user/958429872260328) | [CSDN](https://javapub.blog.csdn.net/?type=blog) | [腾讯云开发者社区](https://cloud.tencent.com/developer/user/2686511) | [哔哩哔哩](https://space.bilibili.com/404747369) | [阿里云栖社区](https://developer.aliyun.com/profile/e6np5bdeh6snm)
 
 
@@ -349,4 +348,7 @@ JavaPub 的新版网站，之后的更新都会在这里，计划运营到 2050 
 所有的内容会公众号第一时间更新，其他平台也会同步。此外，通过公众号可以获得站长联系方式。
 
 ![JavaPub官方公众号](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/static/fengmiansheji.png)
+
+
+![Visitor Count](https://profile-counter.glitch.me/JavaPubNetCn/count.svg)
 
