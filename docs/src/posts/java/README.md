@@ -1,6 +1,6 @@
 ---
 title: Java
-icon: lightbulb
+icon: java
 index: false
 ---
 

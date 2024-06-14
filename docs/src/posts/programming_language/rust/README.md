@@ -1,6 +1,6 @@
 ---
 title: Rust
-icon: lightbulb
+icon: rust
 index: false
 ---
 

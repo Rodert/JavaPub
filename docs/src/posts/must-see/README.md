@@ -1,6 +1,6 @@
 ---
 title: 必看
-icon: lightbulb
+icon: star
 index: false
 ---
 

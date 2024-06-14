@@ -1,6 +1,6 @@
 ---
 title: Python
-icon: lightbulb
+icon: python
 index: false
 ---
 

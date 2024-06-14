@@ -1,6 +1,6 @@
 ---
 title: Linux
-icon: lightbulb
+icon: linux
 index: false
 ---
 

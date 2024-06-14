@@ -1,6 +1,6 @@
 ---
 title: GoLang
-icon: lightbulb
+icon: golang
 index: false
 ---
 

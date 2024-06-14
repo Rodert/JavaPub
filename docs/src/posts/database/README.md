@@ -1,6 +1,6 @@
 ---
 title: 数据库
-icon: lightbulb
+icon: database
 index: false
 ---
 

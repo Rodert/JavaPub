@@ -14,7 +14,7 @@ export default navbar([
         children: ["operating-guide", { text: "...", icon: "ellipsis", link: "" }],
       },
       {
-        text: "专题合集",
+        text: "面试专题合集",
         icon: "lightbulb",
         prefix: "special/",
         children: [{ text: "...", icon: "ellipsis", link: "" }],
