@@ -28,6 +28,8 @@ icon: circle-info
 如果不确定是否要加入，可以在公众号留言 [公众号 - JavaPub](https://kazjsfecs3y.feishu.cn/wiki/Giosw53oei2dlQk9zxmcjoj8nad) ，备注：想要加入星球，然后说明自己的情况。
 
 
+https://t.zsxq.com/14tMfIK7m
+
 ![星球优惠码](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/static/star_qr_1.jpg)
 
 
