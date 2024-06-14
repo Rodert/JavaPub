@@ -316,7 +316,7 @@ Maven世界拥有大量构件，需要找一个用来唯一标识一个构建的
 3. provided：已提供依赖范围。对于编译，测试的classpath都有效，但对于运行无效。因为由容器已经提供，例如servlet-api
 4. runtime：运行时提供。例如:jdbc驱动
 5. system：系统范围,自定义构件，指定systemPath；跟provided 相似，但是在系统中要以外部JAR包的形式提供，maven不会在repository查找它。
-6. import：只使用在<dependencyManagement>中，表示从其它的pom中导入dependency的配置。
+6. import：只使用在 `<dependencyManagement>` 中，表示从其它的pom中导入dependency的配置。
 
 ![依赖范围]()
 
@@ -332,7 +332,7 @@ Maven世界拥有大量构件，需要找一个用来唯一标识一个构建的
 
 ## 8.3.可选依赖
 
-在依赖节点dependency中的<optional>可以控制当前的依赖是否向下传递；默认值为false，表示向下传递。
+在依赖节点dependency中的`<optional>`可以控制当前的依赖是否向下传递；默认值为false，表示向下传递。
 
 【示例】A项目依赖于log4j，然后B项目依赖于A项目；那么如果在A中对log4j依赖的optional配置成false时，B项目中自动传递依赖于log4j。否则反之。
 
@@ -414,7 +414,7 @@ Maven世界拥有大量构件，需要找一个用来唯一标识一个构建的
 
 > 这个在项目中使用频率较高
 
-在pom中的依赖节点中，如果引入的依赖包含了很多其它的传递依赖，而且项目需要的这些依赖的版本和传递依赖的不相符；那么可以在依赖节点中设置排除依赖节点：<exclusions> 然后再添加 <exclusion>，其里面的内容包括：
+在pom中的依赖节点中，如果引入的依赖包含了很多其它的传递依赖，而且项目需要的这些依赖的版本和传递依赖的不相符；那么可以在依赖节点中设置排除依赖节点：`<exclusions>` 然后再添加 `<exclusion>`，其里面的内容包括：
 ①所包含坐标
 ②排除依赖包中所包含的依赖关系
 【注意】不需要添加版本，直接按照类别排除

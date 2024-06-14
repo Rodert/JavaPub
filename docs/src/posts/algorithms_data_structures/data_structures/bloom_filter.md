@@ -8,7 +8,10 @@ icon: lightbulb
 
 `阅读大概需要4`
 
-![封面图](https://img-blog.csdnimg.cn/20201229214440215.jpg)
+
+
+![封面图](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/202406141636527.png)
+
 
 [toc]
 
@@ -30,7 +33,10 @@ icon: lightbulb
 
 > 坚不可摧	E	消耗法力：30/35/40/45/50冷却时间：18/16/14/12/10	布隆朝一个方向举起盾牌，持续3/3.25/3.5/3.75/4秒，并使来自目标
 
-![](https://img-blog.csdnimg.cn/20201229214210566.jpg)
+
+
+![英雄联盟布隆](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/202406141637574.png)
+
 
 回忆完以上，下面继续
 
@@ -58,8 +64,7 @@ icon: lightbulb
 
 
 
-![布隆过滤原理图](https://img-blog.csdnimg.cn/20201229214227364.png)
-
+![布隆过滤原理图](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/202406141635141.png)
 
 
 >  如图 {x,y,z} 是一个集合，通过三次hash计算，映射对应的值到 位数组 对应位置。当我们要求 **w** 是否存在时，只要对w计算hash，再找对应位置是否为1即可。但是，也有可能正好hash值对应的 位数组 位置都为1，这个概念叫做**误算率**。实际上，这就和哈希表中哈希冲突的情况一样，因为可能会出现两个key值经过k个hash函数之后，取余之后的结果是一样的。
@@ -214,7 +219,10 @@ public class BloomFilterSimple {
 
 
 
-![布隆过滤原理图](https://img-blog.csdnimg.cn/20201229214327696.png)
+
+![布隆过滤原理图](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/202406141635141.png)
+
+
 
 >  如图 {x,y,z} 是一个集合，通过三次hash计算，映射对应的值到 位数组 对应位置。当我们要求 **w** 是否存在时，只要对w计算hash，再找对应位置是否为1即可。但是，也有可能正好hash值对应的 位数组 位置都为1，这个概念叫做**误算率**。实际上，这就和哈希表中哈希冲突的情况一样，因为可能会出现两个key值经过k个hash函数之后，取余之后的结果是一样的。
 
@@ -224,7 +232,7 @@ public class BloomFilterSimple {
 
 
 
-![](布隆过滤器参数计算公式.jpg)
+![布隆过滤器参数计算公式.jpg](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/202406141635462.png)
 
 1. 哈希函数的要求尽量满足平均分布，这样既降低误判发生的概率，又可以充分利用bit数组的空间；
 2. 根据论文《Less Hashing, Same Performance: Building a Better Bloom Filter》提出的一个技巧，可以用2个哈希函数来模拟k个哈希函数，即gi(x) = h1(x) + ih2(x) ，其中0<=i<=k-1；

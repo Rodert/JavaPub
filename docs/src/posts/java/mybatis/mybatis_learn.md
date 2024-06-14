@@ -12,6 +12,7 @@ icon: lightbulb
 [toc]
 
 ## 前言
+
 > 声明：参考来源互联网，有任何争议可以留言。站在前人的肩上，我们才能看的更远。
 
 > 本教程纯手打，致力于最实用教程，不需要什么奖励，只希望多多转发支持。
@@ -22,6 +23,7 @@ icon: lightbulb
 ![微信公众号](https://img-blog.csdnimg.cn/20201229211308907.jpg)
 
 > 对mybatis有一定了解的，可以直接跳过前面基础引入部分。
+
 ## 1，什么是Mybatis之JDBC攻城狮
 
 #### 1,1，使用idea构建maven工程
@@ -30,7 +32,7 @@ icon: lightbulb
 
 #### 1，2，引入mysql依赖包
 
-```
+```xml
 <dependency>
     <groupId>mysql</groupId>
     <artifactId>mysql-connector-java</artifactId>
@@ -41,10 +43,12 @@ icon: lightbulb
 
 #### 1，3，准备数据
 - 创建数据库：
+
 >create database mydatabase;
 
 - 创建表：
-```
+
+```sql
 DROP TABLE IF EXISTS tb_user;
 CREATE TABLE tb_user (
 id char(32) NOT NULL,
@@ -70,7 +74,8 @@ INSERT INTO mydatabase.tb_user ( userName, password, name, age, sex, birthday, c
 - JDBCTest.class
 
 7步操作数据库
-```
+
+```java
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -127,6 +132,7 @@ public class JDBCTest {
 ![.\rodert教你学MyBatis-实战这一篇就够了\一号图片.jpg](https://img-blog.csdnimg.cn/20201229211404909.jpg)
 
 ## 4，MyBatis介绍
+
 ![介绍截图]()
 >官方文档 http://www.mybatis.org/mybatis-3/getting-started.html
 
@@ -137,7 +143,8 @@ public class JDBCTest {
 
 ## 4，快速入门（quick start）
 #### 4，1，引入依赖(pom.xml)
-```
+
+```xml
 <dependency>
     <groupId>org.mybatis</groupId>
     <artifactId>mybatis</artifactId>
@@ -146,7 +153,8 @@ public class JDBCTest {
 ```
 
 #### 4，2，全局配置文件(mybatis-config.xml)
-```
+
+```xml
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE configuration
   PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
@@ -190,7 +198,8 @@ public class JDBCTest {
 ```
 
 #### 4,3，配置Map.xml(MyMapper.xml)
-```
+
+```xml
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
@@ -207,8 +216,10 @@ public class JDBCTest {
 ```
 
 #### 4，4，修改全局配置文件(mybatis-config.xml)
+
 加入MyMapper.xml配置
-```
+
+```xml
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE configuration
   PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
@@ -237,7 +248,8 @@ public class JDBCTest {
 ```
 
 #### 4，5，构建SqlSessionFactory(MybatisTest.java)
-```
+
+```java
 	// 指定全局配置文件
     String resource = "mybatis-config.xml";
     // 读取配置文件
@@ -247,7 +259,8 @@ public class JDBCTest {
 ```
 
 #### 4,6，打开sqlSession回话，并执行sql(MyBatisTest.xml)
-```
+
+```java
 	    // 获取sqlSession
         SqlSession sqlSession = sqlSessionFactory.openSession();
         // 操作CRUD，第一个参数：指定statement，规则：命名空间+“.”+statementId
@@ -261,7 +274,7 @@ public class JDBCTest {
 
 MyBatisTest.java
 
-```
+```java
 import com.zpc.test.pojo.User;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -406,7 +419,8 @@ public class User {
 
 ## 6，完整增删查改操作(CURD)
 #### 6，1，创建USerDao.java接口
-```
+
+```java
 import com.zpc.mybatis.pojo.User;
 import java.util.List;
 
@@ -450,7 +464,8 @@ public interface UserDao {
 }
 ```
 #### 6,2,创建UserDaoImpl.java
-```
+
+```java
 import com.zpc.mybatis.dao.UserDao;
 import com.zpc.mybatis.pojo.User;
 import org.apache.ibatis.session.SqlSession;
@@ -597,7 +612,7 @@ UserDao.java，按住Alt+Enter,选择create test
 
 #### 6.5.编写UserDao的测试用例
 
-```
+```java
 import com.zpc.mybatis.dao.UserDao;
 import com.zpc.mybatis.dao.impl.UserDaoImpl;
 import com.zpc.mybatis.pojo.User;
@@ -691,7 +706,7 @@ User{id=‘2’, userName=‘null’, password=‘123456’, name=‘静静’, 
 
 - 解决方案1：在sql语句中使用别名：
 
-```
+```bash
 <select id="queryUserById" resultType="com.zpc.mybatis.pojo.User">
    select
     tuser.id as id,
@@ -733,7 +748,7 @@ User{id=‘2’, userName=‘null’, password=‘123456’, name=‘静静’, 
 
 ![图片6](https://img-blog.csdnimg.cn/20201229211739339.png)
 
-```
+```java
 org.apache.ibatis.binding.BindingException: Type interface com.zpc.mybatis.dao.UserDao is not known to the MapperRegistry.
 	at org.apache.ibatis.binding.MapperRegistry.getMapper(MapperRegistry.java:47)
 	at org.apache.ibatis.session.Configuration.getMapper(Configuration.java:655)
@@ -741,11 +756,15 @@ org.apache.ibatis.binding.BindingException: Type interface com.zpc.mybatis.dao.U
 at com.zpc.mybatis.test.UserDaoTest.setUp(UserDaoTest.java:32)
 ```
 
-- 分析原因，在UserMapper.xml中配置接口的全路径
-mapper.xml namespace
-如果希望使用mybatis通过的动态代理的接口，就需要namespace中的值，和需要对应的Mapper(dao)接口的全路径一致。Mapper中Namespace的定义本身是没有限制的，只要不重复即可，但如果使用Mybatis的DAO接口动态代理，则namespace必须为DAO接口的全路径，例如：com.zpc.mybatis.dao.UserDao
+- 分析原因，在 `UserMapper.xml` 中配置接口的全路径
 
-> <mapper namespace="com.zpc.mybatis.dao.UserDao">
+`mapper.xml namespace`
+
+如果希望使用mybatis通过的动态代理的接口，就需要namespace中的值，和需要对应的Mapper(dao)接口的全路径一致。Mapper中Namespace的定义本身是没有限制的，只要不重复即可，但如果使用Mybatis的DAO接口动态代理，则namespace必须为DAO接口的全路径，
+
+例如：`com.zpc.mybatis.dao.UserDao`
+
+`<mapper namespace="com.zpc.mybatis.dao.UserDao">`
 
 #### 7.3.完整的例子
 
@@ -804,7 +823,7 @@ public interface UserMapper {
 
 2. 创建Usermapper.xml
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
@@ -899,7 +918,7 @@ public interface UserMapper {
 
 3. 全局配置文件mybatis-config.xml引入UserMapper.xml
 
-```
+```xml
 <mappers>
     <mapper resource="mappers/MyMapper.xml"/>
     <mapper resource="mappers/UserDaoMapper.xml"/>
@@ -909,7 +928,7 @@ public interface UserMapper {
 
 4. 创建UserMapper测试用例
 
-```
+```java
 import com.zpc.mybatis.dao.UserMapper;
 import com.zpc.mybatis.pojo.User;
 import org.apache.ibatis.io.Resources;
@@ -1153,7 +1172,7 @@ MyBatis 可以配置成适应多种环境，例如，开发、测试和生产环
 
 需要告诉 MyBatis 到哪里去找到 SQL 映射语句。即告诉 MyBatis 到哪里去找映射文件。你可以使用相对于类路径的资源引用， 或完全限定资源定位符（包括 file:/// 的 URL），或类名和包名等。例如：
 
-```
+```xml
 <!-- 使用相对于类路径的资源引用 -->
 <mappers>
   <mapper resource="org/mybatis/builder/AuthorMapper.xml"/>
@@ -1168,13 +1187,15 @@ MyBatis 可以配置成适应多种环境，例如，开发、测试和生产环
   <mapper class="org.mybatis.builder.PostMapper"/>
 </mappers>
 ```
+
 > 这里所谓的mapper接口路径。实际上就是dao的接口路径。在mybatis中，通常把dao的包叫做mapper。类名，也叫做mapper
 > 1. 定义一个接口。
 > 2. 在接口所在的包中定义mapper.xml，并且要求xml文件和interface的名称要相同。
 > 3. 在mybatis-config.xml 中通过class路径，引入mapper（注解方式）。要求mapper.xml 中的名称空间是类的接口的全路径。
 
 注解方式：
-```
+
+```xml
 <mappers>
     <mapper resource="mappers/MyMapper.xml"/>
     <mapper resource="mappers/UserDaoMapper.xml"/>
@@ -1184,14 +1205,14 @@ MyBatis 可以配置成适应多种环境，例如，开发、测试和生产环
 ```
 
 问题：
-1. mapper.xml 和 java文件没有分离。 之后的教程讲述和spring整合之后解决。
+1. mapper.xml 和 java 文件没有分离。 之后的教程讲述和spring整合之后解决。
 2. 需要一个一个的去加载mapper。
 
-当然也可以使用包扫描（必须使用注解方式，即在接口方法上使用注解，如@Select("select * from tb_user ")）：
+当然也可以使用包扫描（必须使用注解方式，即在接口方法上使用注解，如 `@Select("select * from tb_user ")）`：
 缺点：
 1. 如果包的路径有很多？
-2. mapper.xml和mapper.java没有分离。
-- spring整合的时候解决。
+2. mapper.xml 和 mapper.java 没有分离。
+- spring 整合的时候解决。
 
 ## 9.Mapper XML文件详解
 
@@ -1670,14 +1691,16 @@ Foreach：collection item saparator open close
 2、相同的SQL和参数
 
 测试：
-```
+
+```java
 @Test
 public void testQueryUserById() {
     System.out.println(this.userMapper.queryUserById("1"));
     System.out.println(this.userMapper.queryUserById("1"));
 }
 ```
-```
+
+```bash
 2018-07-01 17:08:50,156 [main] [org.apache.ibatis.transaction.jdbc.JdbcTransaction]-[DEBUG] Opening JDBC Connection
 2018-07-01 17:08:50,421 [main] [org.apache.ibatis.datasource.pooled.PooledDataSource]-[DEBUG] Created connection 242355057.
 2018-07-01 17:08:50,423 [main] [com.zpc.mybatis.dao.UserMapper.queryUserById]-[DEBUG] ==>  Preparing: select * from tb_user where id = ? 
@@ -1686,10 +1709,12 @@ public void testQueryUserById() {
 User{id='1', userName='bigGod222', password='123456', name='鹏程', age=20, sex=1, birthday='2018-07-01', created='2018-07-01 13:35:40.0', updated='2018-07-01 13:35:40.0'}
 User{id='1', userName='bigGod222', password='123456', name='鹏程', age=20, sex=1, birthday='2018-07-01', created='2018-07-01 13:35:40.0', updated='2018-07-01 13:35:40.0'}
 ```
-使用：sqlSession.clearCache();可以强制清除缓存
+
+使用： `sqlSession.clearCache();` 可以强制清除缓存
 
 测试：
-```
+
+```java
 @Test
 public void testQueryUserById() {
     System.out.println(this.userMapper.queryUserById("1"));
@@ -1697,8 +1722,10 @@ public void testQueryUserById() {
     System.out.println(this.userMapper.queryUserById("1"));
 }
 ```
+
 日志：
-```
+
+```bash
 2018-07-01 17:10:51,065 [main] [org.apache.ibatis.transaction.jdbc.JdbcTransaction]-[DEBUG] Opening JDBC Connection
 2018-07-01 17:10:51,359 [main] [org.apache.ibatis.datasource.pooled.PooledDataSource]-[DEBUG] Created connection 242355057.
 2018-07-01 17:10:51,360 [main] [com.zpc.mybatis.dao.UserMapper.queryUserById]-[DEBUG] ==>  Preparing: select * from tb_user where id = ? 
@@ -1710,9 +1737,11 @@ User{id='1', userName='bigGod222', password='123456', name='鹏程', age=20, sex
 2018-07-01 17:10:51,440 [main] [com.zpc.mybatis.dao.UserMapper.queryUserById]-[DEBUG] <==      Total: 1
 User{id='1', userName='bigGod222', password='123456', name='鹏程', age=20, sex=1, birthday='2018-07-01', created='2018-07-01 13:35:40.0', updated='2018-07-01 13:35:40.0'}
 ```
-执行update、insert、delete的时候，会清空缓存
+
+执行 update、insert、delete 的时候，会清空缓存
 测试：
-```
+
+```java
 @Test
 public void testQueryUserById() {
     System.out.println(this.userMapper.queryUserById("1"));
@@ -1748,12 +1777,14 @@ User{id='1', userName='bigGod222', password='123456', name='美女', age=20, sex
 mybatis 的二级缓存的作用域是一个mapper的namespace ，同一个namespace中查询sql可以从缓存中命中。
 
 开启二级缓存：
-```
+
+```xml
 <mapper namespace="com.zpc.mybatis.dao.UserMapper">
     <cache/>
 </mapper>
 ```
 测试：
+
 ```
 @Test
 public void testCache() {
@@ -1833,7 +1864,8 @@ public class Order {
 #### 12.2.一对一查询
 方法一：核心思想扩展Order对象，来完成映射
 新建OrderUser实体类继承Order：
-```
+
+```java
 public class OrderUser extends Order {
     private String userName;
     private String password;
@@ -1845,32 +1877,40 @@ public class OrderUser extends Order {
     private Date updated;
 }
 ```
+
 OrderMapper接口：
-```
+
+```java
 public interface OrderMapper {
      OrderUser queryOrderUserByOrderNumber(@Param("number") String number);
 }
 ```
+
 配置OrderMapper：
-```
+
+```xml
  <mapper namespace="com.zpc.mybatis.dao.OrderMapper">
     <select id="queryOrderUserByOrderNumber" resultType="com.zpc.mybatis.pojo.OrderUser">
       select * from tb_order o left join tb_user u on o.user_id=u.id where o.order_number = #{number}
    </select>
 </mapper>
 ```
+
 测试：
-```
+
+```java
 @Test
 public void queryOrderUserByOrderNumber() throws Exception {
     OrderUser orderUser = orderMapper.queryOrderUserByOrderNumber("201807010001");
     System.out.println(orderUser);
 }
 ```
+
 方法二：面向对象的思想，在Order对象中添加User对象。
 
 在Order对象中添加User属性：
-```
+
+```java
 public class Order {
     private Integer id;
     private Long userId;
@@ -1880,8 +1920,10 @@ public class Order {
     private User user;
 }
 ```
+
 接口：
-```
+
+```java
 /**
  * 根据订单号查询订单用户的信息
  * @param number
@@ -1889,8 +1931,10 @@ public class Order {
  */
 Order queryOrderWithUserByOrderNumber(@Param("number") String number);
 ```
+
 使用resultType不能完成自动映射，需要手动完成结果集映射resultMap：
-```
+
+```xml
  <resultMap id="OrderUserResultMap" type="com.zpc.mybatis.pojo.Order" autoMapping="true">
      <id column="id" property="id"/>
      <!--association:完成子对象的映射-->
@@ -1906,19 +1950,23 @@ Order queryOrderWithUserByOrderNumber(@Param("number") String number);
    select * from tb_order o left join tb_user u on o.user_id=u.id where o.order_number = #{number}
 </select>
 ```
+
 测试：
-```
+
+```java
 @Test
 public void queryOrderWithUserByOrderNumber() throws Exception {
     Order order = orderMapper.queryOrderWithUserByOrderNumber("201807010001");
     System.out.println(order.getUser());
 }
 ```
+
 #### 12.3.一对多查询
 一对多查询：查询订单，查询出下单人信息并且查询出订单详情。
 
 Order类：
-```
+
+```java
 public class Order {
     private Integer id;
     private Long userId;
@@ -1930,7 +1978,7 @@ public class Order {
 }
 ```
 
-```
+```java
 public class OrderDetail {
     private Integer id;
     private Integer orderId;
@@ -1940,7 +1988,8 @@ public class OrderDetail {
 ```
 
 接口：
-```
+
+```java
 /**
  * 根据订单号查询订单用户的信息及订单详情
  * @param number
@@ -1950,7 +1999,8 @@ Order queryOrderWithUserAndDetailByOrderNumber(@Param("number") String number);
 ```
 
 Mapper映射：
-```
+
+```xml
 <resultMap id="OrderUserDetailResultMap" type="com.zpc.mybatis.pojo.Order" autoMapping="true">
     <id column="id" property="id"/>
     <!--collection:定义子对象集合映射-->
@@ -1975,7 +2025,8 @@ Mapper映射：
 ```
 
 测试：
-```
+
+```java
 @Test
 public void queryOrderWithUserAndDetailByOrderNumber() throws Exception {
     Order order = orderMapper.queryOrderWithUserAndDetailByOrderNumber("201807010001");
@@ -1983,11 +2034,13 @@ public void queryOrderWithUserAndDetailByOrderNumber() throws Exception {
     System.out.println(order.getDetailList());
 }
 ```
+
 #### 12.4.多对多查询
 多对多查询：查询订单，查询出下单人信息并且查询出订单详情中的商品数据。
 
 OrderDetail类
-```
+
+```java
 public class OrderDetail {
     private Integer id;
     private Integer orderId;
@@ -2005,7 +2058,8 @@ public class Item {
 ```
 
 接口：
-```
+
+```java
 /**
  * 根据订单号查询订单用户的信息及订单详情及订单详情对应的商品信息
  * @param number
@@ -2015,7 +2069,8 @@ Order queryOrderWithUserAndDetailItemByOrderNumber(@Param("number") String numbe
 ```
 
 Mapper配置：
-```
+
+```xml
 <resultMap id="OrderUserDetailItemResultMap" type="com.zpc.mybatis.pojo.Order" autoMapping="true">
     <id column="id" property="id"/>
     <association property="user" javaType="com.zpc.mybatis.pojo.User" autoMapping="true">
@@ -2039,7 +2094,8 @@ Mapper配置：
 ```
 
 测试：
-```
+
+```java
 @Test
 public void queryOrderWithUserAndDetailItemByOrderNumber() throws Exception {
     Order order = orderMapper.queryOrderWithUserAndDetailItemByOrderNumber("201807010001");
@@ -2052,7 +2108,7 @@ public void queryOrderWithUserAndDetailItemByOrderNumber() throws Exception {
 
 ![图片二十一](https://img-blog.csdnimg.cn/20201229212500102.png)
 
-```
+```sql
 数据库脚本：
 CREATE TABLE tb_order (
 id int(11) NOT NULL AUTO_INCREMENT,
@@ -2092,7 +2148,8 @@ INSERT INTO tb_orderdetail VALUES (‘2’, ‘1’, ‘2000’, ‘2’, ‘000
 #### 12.6.高级查询的整理
 resutlType无法帮助我们自动的去完成映射，所以只有使用resultMap手动的进行映射。
 type 结果集对应的数据类型 id 唯一标识，被引用的时候，进行指定。
-```
+
+```xml
 <resultMap type="Order" id="orderUserLazyResultMap">
 <!—定义pojo中的单个对象的 property 定义对象的属性名， javaType 属性的类型，
 		<association property="user" javaType="User" autoMapping="true">
@@ -2114,10 +2171,10 @@ type 结果集对应的数据类型 id 唯一标识，被引用的时候，进�
 ![23](https://img-blog.csdnimg.cn/20201229212533568.png)
 
 因为业务，需要在mybatis中，使用到大于号，小于号，所以就在SQL中直接使用了。
-- SELECT * FROM test WHERE 1 = 1 AND start_date <= CURRENT_DATE AND end_date >= CURRENT_DATE
+- `SELECT * FROM test WHERE 1 = 1 AND start_date <= CURRENT_DATE AND end_date >= CURRENT_DATE`
 可是，在执行时，总报错误：
 ```Error creating document instance. Cause: org.xml.sax.SAXParseException; lineNumber: 74; columnNumber: 17; ``元素内容必须由格式正确的字符数据或标记组成。
-把AND start_date >= CURRENT_DATE AND end_date <= CURRENT_DATE去掉，就没有问题，所以确定是因为大于号，小于号引起的问题。
+把 `AND start_date >= CURRENT_DATE AND end_date <= CURRENT_DATE` 去掉，就没有问题，所以确定是因为大于号，小于号引起的问题。
 
 于是就想到了特殊符号，于是用了转义字符把>和<替换掉，然后就没有问题了。
 - SELECT * FROM test WHERE 1 = 1 AND start_date &lt;= CURRENT_DATE AND end_date &gt;= CURRENT_DATE
@@ -2127,10 +2184,10 @@ type 结果集对应的数据类型 id 唯一标识，被引用的时候，进�
 2.<if test="endDateTime!=null"> and mm.ttime &lt;= to_date(#{endDateTime},'yyyy-mm-dd hh24:mi:ss')</if>  
 ```
 
-#### 14,2,使用<![CDATA[ < ]]>
+#### 14,2,使用`<![CDATA[ < ]]>`
 
 案例1：
-```
+```xml
 <![CDATA[ 
        and mm.ttime > to_date(#{startDateTime},'yyyy-mm-dd hh24:mi:ss') 
       and mm.ttime <= to_date(#{endDateTime},'yyyy-mm-dd hh24:mi:ss') 
@@ -2139,14 +2196,16 @@ type 结果集对应的数据类型 id 唯一标识，被引用的时候，进�
 案例2：
 
 mapper文件示例代码 ：
-```
+
+```xml
 and (t1.status <![CDATA[ >= ]]> 1  and  t1.status <![CDATA[ <= ]]> 2)
 上述代码其实对应的sql：
 and (t1.status > =1 andt1.status <= 2)
 ```
+
 **注意：**
-> 使用<![CDATA[ ]]>标记的sql语句中的<where> <if>等标签不会被解析。
+> 使用 `<![CDATA[ ]]>` 标记的sql语句中的 `<where> <if>` 等标签不会被解析。
 
 > CDATA 部分中的所有内容都会被解析器忽略。
-> CDATA 部分由 "<![CDATA[" 开始，由 "]]>" 结束
+> CDATA 部分由 `<![CDATA[" 开始，由 "]]>` 结束
 

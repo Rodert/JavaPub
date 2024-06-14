@@ -48,31 +48,48 @@ $scp local_file remote_ip:remote_file
 scp root@192.168.120.204:/opt/soft/nginx-0.5.38.tar.gz /opt/soft/
 
 12，字符串切割
-awk '{FS=":"}{print $1"\t" $3}' /etc/passwd，使用FS=””,指定分割符，第一行已经读完，用冒号分割已经来不及了，默认的用空格分割，后面的用冒号分割，在FS之前强制加个BEGIN
+`awk '{FS=":"}{print $1"\t" $3}' /etc/passwd`，使用FS=””,指定分割符，第一行已经读完，用冒号分割已经来不及了，默认的用空格分割，后面的用冒号分割，在FS之前强制加个BEGIN
 ***********awk -F '\t' '{print $3}'**********
 
-13，删除指定行	sed -i '1d' <file>
+13，删除指定行	`sed -i '1d' <file>`
 
-14，删除包含特定字符的行	sed -e '/xxx/d' a1.txt > a2.txt
+14，删除包含特定字符的行	`sed -e '/xxx/d' a1.txt > a2.txt`
 
-15，文件授权（递归授权所有文件）	chown -R testname <filename>
+15，文件授权（递归授权所有文件）	`chown -R testname <filename>`
 
-16，压缩	压缩方式： 
-     tar -zcvf archive_name.tar.gz filename
-     解压缩方式： 
-     tar -zxvf archive_name.tar.gz 
-	压缩解压（zip）
-	 zip -r 123.zip 123.txt
-	 unzip 123.zip -d ./
+16，压缩
+
+压缩方式： 
+
+`tar -zcvf archive_name.tar.gz filename`
+
+解压缩方式： 
+
+`tar -zxvf archive_name.tar.gz`
+	
+压缩解压（zip）
+
+```bash
+zip -r 123.zip 123.txt
+unzip 123.zip -d ./
+```
 	 
 17，nohup
-	nohup java -jar myProject.jar >> /usr/local/log/output.log 2>&1 &
-	
+
+```bash
+nohup java -jar myProject.jar >> /usr/local/log/output.log 2>&1 &
+```
 
 19，替换文件制定字符
-	sed -i "s/tf_ab/tf_qw/g" result.txt
-	
+
+```bash
+sed -i "s/tf_ab/tf_qw/g" result.txt
+```
+
+
 20，git命令
+
+```bash
     git status
 	git add .
 	git commit -m "一些信息"
@@ -81,7 +98,9 @@ awk '{FS=":"}{print $1"\t" $3}' /etc/passwd，使用FS=””,指定分割符，
 	git checkout -b 分支名 #新建分支
 	git branch -a 
 	git checkout 分支名
-	
-21，rsync -av  ../log/textJson_$min".log" --port=9215 root@106.12.31.72::web_news_database
+```
+
+21，`rsync -av  ../log/textJson_$min".log" --port=9215 root@106.12.31.72::web_news_database`
+
 
 
