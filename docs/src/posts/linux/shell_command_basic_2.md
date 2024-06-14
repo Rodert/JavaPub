@@ -1,7 +1,6 @@
 ---
 title: 大学生都会的Linux命令V2
 icon: lightbulb
-index: false
 ---
 
 

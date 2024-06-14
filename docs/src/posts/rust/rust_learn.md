@@ -1,5 +1,5 @@
 ---
-title: Python
+title: Rust学习教程
 icon: lightbulb
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Python
+title: Python安装cv2
 icon: lightbulb
 category:
   - python
