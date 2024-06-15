@@ -93,7 +93,7 @@ rest 实例：
 
 
 
-![安装目录截图](https://img-blog.csdnimg.cn/20201128222405223.png)
+![安装目录截图](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091134.png)
 
 
 ## 更多扩展词库
@@ -154,7 +154,7 @@ replica承担三个任务：
 
 shard 的全称叫 primary shard，replica 全称叫 replica shard，primary shard 数量在创建索引时指定，后期不能修改，replica shard 后期可以修改。默认每个索引的 primary shard 值为5，replica shard 值为1，含义是5个primary shard，5个 replica shard，共10个 shard。因此 Elasticsearch 最小的高可用配置是2台服务器。
 
-![](https://img-blog.csdnimg.cn/20201130122134113.png)
+![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091137.png)
 
 
 ## 理解倒排索引
@@ -172,7 +172,7 @@ shard 的全称叫 primary shard，replica 全称叫 replica shard，primary sha
 
 概念关系：
 
-![](https://img-blog.csdnimg.cn/20201130193805423.png)
+![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091141.png)
 
 
 ### 简单倒排索引实例
@@ -181,15 +181,15 @@ shard 的全称叫 primary shard，replica 全称叫 replica shard，primary sha
 
 假设有五个文档：
 
-![](https://img-blog.csdnimg.cn/20201130193959490.png)
+![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091143.png)
 
 通过分词后，每个文档就转换为由单词序列构成的数据流，为了系统后续处理方便，需要对每个不同的单词赋予唯一的单词编号，同时记录下哪些文档包含这个单词，在如此处理结束后，我们可以得到最简单的倒排索引。
 
-![](https://img-blog.csdnimg.cn/20201130194122520.png)
+![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091145.png)
 
 事实上，索引系统还可以记录除此之外的更多信息。下图是一个相对复杂些的倒排索引，与上图的基本索引系统比，在单词对应的倒排列表中不仅记录了文档编号，还记载了单词频率信息（TF），即这个单词在某个文档中的出现次数，之所以要记录这个信息，是因为词频信息在搜索结果排序时，计算查询和文档相似度是很重要的一个计算因子，所以将其记录在倒排列表中，以方便后续排序时进行分值计算。
 
-![](https://img-blog.csdnimg.cn/202011301943320.png)
+![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091214.png)
 
 
 **最后**，实用的倒排索引还可以记载更多的信息，上图所示索引系统除了记录文档编号和单词频率信息外，额外记载了两类信息，即每个单词对应的“文档频率信息”（以及在倒排列表中记录单词在某个文档出现的位置信息。
@@ -200,7 +200,7 @@ shard 的全称叫 primary shard，replica 全称叫 replica shard，primary sha
 
 
 
-![微信搜：JavaPub](https://img-blog.csdnimg.cn/20201222192021117.jpg)
+![微信搜：JavaPub](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091217.jpeg)
 
 
 

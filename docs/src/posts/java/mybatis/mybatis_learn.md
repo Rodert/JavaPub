@@ -20,7 +20,7 @@ icon: lightbulb
 
 > 有任何问题都可以来谈谈，等你哦！
 
-![微信公众号](https://img-blog.csdnimg.cn/20201229211308907.jpg)
+![微信公众号](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092131.jpeg)
 
 > 对mybatis有一定了解的，可以直接跳过前面基础引入部分。
 
@@ -129,7 +129,7 @@ public class JDBCTest {
 
 ```
 #### 1，5，jdbc缺点分析
-![.\rodert教你学MyBatis-实战这一篇就够了\一号图片.jpg](https://img-blog.csdnimg.cn/20201229211404909.jpg)
+![.\rodert教你学MyBatis-实战这一篇就够了\一号图片.jpg](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092144.jpeg)
 
 ## 4，MyBatis介绍
 
@@ -138,7 +138,7 @@ public class JDBCTest {
 
 
 ## 3，MyBatis整体架构
-![架构图](https://img-blog.csdnimg.cn/20201229211438896.png)
+![架构图](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092151.png)
 
 
 ## 4，快速入门（quick start）
@@ -397,7 +397,7 @@ public class User {
 ```
 
 #### 4,7，目录结构
-![二号图片](https://img-blog.csdnimg.cn/20201229211537724.jpg)
+![二号图片](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092158.jpeg)
 
 
 ## 5，分析
@@ -608,7 +608,7 @@ pom.xml文件添加junit依赖
 
 UserDao.java，按住Alt+Enter,选择create test
 
-![图片三](https://img-blog.csdnimg.cn/20201229211613877.jpg)
+![图片三](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092204.jpeg)
 
 #### 6.5.编写UserDao的测试用例
 
@@ -694,7 +694,7 @@ public class UserDaoTest {
 
 #### 6.6.目录结构
 
-![图片四](https://img-blog.csdnimg.cn/20201229211650814.jpg)
+![图片四](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092208.jpeg)
 
 
 #### 6.7.解决数据库字段名和实体类属性名不一致的问题
@@ -742,11 +742,11 @@ User{id=‘2’, userName=‘null’, password=‘123456’, name=‘静静’, 
 
 - 修改测试用例的setUp方法
 
-![图片五](https://img-blog.csdnimg.cn/20201229211711527.png)
+![图片五](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092211.png)
 
 - 执行queryUserAll()方法
 
-![图片6](https://img-blog.csdnimg.cn/20201229211739339.png)
+![图片6](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092213.png)
 
 ```java
 org.apache.ibatis.binding.BindingException: Type interface com.zpc.mybatis.dao.UserDao is not known to the MapperRegistry.
@@ -1024,7 +1024,7 @@ public class UserMapperTest {
 
 - 目录结构：
 
-![图片七](https://img-blog.csdnimg.cn/20201229212018355.png)
+![图片七](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092220.png)
 
 #### 7,4，动态代理总结
 
@@ -1039,7 +1039,7 @@ public class UserMapperTest {
 
 mybatis-config.xml讲究严格的顺序，具体顺序遵循文档的顺序。
 
-![图片八](https://img-blog.csdnimg.cn/20201229212048387.png)
+![图片八](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092224.png)
 
 #### 8,1，properties属性读取外部资源
 
@@ -1082,7 +1082,7 @@ SqlSessionFactory factory = new SqlSessionFactoryBuilder().build(reader, environ
 
 #### 8,2,settings设置
 
-![图片九](https://img-blog.csdnimg.cn/20201229212111995.png)
+![图片九](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092229.png)
 
 - 开启驼峰匹配：
 
@@ -1115,7 +1115,7 @@ SqlSessionFactory factory = new SqlSessionFactoryBuilder().build(reader, environ
 
 Mybatis已经为普通的 Java 类型内建了许多相应的类型别名。它们都是大小写不敏感的。
 
-![图片十](https://img-blog.csdnimg.cn/20201229212130569.png)
+![图片十](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092244.png)
 
 #### 8,4,typeHandlers(类处理器)
 
@@ -1132,7 +1132,7 @@ StatementHandler (prepare, parameterize, batch, update, query)
 现在一些MyBatis 插件比如PageHelper都是基于这个原理，有时为了监控sql执行效率，也可以使用插件机制
 原理：
 
-![图片十一](https://img-blog.csdnimg.cn/20201229212147124.png)
+![图片十一](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092244.png)
 
 ```
 // ExamplePlugin.java
@@ -1384,12 +1384,12 @@ User queryUserListByName2(@Param("username2") String username2);
 ```
 
 #### 9.4.resultMap
-![图片十二](https://img-blog.csdnimg.cn/20201229212219963.png)
+![图片十二](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092247.png)
 
-![图片十三](https://img-blog.csdnimg.cn/20201229212234535.png)
+![图片十三](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092247.png)
 
 使用：
-![图片十四](https://img-blog.csdnimg.cn/20201229212245569.png)
+![图片十四](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092247.png)
 
 #### 9.5.sql片段
 ```
@@ -1467,7 +1467,7 @@ Sql片段也可以定义在单独的.xml文件中如：
 ## 10.动态sql
 
 场景：查询男性用户，如果输入了姓名，按姓名模糊查询
-![图片十五](https://img-blog.csdnimg.cn/20201229212302687.png)
+![图片十五](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092250.png)
 
 #### 10.1.if
 
@@ -1682,7 +1682,7 @@ Foreach：collection item saparator open close
 ### 11.缓存
 
 ##### 11.1.一级缓存
-![图片十六](https://img-blog.csdnimg.cn/20201229212334332.png)
+![图片十六](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092255.png)
 
 在mybatis中，一级缓存默认是开启的，并且一直无法关闭
 
@@ -1819,7 +1819,7 @@ User{id='1', userName='bigGod222', password='123456', name='美女', age=20, sex
 关闭二级缓存：
 不开启，或者在全局的mybatis-config.xml 中去关闭二级缓存
 
-![图片十七](https://img-blog.csdnimg.cn/20201229212352398.png)
+![图片十七](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092259.png)
 
 
 
@@ -1831,12 +1831,12 @@ User{id='1', userName='bigGod222', password='123456', name='美女', age=20, sex
     <setting name="cacheEnabled" value="false"/>
 </settings>
 ```
-![图片十八](https://img-blog.csdnimg.cn/20201229212407115.png)
+![图片十八](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092304.png)
 
 ## 12.高级查询
 
 #### 12.1.表关系说明
-![图片十九](https://img-blog.csdnimg.cn/20201229212421904.png)
+![图片十九](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092307.png)
 
 创建order表：
 CREATE TABLE tb_order (
@@ -1859,7 +1859,7 @@ public class Order {
 ```
 
 需求说明：
-![图片二十](https://img-blog.csdnimg.cn/20201229212437871.png)
+![图片二十](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-093948.png)
 
 #### 12.2.一对一查询
 方法一：核心思想扩展Order对象，来完成映射
@@ -2106,7 +2106,7 @@ public void queryOrderWithUserAndDetailItemByOrderNumber() throws Exception {
 ```
 至此，目录结构如下：
 
-![图片二十一](https://img-blog.csdnimg.cn/20201229212500102.png)
+![图片二十一](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092313.png)
 
 ```sql
 数据库脚本：
@@ -2143,7 +2143,7 @@ INSERT INTO tb_orderdetail VALUES (‘2’, ‘1’, ‘2000’, ‘2’, ‘000
 ```
 
 #### 12.5.resultMap的继承
-![图片二十二](https://img-blog.csdnimg.cn/20201229212518752.png)
+![图片二十二](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092316.png)
 
 #### 12.6.高级查询的整理
 resutlType无法帮助我们自动的去完成映射，所以只有使用resultMap手动的进行映射。
@@ -2168,7 +2168,7 @@ type 结果集对应的数据类型 id 唯一标识，被引用的时候，进�
 ## 14.如果sql语句中出现’<’的解决方案
 #### 14,1，使用xml中的字符实体
 
-![23](https://img-blog.csdnimg.cn/20201229212533568.png)
+![23](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092319.png)
 
 因为业务，需要在mybatis中，使用到大于号，小于号，所以就在SQL中直接使用了。
 - `SELECT * FROM test WHERE 1 = 1 AND start_date <= CURRENT_DATE AND end_date >= CURRENT_DATE`

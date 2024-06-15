@@ -9,8 +9,7 @@ icon: lightbulb
 
 [toc]
 
-
-![](https://static01.imgkr.com/temp/9004824362584db98521a0db5ec8beee.png)
+![img](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091327.png)
 
 
 ## 前言
@@ -22,7 +21,7 @@ icon: lightbulb
 
 > 有任何问题都可以来谈谈 ！
 
-![](https://img-blog.csdnimg.cn/20200616161009430.jpg)
+![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091246.jpeg)
 
 如果看上一篇**[计数排序](https://mp.weixin.qq.com/s/7lphoHUgfDu0Cb1cO8ExKA)**，你有没有这样疑问，当每个数据之间跨度过大(如从 0-2亿 数字中排序 20 个数)，就需要大量空间消耗。**桶排序**就是对**[计数排序](https://mp.weixin.qq.com/s/7lphoHUgfDu0Cb1cO8ExKA)**的改进。
 
@@ -48,7 +47,7 @@ icon: lightbulb
 
 
 
-![](https://static01.imgkr.com/temp/a78b68bcd67a4b20b78da4f3afb0f695.jpg)
+![img](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091348.png)
 
 
 
@@ -81,13 +80,13 @@ icon: lightbulb
 
 元素分配到不同桶中：
 
-![](https://static01.imgkr.com/temp/55e0031dfb8943f4b04f0e831b4093da.png)
+![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091357.png)
 
 
 然后，元素在每个桶中排序：
 
 
-![](https://static01.imgkr.com/temp/6d166fef9c834be0befd7c52083eeef7.png)
+![img](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091404.png)
 
 
 
@@ -227,7 +226,7 @@ Given a non-empty array of integers, return the k most frequent elements.
 - **题解：**
 
 
-![](https://static01.imgkr.com/temp/a3230600f94e415d904998b60ae756b4.jpg)
+![img](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091417.png)
 
 
 

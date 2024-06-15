@@ -23,7 +23,7 @@ icon: lightbulb
 
 通过提升服务器硬件能力来提高数据处理能力，比如增加存储容量 、CPU等，这种方案成本很高，并且如果瓶颈在 MySQL 本身那么提高硬件也是很有限的。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210401184505296.png)
+![在这里插入图片描述](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091028.png)
 
 
 
@@ -33,7 +33,7 @@ icon: lightbulb
 
 如下图：将电商数据库拆分为若干独立的数据库，并且对于大表也拆分为若干小表，通过这种数据库拆分的方法来解决数据库的性能问题。就跟把鸡蛋放在多个篮子里是一样的。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210401184445883.png)
+![在这里插入图片描述](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091031.png)
 
 
 **分库分表就是为了解决由于数据量过大而导致数据库性能降低的问题，将原来独立的数据库拆分成若干数据库组成 ，将数据大表拆分成若干数据表组成，使得单一数据库、单一数据表的数据量变小，从而达到提升数据库性能的目的。**
@@ -151,4 +151,4 @@ Java 学习者和爱好者，有一定工作经验的技术人，准面试官等
 
 
 
-![wx](https://img-blog.csdnimg.cn/20210126205030521.jpg)
+![wx](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-093516.jpeg)

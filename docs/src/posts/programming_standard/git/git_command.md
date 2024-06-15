@@ -38,7 +38,7 @@ git merge feature/new-branch #合并分支
 
 对于这种情况，p哥不想开新分支，又不想把没开发完的代码提交远程仓库，他是这样做的。做法：将工作区内容 `stash` 暂存起来，在当前分支进行紧急需求开发提交，再将工作区的内容取出来，恢复到暂存时的状态。
 
-![stash翻译](https://img-blog.csdnimg.cn/20210621202214814.png)
+![stash翻译](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091849.png)
 
 恢复暂存时的状态有俩种命令：
 
@@ -53,7 +53,7 @@ git merge feature/new-branch #合并分支
 
 - 初始状态index.html文件在工作区进行修改：可以使用命令git status 和git diff看到此时的修改信息
 
-![gitstatus](https://img-blog.csdnimg.cn/20190331161719261.png)
+![gitstatus](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091851.png)
 
 
 
@@ -63,13 +63,13 @@ git merge feature/new-branch #合并分支
 
 
 
-![gitstash](https://img-blog.csdnimg.cn/2019033116215110.png)
+![gitstash](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091855.png)
 
 
 
 - bug修复提交后，恢复之前暂存的状态，这个时候有两种命令可选，我们选择：git stash pop 命令
 
-![gitstashpop](https://img-blog.csdnimg.cn/20190331162413287.png)
+![gitstashpop](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091857.png)
 
 
 
@@ -256,7 +256,7 @@ git commit --amend
 
 一图顶千文
 
-![git流程图](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/202405271044703.png)
+![git流程图](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091903.png)
 
 简单来说：git pull = git fetch + git merge
 

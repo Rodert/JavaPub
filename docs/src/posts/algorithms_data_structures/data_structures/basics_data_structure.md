@@ -661,12 +661,12 @@ public class LinkedList<E> implements List<E> {
 
 顺序队列的实现可以使用数组来完成，一端做push，另一端做pop操作。下面是队列的操作示意图。
 
-![顺序队列](https://img-blog.csdnimg.cn/20201219180235825.png)
+![顺序队列](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091050.png)
 
 所以我们通常将数组弄成一个环状，即队头和队尾相连，这样就形成了“循环队列”，同时也解决了“假溢出”现象。循环队列是改进版的顺序队列。
 
 
-![循环顺序队列](https://img-blog.csdnimg.cn/20201219180448635.png)
+![循环顺序队列](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091053.png)
 
 
 
@@ -677,7 +677,7 @@ public class LinkedList<E> implements List<E> {
 
 
 
-![](https://img-blog.csdnimg.cn/20201219181006128.png)
+![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091055.png)
 
 
 
@@ -809,7 +809,7 @@ class s {
 
 链队实现，如图所示：
 
-![](https://img-blog.csdnimg.cn/20201219182612335.png)
+![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091100.png)
 
 
 

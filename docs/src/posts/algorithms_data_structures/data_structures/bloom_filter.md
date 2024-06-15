@@ -24,7 +24,7 @@ icon: lightbulb
 
 > 有任何问题都可以来谈谈，等你！
 
-![微信公众号](https://img-blog.csdnimg.cn/20201229214154531.jpg)
+![微信公众号](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091237.jpeg)
 
 
 ## JavaPub说
@@ -86,7 +86,7 @@ icon: lightbulb
 
 - 数学公式
 
-![](https://img-blog.csdnimg.cn/20201229214249144.jpg)
+![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091834.jpeg)
 
 
 

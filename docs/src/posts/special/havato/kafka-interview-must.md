@@ -63,7 +63,7 @@ HW/LEO这两个都是指最后一条的下一条的位置而不是指最后一�
 
 Kafka 是一个分布式的流式处理平台，它以高吞吐、可持久化、可水平扩展、支持流数据处理等多种特性而被广泛使用
 
-![](https://img-blog.csdnimg.cn/img_convert/16668d6a19eb5cb6faddd7706e9e989b.png)
+![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-094144.png)
 
 主要功能体现于三点：
 
@@ -77,7 +77,7 @@ Kafka 是一个分布式的流式处理平台，它以高吞吐、可持久化�
 
 > 这是一个基本概念的题目，一定要掌握。
 
-![](https://img-blog.csdnimg.cn/img_convert/77d41d1963c2606740b3188195eac97f.png)
+![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-094148.png)
 
 一个典型的 kafka 体系架构包括若干 Producer、若干 Consumer、以及一个 Zookeeper 集群（在2.8.0版本中移，除了 Zookeeper,通过 KRaft 进行自己的集群管理）
 
@@ -104,7 +104,7 @@ Kafka 基本概念：
 
 ### 3. Kafka Replicas是怎么管理的？
 
-![](https://img-blog.csdnimg.cn/img_convert/dfb283e65f030d4c660d60f3c8ca9b9c.png)
+![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-094151.png)
 
 - AR:分区中的**所有 Replica 统称为 AR**
 - ISR:所有与 Leader 副本**保持一定程度同步**的Replica(包括 Leader 副本在内)组成 ISR
@@ -122,7 +122,7 @@ Leader 负责维护和跟踪 ISR 集合中所有 Follower 副本的滞后状态�
 
 分区相当于一个日志文件，我们先简单介绍几个概念
 
-![](https://img-blog.csdnimg.cn/img_convert/9b038ce0fc7308c1e815ce46ac397b86.png)
+![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092656.png)
 
 如上图是一个分区日志文件
 
@@ -133,17 +133,17 @@ Leader 负责维护和跟踪 ISR 集合中所有 Follower 副本的滞后状态�
 
 **分区 ISR 集合中的每个副本都会维护自己的 LEO，而 ISR 集合中最小的LEO 即为分区的 HW**
 
-![](https://img-blog.csdnimg.cn/img_convert/733241b1f3d812dc229022ddcddaadba.png)
+![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092658.png)
 
 如上图: 三个分区副本都是 ISR集合当中的，最小的 LEO 为 3，就代表分区的 HW 为3，所以当前分区只能消费到 0~2 之间的三条数据，如下图
 
-![](https://img-blog.csdnimg.cn/img_convert/5e09d8a79178af747ccbf0cc2b142063.png)
+![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092700.png)
 
 
 
 ### 5. 发送消息的分区策略有哪些？
 
-![](https://img-blog.csdnimg.cn/img_convert/fc5038a2800475066fb2fc7cebdbea30.png)
+![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092703.png)
 
 
 - 1.轮询：**依次**将消息发送该topic下的所有分区，如果在创建消息的时候 key 为 null，Kafka 默认采用这种策略。
@@ -183,7 +183,7 @@ Leader 负责维护和跟踪 ISR 集合中所有 Follower 副本的滞后状态�
 
 既然是分区再分配，那么 kafka 分区有什么问题呢？
 
-![](https://img-blog.csdnimg.cn/img_convert/e57b54803d2cf0f8f11b0acecc978e31.png)
+![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092706.png)
 
 **问题1**：当集群中的一个节点下线了
 
@@ -192,7 +192,7 @@ Leader 负责维护和跟踪 ISR 集合中所有 Follower 副本的滞后状态�
 
 **kafka 并不会将这些失效的分区迁移到其他可用的 broker 上**，这样就会影响集群的负载均衡，甚至也会影响服务的可靠性和可用性
 
-![](https://img-blog.csdnimg.cn/img_convert/e2912a908a8b2672ae947e71287791db.png)
+![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092708.png)
 
 **问题2**：集群新增 broker 时，只有新的主题分区会分配在该 broker 上，而老的主题分区不会分配在该 broker 上，就造成了**老节点和新节点之间的负载不均衡**。
 
@@ -220,9 +220,9 @@ ZooKeeper负载过重:
 
 **优势：**
 
-​Kafka的Leader Election方案解决了上述问题，它在所有broker中选出一个controller，所有Partition的Leader选举都由controller决定。 controller会将Leader的改变直接通过RPC的方式(比ZooKeeper Queue的方式更高效)通知需为此作为响应的Broker。
+Kafka的Leader Election方案解决了上述问题，它在所有broker中选出一个controller，所有Partition的Leader选举都由controller决定。 controller会将Leader的改变直接通过RPC的方式(比ZooKeeper Queue的方式更高效)通知需为此作为响应的Broker。
 
-​没有使用 zk，所以无 2.3 问题；也没有注册 watch无 2.2 问题 leader 失败了，就通过 controller 继续重新选举即可，所以克服所有问题。
+没有使用 zk，所以无 2.3 问题；也没有注册 watch无 2.2 问题 leader 失败了，就通过 controller 继续重新选举即可，所以克服所有问题。
 
 **Kafka partition leader的选举：**
 
@@ -245,7 +245,7 @@ ZooKeeper负载过重:
 
 那么为什么说超过了一定限度，就会对性能造成影响呢？原因如下:
 
-![](https://img-blog.csdnimg.cn/img_convert/54db2b5495c53fde42368a5f60ac1b0f.png)
+![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092711.png)
 
 **1.客户端/服务器端需要使用的内存就越多**
 
@@ -269,7 +269,7 @@ Kafka 会将分区 HW 之前的消息暴露给消费者。分区越多则副本�
 
 ### 10. kafka 为什么这么快？
 
-![](https://img-blog.csdnimg.cn/img_convert/660921f85642692c5f819c27474ebc68.png)
+![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092714.png)
 
 - 1.**顺序读写**磁盘分为顺序读写与随机读写，基于磁盘的随机读写确实很慢，但磁盘的顺序读写性能却很高，kafka 这里采用的就是顺序读写。
 

@@ -22,7 +22,7 @@ redis入门
 
 > 本教程致力于最实用教程，个别图片粘贴有丢失，还有来领取原版。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200613232629668.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwMzc0NjA0,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091006.png)
 
 @[toc]
 ## 前言
@@ -34,7 +34,7 @@ redis入门
 
 > 有任何问题都可以来谈谈 ！
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200613232439488.jpg)
+![在这里插入图片描述](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091009.jpeg)
 
 > 本篇主要是 Redis 的入门，涉及一些基础命令和常见场景。
 
@@ -145,7 +145,7 @@ Redis 支持 32 位和 64 位。这个需要根据你系统平台的实际情况
 
 > redis-server.exe redis.windows.conf
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200613232402250.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwMzc0NjA0,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-093458.png)
 
 - 客户端连接
 

@@ -74,7 +74,7 @@ System.out.println(i instanceof Object);//编译不通过
 3. Integer的默认值是null，int的默认值是0
 
 Java中8种基本数据类型。左边基本类型，右边包装类型。
-![在这里插入图片描述](https://img-blog.csdnimg.cn/fa68ecc8af4e4b679e48c2703cf897c7.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBASmF2YVB1Yi1yb2RlcnQ=,size_8,color_FFFFFF,t_70,g_se,x_16)
+![在这里插入图片描述](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092123.png)
 
 **在面试中：**
 
@@ -145,7 +145,7 @@ private static class IntegerCache {
 `注意，Integer、Short、Byte、Character、Long这几个类的valueOf方法的实现是类似的。
 Double、Float的valueOf方法的实现是类似的（没有缓存数值，这里的数值想想都有很多，不适合缓存）。`
 
- ---
+---
 
 ### 3. 重载和重写区别
 重载和重写是一个特别好理解的概念，这里说一个通俗的解答方式
@@ -235,7 +235,7 @@ User user4 = new User("JavaPub", "man", "1996-08-28")
 致力于大白话说清楚。NIO和BIO是一个相对有点抽象的概念，如果你对网络有点了解，理解起来可能会更顺畅。首先说一下基本
 
 **BIO**：同步阻塞IO，每一个客户端连接，服务端都会对应一个处理线程，对于没有分配到处理线程的连接就会被阻塞或者拒绝。相当于是`一个连接一个线程`。
- 
+
 **NIO**：同步非阻塞IO，基于Reactor模型，客户端和channel进行通信，channel可以进行读写操作，通过多路复用器selector来轮询注册在其上的channel，而后再进行IO操作。这样的话，在进行IO操作的时候再用一个线程去处理就可以了，也就是`一个请求一个线程`。
 
 > Reactor模型是什么? 
@@ -245,7 +245,7 @@ User user4 = new User("JavaPub", "man", "1996-08-28")
 > 
 > 简单来说：Reactor线程模型的思想就是基于IO复用和线程池的结合。
 
- 
+
 **AIO**：（一般都会把AIO和NIO、BIO放一块比较，这里简单提一下。）异步非阻塞IO，相比NIO更进一步，完全由操作系统来完成请求的处理，然后通知服务端开启线程去进行处理，因此是`一个有效请求一个线程`。
 
 **那么怎么理解同步和阻塞？**
@@ -390,7 +390,7 @@ Java原生除了提供基本注解，还提供了 meta-annotation（元注解）
 3. @Documented
 4. @Inherited
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/1b035a1306d5426b9fdba1bd07bb57a4.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBASmF2YVB1Yi1yb2RlcnQ=,size_12,color_FFFFFF,t_70,g_se,x_16)
+![在这里插入图片描述](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092803.png)
 
 
 一般比较常用的有 @Target，@Retention。`@Target`表示这个注解可以修饰那些地方（比如类、方法、成员变量），`@Retention` 主要是设置注解的生命周期。
@@ -438,7 +438,7 @@ public class IndexController {
 
 很简单的俩个接口，没添加拦截器之前成功访问
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/237de5087d2e46fd9c2388a293ddd690.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBASmF2YVB1Yi1yb2RlcnQ=,size_16,color_FFFFFF,t_70,g_se,x_16)
+![在这里插入图片描述](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092817.png)
 
 实现 spring 的 HandlerInterceptor 类先实现拦截器，但不拦截，只是简单打印日志，如下：
 
@@ -474,7 +474,7 @@ public class InterceptorTrainConfigurer implements WebMvcConfigurer {
 ```
 拦截成功如下
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/8c2a2de1a354426e99a709d9939e2295.png)
+![在这里插入图片描述](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092822.png)
 在 sourceB 方法上添加我们的登录注解 @LoginRequired
 
 ```java
@@ -517,8 +517,8 @@ public class IndexController {
 ```
 
 运行成功，访问sourceB时需要登录了，访问sourceA则不用登录。
-![在这里插入图片描述](https://img-blog.csdnimg.cn/5f621d02dfbc4d36ac3965acd2b4607f.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBASmF2YVB1Yi1yb2RlcnQ=,size_14,color_FFFFFF,t_70,g_se,x_16)
-![在这里插入图片描述](https://img-blog.csdnimg.cn/87a44ae94b5a4ec685cec7918d419d6b.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBASmF2YVB1Yi1yb2RlcnQ=,size_13,color_FFFFFF,t_70,g_se,x_16)
+![在这里插入图片描述](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092833.png)
+![在这里插入图片描述](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092837.png)
 
 **场景二：自定义注解+AOP 实现日志打印**
 
@@ -592,8 +592,8 @@ public class MyLogAspect {
 
 启动springboot web项目，输入访问地址
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/699f926567e74423902434d50cabf81f.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBASmF2YVB1Yi1yb2RlcnQ=,size_16,color_FFFFFF,t_70,g_se,x_16)
-![在这里插入图片描述](https://img-blog.csdnimg.cn/04e37829274044c0b297fa9b97bb5915.png)
+![在这里插入图片描述](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092850.png)
+![在这里插入图片描述](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-094320.png)
 
 有些面试官喜欢问，注解三要素是哪些：
 
@@ -606,7 +606,7 @@ public class MyLogAspect {
 ### 10. Java创建对象有几种方式
 Java中有5种创建对象的方式，下面给出它们的例子
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/44e70dbb3062498fbbfbaa9045c0f8d6.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBASmF2YVB1Yi1yb2RlcnQ=,size_17,color_FFFFFF,t_70,g_se,x_16)
+![在这里插入图片描述](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092858.png)
 **使用new关键字**
 
 ```java

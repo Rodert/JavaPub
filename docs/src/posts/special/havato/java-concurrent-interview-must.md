@@ -42,15 +42,15 @@ Java并发
 
 参考图：
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/c9b8939fe6274e508853acba1f1ee213.png)
+![在这里插入图片描述](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-094050.png)
 
 
 ---
-  
+
 ### 2. volatile关键字的作用
 volatile `英 [ˈvɒlətaɪl]` ，第一个想到的一定是**保证内存可见性**（Memory Visibility）。可见性是性对于线程而言。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/dbb024baa3144f8b9abc1b241a6474a6.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBASmF2YVB1Yi1yb2RlcnQ=,size_20,color_FFFFFF,t_70,g_se,x_16)
+![在这里插入图片描述](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-094053.png)
 上图是Java内存模型，所有线程的共享变量都放在主内存中，每一个线程都有一个独有的工作内存，每个线程不直接操作在主内存中的变量，而是将主内存上变量的副本放进自己的工作内存中，只操作工作内存中的数据。当修改完毕后，再把修改后的结果放回到主内存中。每个线程都只操作自己工作内存中的变量，无法直接访问对方工作内存中的变量，线程间变量值的传递需要通过主内存来完成。
 
 很明显，在并发环境下一定会发生脏数据问题。
@@ -377,7 +377,7 @@ CyclicBarrier：
 ---
 
 ### 8. 如何避免死锁？
-![](https://img-blog.csdnimg.cn/20190729214659783.png)
+![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-093536.png)
 从上图我们就可以看出，产生死锁就是俩个或多个线程在申请资源时，自己需要的资源别别人持有、并阻塞。所以导致死锁。
 
 **如何解决：**
@@ -515,7 +515,7 @@ https://zhuanlan.zhihu.com/p/136294283
 ---
 
 ### 10. 有三个线程 T1，T2，T3，怎么确保它们按顺序执行？
- 
+
  **方法1：**
 
 线程内部顺序调用，T1、T2、T3。这个可能不是要考察的点，但也是一个方案。

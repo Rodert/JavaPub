@@ -18,8 +18,9 @@ tag:
 
 redis之青铜
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200616155217399.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwMzc0NjA0,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-094232.png)
 @[toc]
+
 ## 前言
 
 > 声明：参考来源互联网，有任何争议可以留言。站在前人的肩上，我们才能看的更远。
@@ -29,7 +30,7 @@ redis之青铜
 
 > 有任何问题都可以来谈谈 ！
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200616161009430.jpg)
+![在这里插入图片描述](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-094234.jpeg)
 
 
 本篇继续学习 Redis ,上一篇 [rodert单排学习redis入门【黑铁】](https://mp.weixin.qq.com/s?__biz=MzUzNDUyOTY0Nw==&mid=2247484011&idx=1&sn=1ffdb758a552db1934f41b1c4496bb36&chksm=fa92116bcde5987da7db79b41b86add44bddc574cdbd33bd622b7f6a21662c652331ed9e4173&scene=126&sessionid=1592125292&key=2e8f81eda3e54fad9074a8b209275cc64f9c5dd28066961b7be2f518b92c55507968ed1b6278d887e87fd9f464f4b4899c8cf651adda04616c16f3c11e97de5ebdc827c9144e99e8b08451af86234894&ascene=1&uin=MTk1NDc4MzM2Mg%3D%3D&devicetype=Windows+10+x64&version=62090070&lang=zh_CN&exportkey=AWHTYrB4gjJmGEbHtri6R6w%3D&pass_ticket=leo%2BHfJ0BW2bC82%2BQSYAPob7M1DzxC09JpT%2BAvOxTmnKdJp6Basn7bAq9v%2Fv3xN%2B) 对 Redis **<span color=#159957>安装</span>**和**<span color=#159957>常用数据</span>**结构做了梳理，如果没看可以先回去看完再继续本篇~
@@ -60,7 +61,7 @@ Redis 是一个开源的、**基于内存**的**数据结构存储器**，可以
 
 如果想尝试 Redis 命令又懒得安装，可以使用这个 [http://try.redis.io/](http://try.redis.io/) 网站。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200616155248408.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwMzc0NjA0,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-094237.jpeg)
 
 ## 2.为什么要用Redis
 
@@ -81,7 +82,7 @@ Redis 是**<span color=#159957>基于内存</span>**，常用作缓存的一种�
 所有我们在中间加一道缓存：
 
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200616161041153.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwMzc0NjA0,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-093006.png)
 
 ## 4.Redis数据结构
 ### 4.1.SDS简单动态字符串
@@ -110,7 +111,7 @@ struct sdshdr {
 
 };
 ```
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200616155325700.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwMzc0NjA0,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-093016.png)
 
 上图是 SDS 示例，以空字符结尾 `'\0'`。遵循空字符结尾这一惯例的好处是， SDS 可以直接重用一部分 C 字符串函数库里面的函数。
 
@@ -187,7 +188,7 @@ typedef struct list {
 由一个 `list` 结构和三个 `listNode` 结构组成的链表：
 
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200616155348716.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwMzc0NjA0,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-093024.png)
 
 #### 4.2.2.Redis 链表重点
 
@@ -225,7 +226,7 @@ typedef struct dictht {
 ```
 
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200616155404943.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwMzc0NjA0,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-093059.png)
 
 **哈希表节点**
 哈希表节点使用 dictEntry 结构表示， 每个 dictEntry 结构都保存着一个键值对：
@@ -251,7 +252,7 @@ typedef struct dictEntry {
 
 
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200616155419279.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwMzc0NjA0,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-093102.png)
 
 > 有没有注意到，上图有个冲突，俩个键在同一个节点，这就是 Redis **解决键冲突** ，Redis 的哈希表使用链地址法（separate chaining）来解决键冲突： 每个哈希表节点都有一个 next 指针， 多个哈希表节点可以用 next 指针构成一个单向链表， 被分配到同一个索引上的多个节点可以用这个单向链表连接起来， 这就解决了键冲突的问题。
 
@@ -305,7 +306,7 @@ typedef struct dictType {
 
 ​	ht 属性是一个包含两个项的数组， 数组中的每个项都是一个 **dictht** 哈希表， 一般情况下， 字典只使用 **ht[0]** 哈希表， **ht[1]** 哈希表只会在对 **ht[0]** 哈希表进行 **rehash** 时使用。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200616155431351.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwMzc0NjA0,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-093106.png)
 
 #### 4.3.2.Redis rehash(重新散列)
 
@@ -368,13 +369,13 @@ typedef struct zskiplistNode {
 - zskiplistNode 不同层高节点
 
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200616155501710.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwMzc0NjA0,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-093110.png)
 
 
 
 > 跳跃表节点的 level 数组可以包含多个元素， 每个元素都包含一个指向其他节点的指针， 程序可以通过这些层来加快访问其他节点的速度， 一般来说， **<span color=#159957>层的数量越多</span>**， 访问其他节点的**<span color=#159957>速度就越快</span>**。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200616155511703.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwMzc0NjA0,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-093113.png)
 
 > 看到这里，如果还有疑惑，不理解什么是跳跃表，传送一篇不错的跳跃表介绍文章：https://www.cnblogs.com/hunternet/p/11248192.html
 
@@ -414,7 +415,7 @@ typedef struct intset {
 
 
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200616155827825.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwMzc0NjA0,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-093117.png)
 
 ### 4.6.压缩列表
 #### 4.6.1.前言
@@ -436,7 +437,7 @@ typedef struct intset {
 
 - 当一个哈希只包含少量键值对,比且每个键值对的键和值要么就是小整数值,要么就是长度比较短的字符串,那么Redis就会使用压缩列表来做哈希的底层实现。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200616155926449.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwMzc0NjA0,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-093120.png)
 
 
 

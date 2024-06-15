@@ -20,7 +20,7 @@ icon: lightbulb
 
 > 有任何问题都可以来谈谈，等你哦！
 
-![微信公众号](https://img-blog.csdnimg.cn/20200611113255716.jpg)
+![微信公众号](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091808.jpeg)
 
 
 我搞Java也有段时间了，对maven的理解停留在能管理依赖、作为仓库使用，那它还能干什么？
@@ -48,7 +48,7 @@ Maven是跨平台的项目管理工具。主要服务于基于Java平台的项�
 
 - 什么是项目构建？
 
-![](https://img-blog.csdnimg.cn/20200611113350737.jpg)
+![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091805.jpeg)
 
 - 什么是理想的项目构建？
 
@@ -93,13 +93,13 @@ maven可以指定jar的依赖范围
 
 下载地址：http://maven.apache.org/download.cgi
 
-![下载地址](https://img-blog.csdnimg.cn/20200611113445716.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwMzc0NjA0,size_16,color_FFFFFF,t_70)
+![下载地址](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091801.png)
 
 **2.  解压文件**
 
 解压maven压缩包“apache-maven-3.5.2.bin.zip”到一个路径（尽量编码路径中不要包含中文）
 
-![image-20200610223114895](https://img-blog.csdnimg.cn/2020061111350092.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwMzc0NjA0,size_16,color_FFFFFF,t_70)
+![image-20200610223114895](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091754.png)
 
 - bin：含有mvn运行的脚本
 - boot：含有plexus-classworlds类加载器框架
@@ -113,23 +113,23 @@ maven可以指定jar的依赖范围
 
 MAVEN_HOME : E:\maven\apache-maven-3.5.2-bin（注意：配置为你自己的maven路径）
 
-![](https://img-blog.csdnimg.cn/20200611113512892.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwMzc0NjA0,size_16,color_FFFFFF,t_70)
+![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091747.png)
 
 MAVEN_OPTS : -Xms256m -Xmx512m（``注意：可以不配置``）
 
-![](https://img-blog.csdnimg.cn/20200611113527942.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwMzc0NjA0,size_16,color_FFFFFF,t_70)
+![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091740.jpeg)
 
 **2. 设置系统环境变量path**
 
 在Path中追加: %MAVEN_HOME%\bin
 
-![image-20200610223813357](https://img-blog.csdnimg.cn/20200611113538518.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwMzc0NjA0,size_16,color_FFFFFF,t_70)
+![image-20200610223813357](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091732.png)
 
 **3. 验证成功**
 
 打开 cmd 输入：mvn -version
 
-![maven_version](https://img-blog.csdnimg.cn/20200611113555475.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwMzc0NjA0,size_16,color_FFFFFF,t_70)
+![maven_version](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091725.png)
 
 **4. 配置本地仓库**
 
@@ -138,7 +138,7 @@ Maven的默认本地仓库在：${user.home}/.m2/repository；这地址可以在
 【自定义仓库路径】
 找到${maven_home}/conf/settings.xml文件，修改如下：
 
-![maven_setting_repository](https://img-blog.csdnimg.cn/20200611113605233.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwMzc0NjA0,size_16,color_FFFFFF,t_70)
+![maven_setting_repository](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091717.png)
 
 需要注意的是上图中的自定义路径必须存在。repository是本地仓库，也即本地下载的jar存放路径。
 
@@ -153,7 +153,7 @@ Maven的默认本地仓库在：${user.home}/.m2/repository；这地址可以在
 
 **maven项目的目录结构遵守以下规范：**
 
-![maven项目目录](https://img-blog.csdnimg.cn/20200611113616350.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwMzc0NjA0,size_16,color_FFFFFF,t_70)
+![maven项目目录](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091709.png)
 
 # 5.命令行构建maven项目
 ## 5.1.命令行构建Java项目
@@ -170,7 +170,7 @@ mvn archetype:generate  -DarchetypeCatalog=internal  -DgroupId=com.yiidian -Dart
 
 执行后结果：
 
-![image-20200610225900548](https://img-blog.csdnimg.cn/2020061111362613.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwMzc0NjA0,size_16,color_FFFFFF,t_70)
+![image-20200610225900548](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091702.png)
 
 ```bash
 参数说明：
@@ -199,7 +199,7 @@ mvn archetype:generate  -DarchetypeCatalog=internal  -DgroupId=com.yiidian -Dart
 
 执行后结果：
 
-![image-20200610230144920](https://img-blog.csdnimg.cn/20200611113638803.png)
+![image-20200610230144920](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091653.png)
 
 ```bash
 参数说明：
@@ -273,11 +273,11 @@ Maven在某个统一的位置存储所有项目的共享的构件，这个统一
 
 **没有使用私服的仓库构件下载**
 
-![](https://img-blog.csdnimg.cn/20200611113706396.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwMzc0NjA0,size_16,color_FFFFFF,t_70)
+![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091630.jpeg)
 
 **使用私服的仓库构件下载**
 
-![](https://img-blog.csdnimg.cn/20200611113659448.jpg)
+![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-093402.jpeg)
 
 # 7.什么是maven坐标？
 
@@ -302,7 +302,7 @@ Maven世界拥有大量构件，需要找一个用来唯一标识一个构建的
 
 网站上可以搜索具体的组织或项目关键字，之后复制对应的坐标到pom.xml中。如：
 
-![image-20200610231456317](https://img-blog.csdnimg.cn/20200611113715456.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwMzc0NjA0,size_16,color_FFFFFF,t_70)
+![image-20200610231456317](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091618.png)
 
 # 8.maven依赖管理
 ## 8.1.依赖范围
@@ -328,7 +328,7 @@ Maven世界拥有大量构件，需要找一个用来唯一标识一个构建的
 
 对于传递性依赖，依赖的范围如下表：
 
-![](https://img-blog.csdnimg.cn/20200611113916355.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwMzc0NjA0,size_16,color_FFFFFF,t_70)
+![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091608.jpeg)
 
 ## 8.3.可选依赖
 
@@ -367,7 +367,7 @@ Maven世界拥有大量构件，需要找一个用来唯一标识一个构建的
 
 - 如果直接与间接依赖中包含有同一个坐标不同版本的资源依赖，以直接依赖的版本为准（就近原则）
 
-![](https://img-blog.csdnimg.cn/20200611113932404.jpg)
+![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091556.jpeg)
 
 **最终A依赖的X的版本为2.0**
 
@@ -390,7 +390,7 @@ Maven世界拥有大量构件，需要找一个用来唯一标识一个构建的
 
 - 如果直接依赖中包含有同一个坐标不同版本的资源依赖，以配置顺序下方的版本为准
 
-![](https://img-blog.csdnimg.cn/20200611114003803.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwMzc0NjA0,size_16,color_FFFFFF,t_70)
+![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091954.jpeg)
 
 
 - 如果间接依赖中包含有同一个坐标不同版本的资源依赖，以配置顺序上方的版本为准

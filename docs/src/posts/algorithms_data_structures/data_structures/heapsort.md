@@ -16,7 +16,7 @@ icon: lightbulb
 
 > 有任何问题都可以来谈谈 ！
 
-![](https://img-blog.csdnimg.cn/20200616161009430.jpg)
+![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092555.jpeg)
 
 > 堆排序在常用排序算法中属于比较难理解的，本篇就以最简单的方式讲解。如果还有什么疑问，
 
@@ -30,16 +30,16 @@ icon: lightbulb
 
 下图：
 
-![](https://img-blog.csdnimg.cn/20201229215818715.png)
+![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092549.png)
 
 
-![](https://img-blog.csdnimg.cn/20201229215855672.png)
+![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092552.png)
 
 简单用公式描述一下就是：
 
-大顶堆：arr[i] >= arr[2i+1] && arr[i] >= arr[2i+2]  
+大顶堆： `arr[i] >= arr[2i+1] && arr[i] >= arr[2i+2]`
 
-小顶堆：arr[i] <= arr[2i+1] && arr[i] <= arr[2i+2]  
+小顶堆： `arr[i] <= arr[2i+1] && arr[i] <= arr[2i+2]`  
 
 
 
@@ -76,19 +76,19 @@ icon: lightbulb
 
 　　a.假设给定无序序列结构如下
 　　
-　　![](https://img-blog.csdnimg.cn/202012292151123.png)
+　　![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092509.png)
 　　
 　　b.此时我们从最后一个非叶子结点开始（叶结点自然不用调整，第一个非叶子结点 arr.length/2-1=5/2-1=1，也就是下面的6结点），从左至右，从下至上进行调整。
 　　
-　　![](https://img-blog.csdnimg.cn/20201229215128840.png)
+　　![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092513.png)
 　　
 　　c.找到第二个非叶节点4，由于[4,9,8]中9元素最大，4和9交换。
 　　
-　　![](https://img-blog.csdnimg.cn/20201229215143258.png)
+　　![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092521.png)
 　　
 　　d.这时，交换导致了子根[4,5,6]结构混乱，继续调整，[4,5,6]中6最大，交换4和6。
 　　
-　　![](https://img-blog.csdnimg.cn/20201229215155744.png)
+　　![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092523.png)
 　　
 　　此时，就将一个无需序列构造成了一个大顶堆。
 　　
@@ -97,19 +97,19 @@ icon: lightbulb
 
 　　a.将堆顶元素9和末尾元素4进行交。
 　　
-　　![](https://img-blog.csdnimg.cn/20201229215210365.png)
+　　![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092526.png)
 　　
 　　b.重新调整结构，使其继续满足堆定义。
 　　
-　　![](https://img-blog.csdnimg.cn/20201229215223888.png)
+　　![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092529.png)
 　　
 　　c.再将堆顶元素8与末尾元素5进行交换，得到第二大元素8。
 　　
-　　![](https://img-blog.csdnimg.cn/20201229215235640.png)
+　　![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092532.png)
 　　
 　　后续过程，继续进行调整，交换，如此反复进行，最终使得整个序列有序。
 　　
-　　![](https://img-blog.csdnimg.cn/20201229215247591.png)
+　　![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092534.png)
 　　
 　　
 　　

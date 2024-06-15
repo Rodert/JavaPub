@@ -146,7 +146,7 @@ servlet的生命周期就是从servlet出现到消亡(销毁)的全过程。主�
 3. 执行
 
   由.class变为.html，用Java虚拟机执行编译文件，然后将执行结果返回给Web服务器，并最终返回给客户端。
-  
+
   如果不是第一次访问某个JSP页面，则只执行第三步，**所以第一次访问JSP较慢**。
 
 ### 5. Session和Cookie的区别和联系；说明在自己项目中如何使用？
@@ -193,7 +193,7 @@ Spring 的拦截器与 Servlet 的 Filter 有相似之处，比如二者都是AO
 
 一张经典的图
 
-![过滤器&拦截器](https://img-blog.csdnimg.cn/20190114155348669.png)
+![过滤器&拦截器](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092104.png)
 
 ### 8. 三次握手和四次挥手
 

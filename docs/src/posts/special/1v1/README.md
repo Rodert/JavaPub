@@ -109,7 +109,8 @@ icon: lightbulb
 ###  🎩Spring  ###
 
 Spring 学习路线图：
-https://img-blog.csdnimg.cn/20201230220120483.png
+
+![img](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-094354.png)
 
 - [一篇告诉你什么是Spring](https://mp.weixin.qq.com/s/5nj-AAekF8j5KL6J67UZKA)
 - [第一个Spring程序(代码篇)](https://mp.weixin.qq.com/s/_T9g67UUI3ao33Ug1PNo_Q)

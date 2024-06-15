@@ -208,5 +208,5 @@ public final class RedisUtil {
 
 > 有任何问题都可以来谈谈 ！
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200625165207975.jpg)
+![在这里插入图片描述](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091043.jpeg)
 

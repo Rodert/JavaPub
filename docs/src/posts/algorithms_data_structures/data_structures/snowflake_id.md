@@ -14,7 +14,7 @@ icon: lightbulb
 [toc]
 
 
-![封面图](https://img-blog.csdnimg.cn/20210112221734297.png)
+![封面图](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092942.png)
 
 ## 前言
 
@@ -72,7 +72,7 @@ uuid 有很好的性能（本地调用），没有网络消耗。
 
 SnowFlake算法生成id的结果是一个64bit大小的整数，它的结构如下图：
 
-![snowflake-64bit](https://img-blog.csdnimg.cn/20190402101612645.png)
+![snowflake-64bit](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-092938.png)
 
 - 1位，不用。二进制中最高位为1的都是负数，但是我们生成的id一般都使用整数，所以这个最高位固定是0
 

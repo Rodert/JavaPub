@@ -17,7 +17,7 @@ icon: lightbulb
 
 > 有任何问题都可以来谈谈 ！
 
-![](https://img-blog.csdnimg.cn/20200616161009430.jpg)
+![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091843.jpeg)
 
 > **计数排序**是比较容易的排序算法，但是对数量级较小的整数排序很实用。
 
@@ -43,11 +43,8 @@ icon: lightbulb
 
 
 
-![](https://static01.imgkr.com/temp/6155c528cde44f6d85a96ceb95ecc2db.gif)
 
-
-
-
+![img](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091452.gif)
 
 > 如果有疑问，看下边一个例子
 
@@ -60,7 +57,7 @@ icon: lightbulb
 通过**计数排序**特性分析题目，我们知道整数的取值范围是从0到10，那么这些整数的值肯定是在0到10这11个数里面。于是我们可以建立一个长度为11的数组，数组下标从0到10，元素初始值全为0，如下所示：
 
 
-![](https://static01.imgkr.com/temp/2c1ef1b41b074bc196b34a5286af6bf2.jpg)
+![img](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091510.png)
 
 
 先假设20个随机整数的值是： `9, 3, 5, 4, 9, 1, 2, 7, 8，1，3, 6, 5, 3, 4, 0, 10, 9, 7, 9`
@@ -70,13 +67,13 @@ icon: lightbulb
 比如第一个整数是 9，那么数组下标为 9 的元素加 1：
 
 
-![](https://static01.imgkr.com/temp/ddf1fbae9f78468f9060462bdea0e93d.jpg)
+![img](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091517.png)
 
 
 - 第二个整数是3，那么数组下标为 3 的元素加 1：
 
 
-![](https://static01.imgkr.com/temp/1b5553d0f5f746c28ce02a69635eac32.jpg)
+![img](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091523.png)
 
 
 - 继续遍历数列并修改数组......
@@ -84,7 +81,7 @@ icon: lightbulb
 最终，数列遍历完毕时，数组的状态如下：
 
 
-![](https://static01.imgkr.com/temp/3e98951a23b24406905e3b0aaf1d2e5b.jpg)
+![img](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-091530.png)
 
 
 数组中的每一个值，代表了数列中对应整数的出现次数。

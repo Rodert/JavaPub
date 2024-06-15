@@ -144,7 +144,7 @@ http://ip+9200/
 > cd cerebro-0.6.5
 > bin/cerebro
 
-![cerebro](https://img-blog.csdnimg.cn/20201128190351184.png)
+![cerebro](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F15%2F20240615-090923.png)
 
 
 
