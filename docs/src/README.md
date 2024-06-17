@@ -6,7 +6,7 @@ heroImage: https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/202406
 bgImageStyle:
   background-attachment: fixed
 heroText: JavaPub
-tagline: 致力于帮助每个朋友更快学会、学好编程。
+tagline: 致力于帮助每个朋友更快学会编程、学好编程。
 actions:
   - text: 开始阅读
     icon: lightbulb
