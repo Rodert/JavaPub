@@ -7,9 +7,20 @@ https://theme-hope.vuejs.press/zh/get-started/
 ```bash
 cd docs
 
+
 pnpm i
 
 pnpm run docs:dev
+```
+
+#### 添加插件
+
+搜索
+
+```bash
+pnpm add -D vuepress-plugin-search-pro
+
+pnpm add -D @vuepress/plugin-search@next
 ```
 
 
