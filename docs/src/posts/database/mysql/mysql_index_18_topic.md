@@ -1,6 +1,15 @@
 ---
 title: MySQL索引18连问_谁能顶住
-icon: lightbulb
+icon: file
+author: Ms.Wang
+date: 2024-06-12
+sticky: true
+star: false
+category:
+  - mysql
+tag:
+  - mysql
+  - 索引
 ---
 
 

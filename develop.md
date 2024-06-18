@@ -28,6 +28,13 @@ pnpm add -D @vuepress/plugin-search@next
 ```
 
 
+博客
+
+```bash
+pnpm add -D @vuepress/plugin-blog@next
+
+```
+
 ### 打包部署
 
 编译出静态文件
