@@ -1,9 +1,27 @@
 ---
 title: 作者信息
 icon: circle-info
+author: Ms.Wang
+date: 2024-06-20
+sticky: true
+star: false
+category:
+  - 站长
+  - 关于我
+tag:
+  - 站长
 ---
 
-软件开发工程师...
+[作者档案](portfolio.html)
+
+
+站长是谁？
+
+大家都叫他王哥，生于 1996 年内蒙古边陲城市，他是一个普普通通的男生，毕业于 2019 年。目前是一名软件开发工程师...，喜欢折腾。
+
+
+
+
 
 
 
