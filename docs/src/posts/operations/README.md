@@ -4,3 +4,5 @@ icon: wrench
 index: false
 ---
 
+
+<Catalog />

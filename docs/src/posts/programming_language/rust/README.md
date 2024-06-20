@@ -4,3 +4,5 @@ icon: rust
 index: false
 ---
 
+
+<Catalog />
