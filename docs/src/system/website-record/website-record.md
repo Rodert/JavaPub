@@ -34,7 +34,7 @@ JavaPub 最早诞生于 2019 年。我当时即将大学毕业，在一家大型
 ## 历史图片
 
 
-保存历史图片，万一以后成为百万博主，也有个吹的。
+保存历史图片，万一以后成为百万博主，也能拿出去吹。
 
 
 历史网站截图： ![](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/202406031449095.png)
