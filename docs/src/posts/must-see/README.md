@@ -4,3 +4,5 @@ icon: star
 index: false
 ---
 
+
+<Catalog />

@@ -1,6 +1,15 @@
 ---
 title: 数据库13问，谁能顶得住
-icon: lightbulb
+icon: file
+author: Ms.Wang
+date: 2024-06-12
+sticky: true
+star: false
+category:
+  - mysql
+tag:
+  - mysql
+  - 数据库锁
 ---
 
 

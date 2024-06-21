@@ -7,11 +7,33 @@ https://theme-hope.vuejs.press/zh/get-started/
 ```bash
 cd docs
 
+
 pnpm i
 
 pnpm run docs:dev
 ```
 
+#### 添加插件
+
+搜索
+
+```bash
+npm config set registry https://registry.npm.taobao.org
+
+npm config set registry https://registry.npmjs.org/
+
+pnpm add -D vuepress-plugin-search-pro
+
+pnpm add -D @vuepress/plugin-search@next
+```
+
+
+博客
+
+```bash
+pnpm add -D @vuepress/plugin-blog@next
+
+```
 
 ### 打包部署
 

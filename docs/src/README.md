@@ -321,7 +321,7 @@ footer: 备案 <a href="https://beian.miit.gov.cn/" target="_blank">京ICP备202
 
 ## 网站信息
 
-JavaPub 的新版网站，之后的更新都会在这里，计划运营到 2050 年，期待你的陪伴。目前所有内容都由站长个人维护、并在逐步完善中，如果你有兴趣欢迎参与进来。
+JavaPub 官方网站，优质原创资源会在这里归档，目前没有任何收益，计划运营到 2050 年，期待你的陪伴。目前所有内容都由站长个人维护、并在逐步完善中，如果你有兴趣欢迎参与进来。
 
 如果觉得有用，可以前往代码仓库点个免费的 start（看质量自行选择，绝不强求）。传送门： [GitHub](https://github.com/Rodert/JavaPub) | [Gitee](https://gitee.com/rodert/JavaPub)
 
@@ -332,7 +332,7 @@ JavaPub 的新版网站，之后的更新都会在这里，计划运营到 2050 
 ## 关于站长
 
 
-[linktr](https://linktr.ee/javapub) | [个人站点](https://javapub.net.cn/) | [微信公众号](https://mp.weixin.qq.com/s/selkBT2ilq0KdA9KjO7ZLA) | [知乎](https://www.zhihu.com/people/zhui-ma-7-49) | [GitHub](https://github.com/Rodert/) | [掘金](https://juejin.cn/user/958429872260328) | [CSDN](https://javapub.blog.csdn.net/?type=blog) | [腾讯云开发者社区](https://cloud.tencent.com/developer/user/2686511) | [哔哩哔哩](https://space.bilibili.com/404747369) | [阿里云栖社区](https://developer.aliyun.com/profile/e6np5bdeh6snm)
+[linktr](https://linktr.ee/javapub) | [个人站点](https://javapub.net.cn/) | [微信公众号](https://mp.weixin.qq.com/s/selkBT2ilq0KdA9KjO7ZLA) | [知乎](https://www.zhihu.com/people/zhui-ma-7-49) | [GitHub](https://github.com/Rodert/) | [掘金](https://juejin.cn/user/958429872260328) | [CSDN](https://javapub.blog.csdn.net/?type=blog) | [腾讯云开发者社区](https://cloud.tencent.com/developer/user/2686511) | [哔哩哔哩](https://space.bilibili.com/404747369) | [阿里云栖社区](https://developer.aliyun.com/profile/e6np5bdeh6snm) | [西瓜视频](https://www.ixigua.com/home/111425969015) | [微博](https://weibo.com/u/7019623020)
 
 
 |  收录   | 地址  |

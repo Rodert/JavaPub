@@ -4,3 +4,5 @@ icon: golang
 index: false
 ---
 
+
+<Catalog />

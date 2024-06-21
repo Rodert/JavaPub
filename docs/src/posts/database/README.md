@@ -4,3 +4,5 @@ icon: database
 index: false
 ---
 
+
+<Catalog />
