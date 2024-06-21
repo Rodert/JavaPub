@@ -6,3 +6,4 @@ index: false
 
 
 <Catalog />
+
