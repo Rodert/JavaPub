@@ -1,8 +1,12 @@
 ---
 title:  B树和B+树区别
 icon: lightbulb
+author: Wang Shiyu
 category:
   - B树
+  - B+树
+sticky: true
+star: true
 ---
 
 
