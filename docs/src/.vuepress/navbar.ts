@@ -17,7 +17,14 @@ export default navbar([
         text: "面试专题合集",
         icon: "lightbulb",
         prefix: "special/",
-        children: [{ text: "...", icon: "ellipsis", link: "" }],
+        children: [
+          {
+            text: "面试专题",
+            icon: "lightbulb",
+            link: "",
+          },
+          { text: "...", icon: "ellipsis", link: "" }
+        ],
       },
     ],
   },
@@ -31,7 +38,14 @@ export default navbar([
         text: "项目实战",
         icon: "lightbulb",
         prefix: "project/",
-        children: ["project", { text: "...", icon: "ellipsis", link: "" }],
+        children: [
+          {
+            text: "实战项目组",
+            icon: "lightbulb",
+            link: "",
+          },
+          { text: "...", icon: "ellipsis", link: "" }
+        ],
       },
       {
         text: "星球介绍",

@@ -36,6 +36,6 @@ icon: circle-info
 
 [星球链接 https://t.zsxq.com/14tMfIK7m](https://t.zsxq.com/14tMfIK7m)
 
-![星球优惠码](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/static/star_qr_1.jpg)
+![星球优惠码先到先得](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/static/star_qr_1.jpg)
 
 
