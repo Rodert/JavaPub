@@ -10,7 +10,23 @@ icon: circle-info
 
 
 
+
+
+如何使用 GitHub: 
+
 ![如何使用](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F23%2F20240623-182758.png)
+
+
+
+---
+
+
+
+方案二，部分资源在百度网盘，加入群消息自行获取。备注【加群】，快速处理。
+
+
+
+![群公告获取](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2024%2F06%2F23%2F20240623-183225.png)
 
 
 
