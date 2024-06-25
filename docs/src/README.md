@@ -323,7 +323,7 @@ footer: 备案 <a href="https://beian.miit.gov.cn/" target="_blank">京ICP备202
 
 JavaPub 官方网站，优质原创资源会在这里归档，目前没有任何收益，计划运营到 2050 年，期待你的陪伴。目前所有内容都由站长个人维护、并在逐步完善中，如果你有兴趣欢迎参与进来。
 
-如果觉得有用，可以前往代码仓库点个免费的 start（看质量自行选择，绝不强求）。传送门： [GitHub](https://github.com/Rodert/JavaPub) | [Gitee](https://gitee.com/rodert/JavaPub)
+如果觉得有用，可以前往代码仓库点个免费的 start (求星星✨)。传送门： [GitHub](https://github.com/Rodert/JavaPub) | [Gitee](https://gitee.com/rodert/JavaPub)
 
 - [实战项目](./star/project/)
 - [常见问题](./posts/must-see/)
