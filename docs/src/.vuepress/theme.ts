@@ -62,21 +62,27 @@ export default hopeTheme({
     blog: true,
     searchPro: true,
     // 公告
-    notice: [
-      {
-        path: "/",
-        title: "通知📢",
-        content: "JavaPub官网新版上线，留下一句话证明你来过。",
-        actions: [
-          {
-            text: "带朕前往",
-            link: "https://javapub.net.cn/posts/must-see/operating-guide.html",
-            type: "primary",
-          },
-          { text: "下次一定" },
-        ],
-      },
-    ],
+    // notice: [
+      // {
+      //   path: "/",
+      //   title: "通知📢",
+      //   content: "JavaPub官网新版上线，留下一句话证明你来过。",
+      //   actions: [
+      //     {
+      //       text: "带朕前往",
+      //       link: "https://javapub.net.cn/posts/must-see/operating-guide.html",
+      //       type: "primary",
+      //     },
+      //     { text: "下次一定" },
+      //   ],
+      // },
+
+      // {
+      //   path: "/",
+      //   title: "今日句子",
+      //   content: "风起于青萍之末，浪成于微澜之间",
+      // },
+    // ],
 
     // 注意: 仅用于测试! 你必须自行生成并在生产环境中使用自己的评论服务
     comment: {
