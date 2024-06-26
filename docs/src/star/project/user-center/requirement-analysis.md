@@ -10,6 +10,7 @@ tag:
 ---
 
 
+![封面图](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/202406262030831.png)
 
 
 > 程序员在企业中是如何做需求的
