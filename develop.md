@@ -15,25 +15,41 @@ pnpm run docs:dev
 
 #### 添加插件
 
-搜索
+##### 搜索
+
+https://theme-hope.vuejs.press/zh/guide/feature/search.html#%E4%BD%BF%E7%94%A8-vuepress-plugin-search-pro
+
 
 ```bash
 npm config set registry https://registry.npm.taobao.org
 
 npm config set registry https://registry.npmjs.org/
+```
+
+
+```bash
 
 pnpm add -D vuepress-plugin-search-pro
 
+searchPro: true,
+```
+
+```bash
+
 pnpm add -D @vuepress/plugin-search@next
+
+search: true,
 ```
 
 
-博客
+
+##### 博客
 
 ```bash
 pnpm add -D @vuepress/plugin-blog@next
-
 ```
+
+
 
 ### 打包部署
 
@@ -50,6 +66,8 @@ pnpm run docs:build
 ```bash
 cd docs/src/.vuepress/dist
 ```
+
+
 
 #### nginx 配置
 
@@ -68,3 +86,5 @@ server {
         }
 }
 ```
+
+

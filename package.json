@@ -1,5 +1,6 @@
 {
 	"devDependencies": {
-		"@vuepress/plugin-blog": "2.0.0-rc.34"
+		"@vuepress/plugin-blog": "2.0.0-rc.34",
+		"@vuepress/plugin-search": "2.0.0-rc.37"
 	}
 }
