@@ -88,3 +88,10 @@ server {
 ```
 
 
+
+## 同步
+
+```bash
+scp -r   ./src/.vuepress/dist/   root@123.57.165.54:/opt/javapub/temp_sc
+```
+
