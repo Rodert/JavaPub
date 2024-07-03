@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      vuepress-plugin-toolbar:
+        specifier: ^1.0.1
+        version: 1.0.1
     devDependencies:
       '@vuepress/bundler-vite':
         specifier: 2.0.0-rc.12
@@ -789,6 +793,9 @@ packages:
 
   '@vueuse/shared@10.10.0':
     resolution: {integrity: sha512-2aW33Ac0Uk0U+9yo3Ypg9s5KcR42cuehRWl7vnUHadQyFvCktseyxxEPBi1Eiq4D2yBGACOnqLZpx1eMc7g5Og==, tarball: https://registry.npmmirror.com/@vueuse/shared/-/shared-10.10.0.tgz}
+
+  animate.css@3.7.2:
+    resolution: {integrity: sha512-0bE8zYo7C0KvgOYrSVfrzkbYk6IOTVPNqkiHg2cbyF4Pq/PXzilz4BRWA3hwEUBoMp5VBgrC29lQIZyhRWdBTw==}
 
   ansi-regex@5.0.1:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==, tarball: https://registry.npmmirror.com/ansi-regex/-/ansi-regex-5.0.1.tgz}
@@ -1600,6 +1607,9 @@ packages:
     peerDependenciesMeta:
       sass-loader:
         optional: true
+
+  vuepress-plugin-toolbar@1.0.1:
+    resolution: {integrity: sha512-r2tbkm7LaXdBxEIvKgLtHDgV7GCdHYrXIrNgjDbC9jxccWdSJmn5nb1BJnXgArkgnXGob5lSUn19ncrc9BQKlQ==}
 
   vuepress-shared@2.0.0-rc.47:
     resolution: {integrity: sha512-y//O1IYUm4QLKdaMcl8a3scRouskGDmeEOn8bZn7bKgCXVrd0QCc/pkxJk+vnbtEFsKiZgBwLfKoa0dT5+IC/g==, tarball: https://registry.npmmirror.com/vuepress-shared/-/vuepress-shared-2.0.0-rc.47.tgz}
@@ -2494,6 +2504,8 @@ snapshots:
       - '@vue/composition-api'
       - vue
 
+  animate.css@3.7.2: {}
+
   ansi-regex@5.0.1: {}
 
   ansi-regex@6.0.1: {}
@@ -3243,6 +3255,10 @@ snapshots:
     transitivePeerDependencies:
       - '@vue/composition-api'
       - typescript
+
+  vuepress-plugin-toolbar@1.0.1:
+    dependencies:
+      animate.css: 3.7.2
 
   vuepress-shared@2.0.0-rc.47(vuepress@2.0.0-rc.12(@vuepress/bundler-vite@2.0.0-rc.12(@types/node@20.14.0)(sass@1.77.4))(vue@3.4.27)):
     dependencies:
