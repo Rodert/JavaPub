@@ -16,7 +16,7 @@ export default hopeTheme({
 
   repo: "Rodert/JavaPub",
 
-  docsDir: "docs/src",
+  docsDir: "src",
 
   // 导航栏
   navbar,

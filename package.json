@@ -1,6 +1,24 @@
 {
-	"devDependencies": {
-		"@vuepress/plugin-blog": "2.0.0-rc.34",
-		"@vuepress/plugin-search": "2.0.0-rc.37"
-	}
+  "name": "javapub",
+  "version": "1.0.0",
+  "description": "A project of vuepress-theme-hope",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "docs:build": "vuepress-vite build src",
+    "docs:clean-dev": "vuepress-vite dev src --clean-cache",
+    "docs:dev": "vuepress-vite dev src",
+    "docs:update-package": "pnpm dlx vp-update"
+  },
+  "devDependencies": {
+    "@vuepress/bundler-vite": "2.0.0-rc.12",
+    "@vuepress/plugin-search": "2.0.0-rc.34",
+    "vue": "^3.4.27",
+    "vuepress": "2.0.0-rc.12",
+    "vuepress-plugin-search-pro": "2.0.0-rc.48",
+    "vuepress-theme-hope": "2.0.0-rc.47"
+  },
+  "dependencies": {
+    "vuepress-plugin-toolbar": "^1.0.1"
+  }
 }
