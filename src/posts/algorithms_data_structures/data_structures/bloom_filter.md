@@ -1,6 +1,13 @@
 ---
 title: 大白话讲解布隆过滤器（BloomFilter）
 icon: lightbulb
+author: Wang Shiyu
+date: 2022-04-21
+category:
+  - 数据结构
+tag:
+  - 布隆过滤器
+  - redis
 ---
 
 

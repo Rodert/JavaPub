@@ -4,6 +4,7 @@ icon: lightbulb
 author: Wang Shiyu
 category:
   - volatile
+  - java
 sticky: false
 star: false
 ---

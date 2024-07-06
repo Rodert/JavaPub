@@ -1,6 +1,14 @@
 ---
 title: LM Studio
 icon: lightbulb
+author: Wang Shiyu
+date: 2022-07-04
+category:
+  - LMStudio
+  - ai
+tag:
+  - LMStudio
+  - ai
 ---
 
 

@@ -5,10 +5,12 @@ category:
   - springboot
   - prometheus
   - grafana
+  - java
 tag:
   - springboot
   - prometheus
   - grafana
+  - java
 ---
 
 

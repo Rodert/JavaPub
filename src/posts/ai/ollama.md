@@ -1,6 +1,15 @@
 ---
 title: ollama本地调用大模型
 icon: lightbulb
+author: Wang Shiyu
+date: 2022-07-04
+category:
+  - ollama
+  - ai
+tag:
+  - ollama
+  - ai
+  - llama3
 ---
 
 

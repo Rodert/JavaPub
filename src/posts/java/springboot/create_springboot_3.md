@@ -3,8 +3,10 @@ title: 三种快速创建SpringBoot项目的方式
 icon: lightbulb
 category:
   - springboot
+  - java
 tag:
   - springboot
+  - java
 ---
 
 

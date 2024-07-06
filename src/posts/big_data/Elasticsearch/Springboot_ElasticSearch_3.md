@@ -1,6 +1,14 @@
 ---
 title: Springboot2.x整合ElasticSearch7.x实战（三）
 icon: lightbulb
+author: Wang Shiyu
+date: 2022-04-21
+category:
+  - elasticsearch
+  - springboot
+tag:
+  - elasticsearch
+  - springboot
 ---
 
 

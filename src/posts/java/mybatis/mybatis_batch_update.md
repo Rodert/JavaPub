@@ -4,6 +4,7 @@ icon: lightbulb
 author: Wang Shiyu
 category:
   - MyBatis
+  - java
 sticky: false
 star: false
 ---

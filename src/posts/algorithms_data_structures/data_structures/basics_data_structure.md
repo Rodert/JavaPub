@@ -1,6 +1,12 @@
 ---
 title: 学习基础数据结构
 icon: lightbulb
+author: Wang Shiyu
+date: 2022-04-21
+category:
+  - 数据结构
+tag:
+  - 数据结构
 ---
 
 

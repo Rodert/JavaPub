@@ -1,6 +1,14 @@
 ---
 title: rodert教你学Maven-实战这一篇就够了
 icon: lightbulb
+author: Wang Shiyu
+date: 2022-04-21
+category:
+  - java
+  - maven
+tag:
+  - java
+  - maven
 ---
 
 

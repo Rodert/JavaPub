@@ -3,8 +3,11 @@ title: SpringBoot生成二维码的正确姿势[附视频/附源码]
 icon: lightbulb
 category:
   - springboot
+  - java
 tag:
   - springboot
+  - java
+  - 二维码
 ---
 
 

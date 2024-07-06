@@ -3,8 +3,10 @@ title: SpringBoot的pom.xml
 icon: lightbulb
 category:
   - springboot
+  - java
 tag:
   - springboot
+  - java
 ---
 
 

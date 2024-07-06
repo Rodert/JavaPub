@@ -1,6 +1,14 @@
 ---
 title: rodert教你学MyBatis-实战这一篇就够了
 icon: lightbulb
+author: Wang Shiyu
+date: 2022-04-21
+category:
+  - mybatis
+  - java
+tag:
+  - mybatis
+  - java
 ---
 
 

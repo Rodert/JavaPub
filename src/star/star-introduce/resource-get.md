@@ -22,7 +22,8 @@ icon: circle-info
 
 
 
-方案二，部分资源在百度网盘，加入群消息自行获取。备注【加群】，快速处理。
+方案二，部分资源在百度网盘，加入群消息自行获取。备注【加群】，快速处理。[点击加群](https://kazjsfecs3y.feishu.cn/wiki/BRMxwzLpgizi62k20fwcCzPHn1e)
+
 
 
 

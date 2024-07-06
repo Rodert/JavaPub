@@ -1,6 +1,13 @@
 ---
 title: 分布式唯一ID解决方案-雪花算法
 icon: lightbulb
+author: Wang Shiyu
+date: 2022-04-21
+category:
+  - 数据结构
+  - 雪花算法
+tag:
+  - 数据结构
 ---
 
 
