@@ -1,6 +1,14 @@
 ---
 title: go整合etcd
 icon: lightbulb
+author: Wang Shiyu
+date: 2022-07-06
+category:
+  - etcd
+  - go
+tag:
+  - etcd
+  - go
 ---
 
 
