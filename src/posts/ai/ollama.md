@@ -13,7 +13,18 @@ tag:
 ---
 
 
-> 
+
+
+> 大语言模型，ollama轻松打造本地LLM应用
+> 普通人如何快速搭建本地大语言模型
+
+
+
+
+
+
+
+
 
 TODO
 [ ] 搭建 llama3 模型，并调用成功
@@ -39,6 +50,11 @@ TODO
 
 - 支持模型列表： https://ollama.com/library
 - 中文参考文档： https://ollama.fan/reference/api/#generate-a-completion-request-streaming
+- webui: https://github.com/open-webui/open-webui
 
+
+
+
+原文： https://javapub.net.cn/posts/ai/
 
 
