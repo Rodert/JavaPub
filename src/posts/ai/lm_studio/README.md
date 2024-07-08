@@ -1,17 +1,18 @@
 ---
-title: 编程规范
+title: lm_studio
 icon: lightbulb
 index: false
 author: Wang Shiyu
-date: 2022-07-04
+date: 2022-07-06
 category:
-  - 编程规范
+  - lm_studio
+  - ai
 tag:
-  - 编程规范
+  - lm_studio
+  - ai
 ---
 
 
 
 
 <Catalog />
-

@@ -1,6 +1,14 @@
 ---
 title: 接口设计这11点要注意
 icon: lightbulb
+author: Wang Shiyu
+date: 2022-07-04
+category:
+  - 编程规范
+  - 接口
+tag:
+  - 编程规范
+  - 接口
 ---
 
 

@@ -1,9 +1,8 @@
 ---
-title: 编程规范
+title: 优化if-else的八种方案
 icon: lightbulb
-index: false
 author: Wang Shiyu
-date: 2022-07-04
+date: 2022-07-08
 category:
   - 编程规范
 tag:
@@ -12,6 +11,4 @@ tag:
 
 
 
-
-<Catalog />
 

@@ -1,6 +1,14 @@
 ---
 title: 工作总结！日志打印的11条建议
 icon: lightbulb
+author: Wang Shiyu
+date: 2022-07-04
+category:
+  - 编程规范
+  - 日志
+tag:
+  - 编程规范
+  - 日志
 ---
 
 > 工作总结！日志打印的11条建议
