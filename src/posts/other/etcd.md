@@ -14,11 +14,14 @@ tag:
 
 
 
-
-
 - 案例源码仓库地址： https://github.com/Rodert/go-demo
 - 官方文档： https://etcd.io/
 - 视频教程： https://space.bilibili.com/404747369
+
+
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=1456119038&bvid=BV1hi421Y7rV&cid=1609010816&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+
+
 
 # 介绍
 

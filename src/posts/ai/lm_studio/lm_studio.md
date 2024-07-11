@@ -9,6 +9,7 @@ category:
 tag:
   - LMStudio
   - ai
+  - chatgpt
 ---
 
 

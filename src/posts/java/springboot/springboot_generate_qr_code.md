@@ -12,9 +12,15 @@ tag:
 
 
 
-
-
 ## SpringBoot生成二维码的正确姿势[附视频/附源码]
+
+
+
+视频： [https://space.bilibili.com/404747369](https://space.bilibili.com/404747369)
+
+
+
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=277269604&bvid=BV1cw411w7Rk&cid=1302631496&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 
 
 

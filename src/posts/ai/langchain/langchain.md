@@ -9,6 +9,7 @@ category:
 tag:
   - langchain
   - ai
+  - chatgpt
 ---
 
 

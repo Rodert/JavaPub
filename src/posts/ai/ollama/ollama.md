@@ -10,6 +10,7 @@ tag:
   - ollama
   - ai
   - llama3
+  - chatgpt
 ---
 
 
@@ -23,9 +24,11 @@ tag:
 
 官网： [https://ollama.com/](https://ollama.com/) ｜ [https://github.com/ollama/ollama](https://github.com/ollama/ollama)
 
-**建议环境&配置**
 
-大于 `4c8g`
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=1806178648&bvid=BV18b421E7Wu&cid=1611201303&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+
+
+**建议环境&配置** 大于 `4c8g`
 
 
 # ollama
