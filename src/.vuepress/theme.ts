@@ -60,8 +60,8 @@ export default hopeTheme({
   // 在这里配置主题提供的插件
   plugins: {
     blog: true,
-    // searchPro: true,
-    search: true,
+    searchPro: true,
+    // search: true,
     // 公告
     // notice: [
       // {

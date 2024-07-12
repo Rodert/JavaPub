@@ -20,9 +20,8 @@ tag:
 > 普通人如何快速搭建本地大语言模型
 
 
-视频： [https://space.bilibili.com/404747369](https://space.bilibili.com/404747369)
+[视频](https://space.bilibili.com/404747369) | [官网](https://ollama.com/) | [GitHub](https://github.com/ollama/ollama)
 
-官网： [https://ollama.com/](https://ollama.com/) ｜ [https://github.com/ollama/ollama](https://github.com/ollama/ollama)
 
 
 <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=1806178648&bvid=BV18b421E7Wu&cid=1611201303&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
