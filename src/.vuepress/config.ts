@@ -6,7 +6,7 @@ export default defineUserConfig({
 
   lang: "zh-CN",
   title: "JavaPub",
-  description: "致力于帮助每个朋友更快学好、学会编程。",
+  description: "致力于帮助每个朋友学好编程、学会编程。",
 
   theme,
 
