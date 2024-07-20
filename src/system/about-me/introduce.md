@@ -50,9 +50,14 @@ tag:
 
 - [JavaPub官网](https://javapub.net.cn/)
 
-- [JavaPub官网历史版本](https://java-pub-interview.vercel.app/#/)
+- [旧版JavaPub官网](https://java-pub-interview.vercel.app/#/)
 
 - [JavaPub学习路线](https://code-route-h3xxxsggd-roderts-projects.vercel.app/)
 
 - [俩万通用后台管理系统](https://github.com/Rodert/liawan-vue)
+
+...
+
+
+- 更多：[点击了解](../star/project/)
 
