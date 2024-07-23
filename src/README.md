@@ -329,14 +329,6 @@ JavaPub 官方网站，优质原创资源会在这里归档，目前没有任何
 - [常见问题](./posts/must-see/)
 
 
-|  收录   | 地址  |
-|  ----  | ----  |
-| 谷歌收录  | [https://www.google.com.hk/search?q=javapub](https://www.google.com.hk/search?q=javapub) |
-| 百度收录  | [https://www.baidu.com/s?wd=javapub](https://www.baidu.com/s?wd=javapub) |
-| 必应收录  | [https://www4.bing.com/search?q=javapub](https://www4.bing.com/search?q=javapub) |
-| 360收录  | [https://www.so.com/s?q=javapub](https://www.so.com/s?q=javapub) |
-| 搜狗收录  | [https://www.sogou.com/web?query=javapub](https://www.sogou.com/web?query=javapub) |
-
 ## 关于站长
 
 
@@ -352,6 +344,8 @@ JavaPub 官方网站，优质原创资源会在这里归档，目前没有任何
 
 
 
+
+
 ## 公众号
 
 所有的内容会公众号第一时间更新，其他平台也会同步。此外，通过公众号可以获得站长联系方式。
@@ -360,4 +354,14 @@ JavaPub 官方网站，优质原创资源会在这里归档，目前没有任何
 
 
 ![Visitor Count](https://profile-counter.glitch.me/JavaPubNetCn/count.svg)
+
+
+
+|  收录   | 地址  |
+|  ----  | ----  |
+| 谷歌收录  | [https://www.google.com.hk/search?q=javapub](https://www.google.com.hk/search?q=javapub) |
+| 百度收录  | [https://www.baidu.com/s?wd=javapub](https://www.baidu.com/s?wd=javapub) |
+| 必应收录  | [https://www4.bing.com/search?q=javapub](https://www4.bing.com/search?q=javapub) |
+| 360收录  | [https://www.so.com/s?q=javapub](https://www.so.com/s?q=javapub) |
+| 搜狗收录  | [https://www.sogou.com/web?query=javapub](https://www.sogou.com/web?query=javapub) |
 

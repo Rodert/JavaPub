@@ -1,5 +1,5 @@
 ---
-title: 优化if-else的八种方案
+title: TODO-优化if-else的八种方案
 icon: lightbulb
 author: Wang Shiyu
 date: 2022-07-08
@@ -10,5 +10,12 @@ tag:
 ---
 
 
+
+TODO
+
+> 优雅永不过时！
+
+
+参考： https://mp.weixin.qq.com/s/Wd1w8OctSwPb0mdykFzbIQ
 
 
