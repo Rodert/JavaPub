@@ -356,6 +356,17 @@ SpringBoot最新版常用案例整合，持续更新中 **https://github.com/Rod
 
 
 
+
+## 实战项目
+
+[《用户中心》管理系统]() ｜ [weixin](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUzNDUyOTY0Nw==&action=getalbum&album_id=3513732912782671873&scene=126&uin=&key=&devicetype=iMac+MacBookPro18%2C3+OSX+OSX+14.5+build(23F79)&version=13080710&lang=zh_CN&nettype=WIFI&ascene=78&fontScale=100) ｜ [原地址](https://javapub.net.cn/star/project/user-center/)
+
+
+[《新闻搜索》ElasticSearch]() ｜ [weixin]() ｜ [原地址](https://javapub.net.cn/star/project/news-search-es/)
+
+
+
+
 ## 推荐练手项目（附源码-附安装视频）
 
 `无套路，免费领取`
