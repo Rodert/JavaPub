@@ -357,6 +357,10 @@ JavaPub 官方网站，优质原创资源会在这里归档，目前没有任何
 
 
 
+## 搜索引擎收录直达
+
+
+
 |  收录   | 地址  |
 |  ----  | ----  |
 | 谷歌收录  | [https://www.google.com.hk/search?q=javapub](https://www.google.com.hk/search?q=javapub) |
