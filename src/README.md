@@ -321,7 +321,7 @@ footer: 备案 <a href="https://beian.miit.gov.cn/" target="_blank">京ICP备202
 
 ## 网站信息
 
-JavaPub 官方网站，优质原创资源会在这里归档，目前没有任何收益，计划运营到 2050 年，期待你的陪伴。目前所有内容都由站长个人维护、并在逐步完善中，如果你有兴趣欢迎参与进来。
+JavaPub 官方网站，优质原创资源会在这里归档，计划运营到 2050 年，期待你的陪伴。目前所有内容都由站长个人维护、并在逐步完善中，如果你有兴趣欢迎参与进来。
 
 如果觉得有用，可以前往代码仓库点个免费的 start (求星星✨)。传送门： [GitHub](https://github.com/Rodert/JavaPub) | [Gitee](https://gitee.com/rodert/JavaPub)
 
