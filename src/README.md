@@ -345,8 +345,19 @@ JavaPub 官方网站，优质原创资源会在这里归档，计划运营到 20
 
 
 
+## 保持联系
 
-## 公众号
+我总是对探索新技术和合作开展有趣的项目感到兴奋。如果您想联系或合作，请随时联系我：
+
+- [WeChat](https://kazjsfecs3y.feishu.cn/wiki/BRMxwzLpgizi62k20fwcCzPHn1e)
+
+- [Send me email](mailto:iswangshiyu@foxmail.com)
+
+
+
+
+
+## 我朋友和我的公众号
 
 所有的内容会公众号第一时间更新，其他平台也会同步。此外，通过公众号可以获得站长联系方式。
 
