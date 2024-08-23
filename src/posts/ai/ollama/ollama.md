@@ -131,10 +131,8 @@ docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-
 
 
 
-TODO
-
-[ ] 搭建 llama3 模型，并调用成功
-[ ] 整合 go 语言，实现 api 调用
+[x] 搭建 llama3 模型，并调用成功
+[ ] 整合 go 语言，实现 api 调用 - 接口调用成功了，http 请求先不展示了
 [ ] 流式回复
 
 
