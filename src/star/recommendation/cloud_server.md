@@ -1,6 +1,14 @@
 ---
 title: 白菜价的云服务器，整理的合集
 icon: circle-info
+icon: lightbulb
+category:
+  - 云服务器
+  - 阿里云
+  - 百度云
+  - 腾讯云
+  - 京东云
+  - 华为云
 ---
 
 
