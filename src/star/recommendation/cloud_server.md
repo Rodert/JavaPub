@@ -1,6 +1,5 @@
 ---
 title: 白菜价的云服务器，整理的合集
-icon: circle-info
 icon: lightbulb
 category:
   - 云服务器
