@@ -1,6 +1,6 @@
 ---
 title: 项目实战
-icon: circle-info
+icon: magnifying-glass
 index: false
 category:
   - 项目实战

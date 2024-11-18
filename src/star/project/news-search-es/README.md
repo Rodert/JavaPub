@@ -1,6 +1,6 @@
 ---
 title: 《新闻搜索ElasticSearch》项目组
-icon: circle-info
+icon: searchengin
 index: false
 category:
   - 项目实战

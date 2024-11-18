@@ -1,6 +1,6 @@
 ---
-title: 星球介绍
-icon: circle-info
+title: 知识星球
+icon: star
 index: false
 ---
 

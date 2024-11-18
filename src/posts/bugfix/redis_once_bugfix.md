@@ -1,6 +1,6 @@
 ---
 title: 记一次redis线上问题
-icon: lightbulb
+icon: line
 category:
   - redis
   - bugfix

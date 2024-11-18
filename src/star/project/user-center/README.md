@@ -1,6 +1,6 @@
 ---
 title: 《用户中心》项目组
-icon: circle-info
+icon: user
 index: false
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: SpringBoot整合MyBatis-Plus
-icon: circle-info
+icon: line
 category:
   - 项目实战
   - 《用户中心》

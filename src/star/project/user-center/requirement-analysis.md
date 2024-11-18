@@ -1,6 +1,6 @@
 ---
 title: 《用户中心》需求分析
-icon: circle-info
+icon: line
 category:
   - 项目实战
   - 《用户中心》

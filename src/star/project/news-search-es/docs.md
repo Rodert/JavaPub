@@ -1,6 +1,6 @@
 ---
 title: 《新闻搜索ElasticSearch》介绍文档
-icon: circle-info
+icon: line
 category:
   - 项目实战
   - 《新闻搜索ElasticSearch》

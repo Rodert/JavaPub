@@ -1,6 +1,6 @@
 ---
 title: 资源获取说明
-icon: circle-info
+icon: info
 ---
 
 
