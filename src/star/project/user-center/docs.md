@@ -1,5 +1,5 @@
 ---
-title: 《用户中心》介绍文档
+title: 介绍文档
 icon: circle-info
 category:
   - 项目实战

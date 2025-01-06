@@ -1,5 +1,5 @@
 ---
-title: 《新闻搜索ElasticSearch》介绍文档
+title: 介绍文档
 icon: line
 category:
   - 项目实战
