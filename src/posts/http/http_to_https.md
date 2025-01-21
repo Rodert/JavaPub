@@ -7,7 +7,7 @@ icon: lightbulb
  * @Author: JavaPub
  * @Date: 2025-01-21 16:26:47
  * @LastEditors: your name
- * @LastEditTime: 2025-01-21 17:06:32
+ * @LastEditTime: 2025-01-21 17:12:48
  * @Description: Here is the JavaPub code base. Search JavaPub on the whole web.
  * @FilePath: /JavaPub/src/posts/http/http_to_https.md
 -->
@@ -44,7 +44,7 @@ icon: lightbulb
 
 #### 1. 首先安装 Snapd
 
-一般最新版本的 Ubuntu 事自带的，如果没有通过这个命令安装
+一般最新版本的 Ubuntu 是自带的，如果没有通过这个命令安装
 
 ```bash
 sudo apt update sudo apt install snapd
