@@ -7,7 +7,7 @@ icon: lightbulb
  * @Author: JavaPub
  * @Date: 2025-01-21 16:26:47
  * @LastEditors: your name
- * @LastEditTime: 2025-01-21 16:26:56
+ * @LastEditTime: 2025-01-21 17:06:32
  * @Description: Here is the JavaPub code base. Search JavaPub on the whole web.
  * @FilePath: /JavaPub/src/posts/http/http_to_https.md
 -->
@@ -98,4 +98,8 @@ sudo certbot renew --dry-run
 ```
 
 当证书到期前 30 天时，如果需要续订，Certbot 会自动处理。
+
+---
+
+最近还在开发一个编程面试小程序，编程鸭，后面接入 API 也需要一个证书，所以也用上了这个方法，非常方便。
 
