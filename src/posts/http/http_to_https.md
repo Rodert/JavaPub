@@ -7,7 +7,7 @@ icon: lightbulb
  * @Author: JavaPub
  * @Date: 2025-01-21 16:26:47
  * @LastEditors: your name
- * @LastEditTime: 2025-01-21 17:12:48
+ * @LastEditTime: 2025-01-22 16:54:55
  * @Description: Here is the JavaPub code base. Search JavaPub on the whole web.
  * @FilePath: /JavaPub/src/posts/http/http_to_https.md
 -->
@@ -16,7 +16,7 @@ icon: lightbulb
 
 
 
-## 如何给自己的域名配置免费的HTTPS
+## 如何给自己的域名配置免费的HTTPS How to configure free HTTPS for your domain name
 
 
 今天有小伙伴给我发私信，你的 https 到期啦
@@ -47,7 +47,11 @@ icon: lightbulb
 一般最新版本的 Ubuntu 是自带的，如果没有通过这个命令安装
 
 ```bash
-sudo apt update sudo apt install snapd
+sudo apt update 
+```
+
+```bash
+sudo apt install snapd
 ```
 
 #### 2. 安装 Certbot
