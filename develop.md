@@ -1,3 +1,11 @@
+<!--
+ * @Author: JavaPub
+ * @Date: 2025-01-06 17:33:16
+ * @LastEditors: your name
+ * @LastEditTime: 2025-02-04 10:08:30
+ * @Description: Here is the JavaPub code base. Search JavaPub on the whole web.
+ * @FilePath: /JavaPub/develop.md
+-->
 ### 框架开发文档
 
 https://theme-hope.vuejs.press/zh/get-started/
@@ -56,7 +64,7 @@ pnpm add -D @vuepress/plugin-blog@next
 编译出静态文件
 
 ```bash
-cd docs
+cd .
 
 pnpm run docs:build
 ```
@@ -64,7 +72,7 @@ pnpm run docs:build
 编译后静态文件目录
 
 ```bash
-cd docs/src/.vuepress/dist
+cd src/.vuepress/dist
 ```
 
 
