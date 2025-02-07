@@ -20,13 +20,20 @@ tag:
 
 ## ollama下载异常解决
 
-https://blog.csdn.net/zishuijing_dd/article/details/142328267
 
 
-
-## 下载ollama异常
+### 下载ollama异常
 
 ![image-20250207121400200](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/2025%2F02%2F07%2F20250207-121401.png)
 
 
+### 解决方案
+
+只需一步
+
+打开 ollama github 官方账号：https://github.com/ollama/ollama/releases
+
+点击系统版本下载
+
+![image-20250207135426316](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/202502071354482.png)
 
