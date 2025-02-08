@@ -369,6 +369,9 @@ TODO
 - [Send me email](mailto:iswangshiyu@foxmail.com)
 
 
+## 福利
+
+- [白菜价的云服务器，我这里整理了目前市面上性价比极高的云服务器购买链接](https://mp.weixin.qq.com/s/OZ8cfgRDGsn86da5lIlytw)
 
 
 
