@@ -16,7 +16,11 @@ tag:
 
 
 
-## deepseek加ollama本地电脑安装
+## deepseek加ollama本地电脑安装-MAC版
+
+
+
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=113905535817648&bvid=BV1m9FpeNEoR&cid=28125364453&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 
 
 第一步：安装 ollama

@@ -20,6 +20,8 @@ tag:
 
 ## deepseek加windows本地电脑安装零剪辑
 
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=113966269403498&bvid=BV1QPNgeUEa3&cid=28274134978&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+
 DeepSeek 太卡，不得整个本地的，让其他人去卡吧~~~
 
 这个视频零剪辑，专业技术人带你安装 deepseek 到 windows 本地电脑。
