@@ -171,3 +171,15 @@ SET temp:code:1001 "123456" EX 60  # 60秒后自动删除[5](@ref)
 ![图片](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/202502201555414.png)
 
 
+参考： 
+
+- https://javapub.net.cn/posts/database/redis/redis_apply_15_topic.html
+- https://mp.weixin.qq.com/s/BFuPOmlGPdC8mo_1N3snDQ
+
+## PDF下载
+
+```bash
+通过网盘分享的文件：工作中redis的15种使用场景.pdf
+链接: https://pan.baidu.com/s/1u3JJz7KsIOHBfC8UG7z78A?pwd=6666 提取码: 6666 
+--来自百度网盘超级会员v6的分享
+```
