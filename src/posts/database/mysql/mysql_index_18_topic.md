@@ -7,9 +7,11 @@ sticky: true
 star: false
 category:
   - mysql
+  - 面试题
 tag:
   - mysql
   - 索引
+  - 面试题
 ---
 
 

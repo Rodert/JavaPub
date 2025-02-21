@@ -3,8 +3,10 @@ title: 工作中，Redis的15种使用场景
 icon: lightbulb
 category:
   - redis
+  - 面试题
 tag:
   - redis
+  - 面试题
 ---
 
 
