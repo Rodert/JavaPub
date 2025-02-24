@@ -21,6 +21,8 @@ tag:
 
 @[toc]
 
+![image-20250224144221700](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/202502241442866.png)
+
 ### 1、golang map 是否并发安全?
 
 Go 语言中的原生 `map` 并不是并发安全的。在多 goroutine 并发读写同一个 `map` 时，可能会导致数据竞争（race condition），从而引发程序崩溃。
@@ -136,4 +138,11 @@ func main() {
 - Go协程：协程的创建和销毁由Go运行时管理，开销极小。创建和销毁协程的成本非常低，因为它们不需要操作系统内核的介入。
 
 
+
+## 最后
+
+```bash
+离线版PDF下载：
+链接: https://pan.baidu.com/s/1zsffbsHj5CRC9whL7W-9aw?pwd=6666 提取码: 6666 
+```
 
