@@ -1,5 +1,5 @@
 
-## [点击在线阅读 javapub.net.cn](https://javapub.net.cn)
+## [点击在线阅读 javapub.net.cn](https://javapub.net.cn) | [GitHub gh-pages](https://rodert.github.io/JavaPub/)
 
 
 
