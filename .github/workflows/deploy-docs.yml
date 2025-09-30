@@ -54,7 +54,6 @@ jobs:
 
   # 阿里云部署任务
   deploy-aliyun:
-    needs: deploy-gh-pages
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
