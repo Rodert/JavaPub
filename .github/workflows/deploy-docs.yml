@@ -10,6 +10,7 @@ permissions:
   contents: write
 
 jobs:
+  # 部署 GitHub pages
   deploy-gh-pages:
     runs-on: ubuntu-latest
     steps:
@@ -50,3 +51,39 @@ jobs:
           # 部署文档
           branch: gh-pages
           folder: src/.vuepress/dist
+
+  # 阿里云部署任务
+  deploy-aliyun:
+    needs: deploy-gh-pages
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: 设置 Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      - name: 安装 pnpm & 依赖
+        run: |
+          corepack enable
+          pnpm install --frozen-lockfile
+
+      - name: 构建文档
+        env:
+          NODE_OPTIONS: --max_old_space_size=8192
+        run: pnpm run docs:build
+
+      # 把构建产物一次性 rsync 到阿里云
+      - name: 部署到阿里云
+        uses: burnett01/rsync-deployments@5.2.1
+        with:
+          switches: -avzr --delete
+          path: src/.vuepress/dist/
+          remote_path: ${{ secrets.ALIYUN_TARGET_DIR }}
+          remote_host: ${{ secrets.ALIYUN_HOST }}
+          remote_user: ${{ secrets.ALIYUN_USER }}
+          remote_key: ${{ secrets.ALIYUN_SSH_KEY }}
+
+
