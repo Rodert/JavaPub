@@ -85,4 +85,14 @@ jobs:
           remote_user: ${{ secrets.ALIYUN_USER }}
           remote_key: ${{ secrets.ALIYUN_SSH_KEY }}
 
+      - name: 重载 Nginx
+        uses: appleboy/ssh-action@v1.0.0
+        with:
+          host: ${{ secrets.ALIYUN_HOST }}
+          username: ${{ secrets.ALIYUN_USER }}
+          key: ${{ secrets.ALIYUN_SSH_KEY }}
+          script: |
+            sudo nginx -t
+            sudo nginx -s reload
+
 
