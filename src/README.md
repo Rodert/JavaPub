@@ -330,16 +330,19 @@ JavaPub 官方网站，优质原创资源会在这里归档，计划运营到 20
 
 
 
-## 我的作品
+## 我的构建
 
 
 - [在线 Markdown 转微信格式网站](http://md.javapub.net.cn/)
 
-
-TODO 
-
 - [微信小程序：点击访问编程面试鸭](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/202502071711977.png)
 
+
+## 视频课
+
+[新手小白玩转 Git/GitHub 精选](https://mp.weixin.qq.com/s/rvAl5KFOeCND-MJzOYLMzQ)
+
+[AI编程微信小程序实战课]()
 
 
 ## 福利
