@@ -135,10 +135,82 @@ export default defineUserConfig({
         border-color: transparent transparent transparent white;
       }
 
-      /* 响应式：在小屏幕上隐藏 */
+      /* 移动端优化样式 */
       @media (max-width: 768px) {
+        /* 按钮位置改为右下角 */
         .floating-qrcode {
+          right: 15px;
+          bottom: 80px;
+          top: auto;
+          transform: none;
+        }
+
+        /* 按钮大小稍小 */
+        .floating-qrcode-btn {
+          width: 48px;
+          height: 48px;
+          font-size: 22px;
+          margin-bottom: 0;
+        }
+
+        /* 移动端弹窗从底部弹出 */
+        .floating-qrcode-popup {
+          position: fixed;
+          right: auto;
+          left: 50%;
+          bottom: 140px;
+          top: auto;
+          transform: translateX(-50%) translateY(20px);
+          width: calc(100vw - 40px);
+          max-width: 320px;
+          max-height: 70vh;
+          padding: 20px;
+          z-index: 999;
+        }
+
+        /* 移动端通过点击显示（使用 active 类） */
+        .floating-qrcode.active .floating-qrcode-popup {
+          opacity: 1;
+          visibility: visible;
+          pointer-events: auto;
+          transform: translateX(-50%) translateY(0);
+        }
+
+        /* 移动端 hover 无效，移除 hover 效果 */
+        .floating-qrcode:hover .floating-qrcode-popup {
+          transform: translateX(-50%);
+        }
+
+        /* 箭头在移动端隐藏或调整位置 */
+        .floating-qrcode-popup::after {
           display: none;
+        }
+
+        /* 添加遮罩层 */
+        .floating-qrcode-overlay {
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: rgba(0, 0, 0, 0.5);
+          z-index: 998;
+          opacity: 0;
+          visibility: hidden;
+          transition: all 0.3s ease;
+          pointer-events: none;
+        }
+
+        .floating-qrcode.active .floating-qrcode-overlay {
+          opacity: 1;
+          visibility: visible;
+          pointer-events: auto;
+        }
+
+        /* 优化触摸体验 */
+        .floating-qrcode-btn {
+          -webkit-tap-highlight-color: transparent;
+          touch-action: manipulation;
         }
       }
       `
@@ -166,6 +238,10 @@ export default defineUserConfig({
           const container = document.createElement('div');
           container.className = 'floating-qrcode';
           container.id = 'floating-qrcode';
+
+          // 创建遮罩层（移动端使用）
+          const overlay = document.createElement('div');
+          overlay.className = 'floating-qrcode-overlay';
 
           // 创建二维码弹窗
           const popup = document.createElement('div');
@@ -218,11 +294,53 @@ export default defineUserConfig({
           btn.innerHTML = '<span>👆</span>';
 
           // 组装元素
+          container.appendChild(overlay);
           container.appendChild(popup);
           container.appendChild(btn);
 
+          // 检测是否为移动端
+          const isMobile = window.innerWidth <= 768 || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+          // 移动端：点击按钮显示/隐藏弹窗
+          if (isMobile) {
+            btn.addEventListener('click', function(e) {
+              e.stopPropagation();
+              container.classList.toggle('active');
+              // 阻止页面滚动
+              if (container.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+              } else {
+                document.body.style.overflow = '';
+              }
+            });
+
+            // 点击遮罩层关闭弹窗
+            overlay.addEventListener('click', function() {
+              container.classList.remove('active');
+              document.body.style.overflow = '';
+            });
+
+            // 点击弹窗内容区域不关闭
+            popup.addEventListener('click', function(e) {
+              e.stopPropagation();
+            });
+          }
+
           // 添加到页面
           document.body.appendChild(container);
+
+          // 响应窗口大小变化
+          let resizeTimer;
+          window.addEventListener('resize', function() {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(function() {
+              // 如果是移动端且弹窗是打开的，关闭它
+              if (window.innerWidth > 768 && container.classList.contains('active')) {
+                container.classList.remove('active');
+                document.body.style.overflow = '';
+              }
+            }, 250);
+          });
         }
       })();
       `
