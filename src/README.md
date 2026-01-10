@@ -335,7 +335,9 @@ JavaPub 官方网站，优质原创资源会在这里归档，计划运营到 20
 
 - [在线 Markdown 转微信格式网站](http://md.javapub.net.cn/)
 
-- [微信小程序：点击访问编程面试鸭](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/202502071711977.png)
+- 微信小程序：点击访问编程面试鸭
+
+  ![编程面试鸭小程序码](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/202502071711977.png)
 
 - [Json字符串格式化](https://rodert.github.io/jsonformat/)
 
