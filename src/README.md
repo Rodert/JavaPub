@@ -333,11 +333,15 @@ JavaPub 官方网站，优质原创资源会在这里归档，计划运营到 20
 ## 我的构建
 
 
+- [ShiyuAdmin 通用后台管理系统](https://github.com/Rodert/ShiyuAdmin) - GoLang + Ant Design Pro React | [在线演示](https://rodert.github.io/ShiyuAdmin)
+
 - [在线 Markdown 转微信格式网站](http://md.javapub.net.cn/)
 
-- 微信小程序：点击访问编程面试鸭
+- <details><summary>微信小程序：点击访问编程面试鸭</summary>
 
   ![编程面试鸭小程序码](https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/202502071711977.png)
+
+  </details>
 
 - [Json字符串格式化](https://rodert.github.io/jsonformat/)
 
