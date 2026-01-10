@@ -70,8 +70,8 @@ export default defineUserConfig({
         right: 60px;
         top: 50%;
         transform: translateY(-50%);
-        width: 200px;
-        padding: 15px;
+        width: 220px;
+        padding: 20px;
         background: white;
         border-radius: 8px;
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
@@ -79,6 +79,9 @@ export default defineUserConfig({
         visibility: hidden;
         transition: all 0.3s ease;
         pointer-events: none;
+        max-height: 85vh;
+        overflow-y: auto;
+        overflow-x: hidden;
       }
 
       .floating-qrcode:hover .floating-qrcode-popup {
@@ -88,8 +91,21 @@ export default defineUserConfig({
         transform: translateY(-50%) translateX(-10px);
       }
 
+      /* 二维码项目容器 */
+      .floating-qrcode-popup .qrcode-item {
+        margin-bottom: 20px;
+        padding-bottom: 18px;
+        border-bottom: 1px solid #eee;
+      }
+
+      .floating-qrcode-popup .qrcode-item:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+      }
+
       /* 二维码图片 */
-      .floating-qrcode-popup img {
+      .floating-qrcode-popup .qrcode-item img {
         width: 100%;
         height: auto;
         border-radius: 4px;
@@ -97,11 +113,11 @@ export default defineUserConfig({
       }
 
       /* 二维码标题 */
-      .floating-qrcode-popup .qrcode-title {
+      .floating-qrcode-popup .qrcode-item .qrcode-title {
         text-align: center;
-        font-size: 14px;
+        font-size: 13px;
         color: #333;
-        margin-top: 10px;
+        margin-top: 8px;
         font-weight: 500;
       }
 
@@ -155,16 +171,46 @@ export default defineUserConfig({
           const popup = document.createElement('div');
           popup.className = 'floating-qrcode-popup';
           
-          const img = document.createElement('img');
-          img.src = 'https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/202502071711977.png';
-          img.alt = '编程面试鸭小程序码';
+          // 小程序码
+          const miniProgramItem = document.createElement('div');
+          miniProgramItem.className = 'qrcode-item';
+          const miniProgramImg = document.createElement('img');
+          miniProgramImg.src = 'https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/202502071711977.png';
+          miniProgramImg.alt = '编程面试鸭小程序码';
+          const miniProgramTitle = document.createElement('div');
+          miniProgramTitle.className = 'qrcode-title';
+          miniProgramTitle.textContent = '扫码访问小程序';
+          miniProgramItem.appendChild(miniProgramImg);
+          miniProgramItem.appendChild(miniProgramTitle);
           
-          const title = document.createElement('div');
-          title.className = 'qrcode-title';
-          title.textContent = '扫码访问小程序';
+          // 微信二维码
+          const wechatItem = document.createElement('div');
+          wechatItem.className = 'qrcode-item';
+          const wechatImg = document.createElement('img');
+          wechatImg.src = '/img/me-wechat.png';
+          wechatImg.alt = '微信二维码';
+          const wechatTitle = document.createElement('div');
+          wechatTitle.className = 'qrcode-title';
+          wechatTitle.textContent = '添加微信';
+          wechatItem.appendChild(wechatImg);
+          wechatItem.appendChild(wechatTitle);
           
-          popup.appendChild(img);
-          popup.appendChild(title);
+          // 公众号二维码
+          const officialAccountItem = document.createElement('div');
+          officialAccountItem.className = 'qrcode-item';
+          const officialAccountImg = document.createElement('img');
+          officialAccountImg.src = '/img/qrcode_for_gh_e4925da5b058_258.jpg';
+          officialAccountImg.alt = '公众号二维码';
+          const officialAccountTitle = document.createElement('div');
+          officialAccountTitle.className = 'qrcode-title';
+          officialAccountTitle.textContent = '关注公众号';
+          officialAccountItem.appendChild(officialAccountImg);
+          officialAccountItem.appendChild(officialAccountTitle);
+          
+          // 添加到弹窗
+          popup.appendChild(miniProgramItem);
+          popup.appendChild(wechatItem);
+          popup.appendChild(officialAccountItem);
 
           // 创建悬浮按钮
           const btn = document.createElement('div');
