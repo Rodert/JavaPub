@@ -70,11 +70,11 @@ export default defineUserConfig({
         right: 60px;
         top: 50%;
         transform: translateY(-50%);
-        width: 220px;
-        padding: 20px;
+        width: 210px;
+        padding: 10px;
         background: white;
-        border-radius: 8px;
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        border-radius: 12px;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
         opacity: 0;
         visibility: hidden;
         transition: all 0.3s ease;
@@ -84,7 +84,8 @@ export default defineUserConfig({
         overflow-x: hidden;
       }
 
-      .floating-qrcode:hover .floating-qrcode-popup {
+      /* 点击打开：使用 active 类控制显示 */
+      .floating-qrcode.active .floating-qrcode-popup {
         opacity: 1;
         visibility: visible;
         pointer-events: auto;
@@ -93,9 +94,9 @@ export default defineUserConfig({
 
       /* 二维码项目容器 */
       .floating-qrcode-popup .qrcode-item {
-        margin-bottom: 20px;
-        padding-bottom: 18px;
-        border-bottom: 1px solid #eee;
+        margin: 8px 0;
+        padding: 0;
+        border: none;
       }
 
       .floating-qrcode-popup .qrcode-item:last-child {
@@ -104,21 +105,92 @@ export default defineUserConfig({
         border-bottom: none;
       }
 
-      /* 二维码图片 */
-      .floating-qrcode-popup .qrcode-item img {
+      /* 展开菜单按钮（Speed Dial） */
+      .floating-qrcode-popup .qrcode-action {
+        display: flex;
+        align-items: center;
+        gap: 10px;
         width: 100%;
-        height: auto;
-        border-radius: 4px;
-        display: block;
+        padding: 10px 12px;
+        border-radius: 12px;
+        border: 1px solid rgba(0, 0, 0, 0.06);
+        background: rgba(255, 255, 255, 0.95);
+        cursor: pointer;
+        user-select: none;
+        box-shadow: 0 10px 22px rgba(0, 0, 0, 0.10);
+        transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
       }
 
-      /* 二维码标题 */
-      .floating-qrcode-popup .qrcode-item .qrcode-title {
-        text-align: center;
+      .floating-qrcode-popup .qrcode-action:hover {
+        transform: translateX(-2px);
+        box-shadow: 0 14px 30px rgba(0, 0, 0, 0.14);
+        border-color: rgba(102, 126, 234, 0.35);
+      }
+
+      .floating-qrcode-popup .qrcode-icon {
+        width: 34px;
+        height: 34px;
+        border-radius: 10px;
+        display: grid;
+        place-items: center;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: #fff;
+        font-size: 16px;
+        font-weight: 700;
+        flex: 0 0 auto;
+      }
+
+      .floating-qrcode-popup .qrcode-text {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.15;
+        min-width: 0;
+      }
+
+      .floating-qrcode-popup .qrcode-text .title {
         font-size: 13px;
-        color: #333;
+        font-weight: 700;
+        color: #222;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .floating-qrcode-popup .qrcode-text .desc {
+        margin-top: 3px;
+        font-size: 12px;
+        color: #666;
+      }
+
+      /* 二维码预览卡片（点击按钮后显示） */
+      .floating-qrcode-preview {
+        position: fixed;
+        right: 90px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 230px;
+        padding: 12px;
+        background: rgba(255, 255, 255, 0.98);
+        border-radius: 14px;
+        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
+        z-index: 1000;
+        backdrop-filter: blur(6px);
+      }
+
+      .floating-qrcode-preview img {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        display: block;
+        background: #fff;
+      }
+
+      .floating-qrcode-preview .preview-title {
         margin-top: 8px;
-        font-weight: 500;
+        text-align: center;
+        font-size: 12px;
+        color: #555;
+        font-weight: 600;
       }
 
       /* 二维码箭头 */
@@ -162,10 +234,19 @@ export default defineUserConfig({
           top: auto;
           transform: translateX(-50%) translateY(20px);
           width: calc(100vw - 40px);
-          max-width: 320px;
+          max-width: 280px;
           max-height: 70vh;
-          padding: 20px;
+          padding: 14px;
           z-index: 999;
+        }
+
+        .floating-qrcode-preview {
+          left: 50%;
+          right: auto;
+          top: auto;
+          bottom: 120px;
+          transform: translateX(-50%);
+          width: min(260px, calc(100vw - 40px));
         }
 
         /* 移动端通过点击显示（使用 active 类） */
@@ -174,11 +255,6 @@ export default defineUserConfig({
           visibility: visible;
           pointer-events: auto;
           transform: translateX(-50%) translateY(0);
-        }
-
-        /* 移动端 hover 无效，移除 hover 效果 */
-        .floating-qrcode:hover .floating-qrcode-popup {
-          transform: translateX(-50%);
         }
 
         /* 箭头在移动端隐藏或调整位置 */
@@ -246,47 +322,69 @@ export default defineUserConfig({
           // 创建二维码弹窗
           const popup = document.createElement('div');
           popup.className = 'floating-qrcode-popup';
-          
-          // 小程序码
-          const miniProgramItem = document.createElement('div');
-          miniProgramItem.className = 'qrcode-item';
-          const miniProgramImg = document.createElement('img');
-          miniProgramImg.src = 'https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/202502071711977.png';
-          miniProgramImg.alt = '编程面试鸭小程序码';
-          const miniProgramTitle = document.createElement('div');
-          miniProgramTitle.className = 'qrcode-title';
-          miniProgramTitle.textContent = '扫码访问小程序';
-          miniProgramItem.appendChild(miniProgramImg);
-          miniProgramItem.appendChild(miniProgramTitle);
-          
-          // 微信二维码
-          const wechatItem = document.createElement('div');
-          wechatItem.className = 'qrcode-item';
-          const wechatImg = document.createElement('img');
-          wechatImg.src = '/img/me-wechat.png';
-          wechatImg.alt = '微信二维码';
-          const wechatTitle = document.createElement('div');
-          wechatTitle.className = 'qrcode-title';
-          wechatTitle.textContent = '添加微信';
-          wechatItem.appendChild(wechatImg);
-          wechatItem.appendChild(wechatTitle);
-          
-          // 公众号二维码
-          const officialAccountItem = document.createElement('div');
-          officialAccountItem.className = 'qrcode-item';
-          const officialAccountImg = document.createElement('img');
-          officialAccountImg.src = '/img/qrcode_for_gh_e4925da5b058_258.jpg';
-          officialAccountImg.alt = '公众号二维码';
-          const officialAccountTitle = document.createElement('div');
-          officialAccountTitle.className = 'qrcode-title';
-          officialAccountTitle.textContent = '关注公众号';
-          officialAccountItem.appendChild(officialAccountImg);
-          officialAccountItem.appendChild(officialAccountTitle);
-          
-          // 添加到弹窗
-          popup.appendChild(miniProgramItem);
-          popup.appendChild(wechatItem);
-          popup.appendChild(officialAccountItem);
+
+          // 预览弹窗（点击按钮显示二维码）
+          let previewEl = null;
+
+          function showPreview(data) {
+            if (!previewEl) {
+              previewEl = document.createElement('div');
+              previewEl.className = 'floating-qrcode-preview';
+              document.body.appendChild(previewEl);
+            }
+            previewEl.innerHTML =
+              '<img src="' + data.imgSrc + '" alt="' + data.title + '">' +
+              '<div class="preview-title">' + data.title + '</div>';
+          }
+
+          function hidePreview() {
+            if (previewEl) previewEl.remove();
+            previewEl = null;
+          }
+
+          function makeAction(data) {
+            const item = document.createElement('div');
+            item.className = 'qrcode-item';
+
+            const action = document.createElement('div');
+            action.className = 'qrcode-action';
+            action.innerHTML =
+              '<div class="qrcode-icon">' + data.icon + '</div>' +
+              '<div class="qrcode-text">' +
+                '<div class="title">' + data.title + '</div>' +
+                '<div class="desc">' + data.desc + '</div>' +
+              '</div>';
+
+            action.addEventListener('click', function(e) {
+              e.stopPropagation();
+              showPreview({ title: data.title, imgSrc: data.imgSrc });
+            });
+
+            item.appendChild(action);
+            return item;
+          }
+
+          // 菜单里放“按钮”，点击后再展示二维码预览
+          popup.appendChild(makeAction({
+            icon: '小',
+            title: '小程序',
+            desc: '点击查看二维码',
+            imgSrc: 'https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/202502071711977.png',
+          }));
+
+          popup.appendChild(makeAction({
+            icon: '微',
+            title: '微信',
+            desc: '点击查看二维码',
+            imgSrc: '/img/me-wechat.png',
+          }));
+
+          popup.appendChild(makeAction({
+            icon: '公',
+            title: '公众号',
+            desc: '点击查看二维码',
+            imgSrc: '/img/qrcode_for_gh_e4925da5b058_258.jpg',
+          }));
 
           // 创建悬浮按钮
           const btn = document.createElement('div');
@@ -298,33 +396,37 @@ export default defineUserConfig({
           container.appendChild(popup);
           container.appendChild(btn);
 
-          // 检测是否为移动端
-          const isMobile = window.innerWidth <= 768 || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-
-          // 移动端：点击按钮显示/隐藏弹窗
-          if (isMobile) {
-            btn.addEventListener('click', function(e) {
-              e.stopPropagation();
-              container.classList.toggle('active');
-              // 阻止页面滚动
-              if (container.classList.contains('active')) {
-                document.body.style.overflow = 'hidden';
-              } else {
-                document.body.style.overflow = '';
-              }
-            });
-
-            // 点击遮罩层关闭弹窗
-            overlay.addEventListener('click', function() {
-              container.classList.remove('active');
-              document.body.style.overflow = '';
-            });
-
-            // 点击弹窗内容区域不关闭
-            popup.addEventListener('click', function(e) {
-              e.stopPropagation();
-            });
+          function setOpen(open) {
+            container.classList.toggle('active', open);
+            // 弹窗打开时避免页面滚动（移动端更重要，桌面端也不影响）
+            document.body.style.overflow = open ? 'hidden' : '';
+            if (!open) hidePreview();
           }
+
+          function toggleOpen() {
+            setOpen(!container.classList.contains('active'));
+          }
+
+          // 所有端：点击按钮打开/关闭
+          btn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            toggleOpen();
+          });
+
+          // 点击弹窗内容区域不关闭
+          popup.addEventListener('click', function(e) {
+            e.stopPropagation();
+          });
+
+          // 点击遮罩层关闭弹窗（遮罩层主要在移动端可见）
+          overlay.addEventListener('click', function() {
+            setOpen(false);
+          });
+
+          // 点击页面空白区域关闭（桌面端也生效）
+          document.addEventListener('click', function() {
+            setOpen(false);
+          });
 
           // 添加到页面
           document.body.appendChild(container);
@@ -334,11 +436,8 @@ export default defineUserConfig({
           window.addEventListener('resize', function() {
             clearTimeout(resizeTimer);
             resizeTimer = setTimeout(function() {
-              // 如果是移动端且弹窗是打开的，关闭它
-              if (window.innerWidth > 768 && container.classList.contains('active')) {
-                container.classList.remove('active');
-                document.body.style.overflow = '';
-              }
+              // 尺寸变化时，如果弹窗是打开的，直接关闭，避免布局切换带来的定位错乱
+              if (container.classList.contains('active')) setOpen(false);
             }, 250);
           });
         }
