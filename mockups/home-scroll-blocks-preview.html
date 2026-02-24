@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JavaPub 分块滚动首页原型</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Noto+Sans+SC:wght@400;500;700;900&display=swap');
+
+    :root {
+      --bg:#0b1220;
+      --text:#e2e8f0;
+      --muted:#94a3b8;
+      --article:#2563eb;
+      --product:#ea580c;
+      --software:#0f766e;
+      --course:#7c3aed;
+      --about:#334155;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0}
+    body{
+      font-family:"Noto Sans SC","Space Grotesk",sans-serif;
+      color:var(--text);
+      background:var(--bg);
+      overflow:hidden;
+    }
+
+    .dot-nav{
+      position:fixed;
+      right:18px;
+      top:50%;
+      transform:translateY(-50%);
+      z-index:20;
+      display:grid;
+      gap:10px;
+    }
+    .dot-nav a{
+      width:10px;height:10px;border-radius:50%;
+      background:rgba(255,255,255,.35);
+      border:1px solid rgba(255,255,255,.55);
+      display:block;
+    }
+
+    .scroll-wrap{
+      height:100vh;
+      overflow-y:auto;
+      scroll-snap-type:y mandatory;
+      scroll-behavior:smooth;
+    }
+
+    .section{
+      min-height:100vh;
+      scroll-snap-align:start;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:32px;
+      position:relative;
+      isolation:isolate;
+    }
+
+    .section::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      z-index:-1;
+      opacity:.95;
+    }
+
+    .s-intro::before{background:linear-gradient(140deg,#020617,#111827 45%,#0f172a)}
+    .s-article::before{background:linear-gradient(140deg,#0b1220,#1e3a8a)}
+    .s-product::before{background:linear-gradient(140deg,#1f2937,#9a3412)}
+    .s-software::before{background:linear-gradient(140deg,#0f172a,#115e59)}
+    .s-course::before{background:linear-gradient(140deg,#111827,#5b21b6)}
+    .s-about::before{background:linear-gradient(140deg,#0b1220,#334155)}
+
+    .panel{
+      width:min(1080px,92vw);
+      border:1px solid rgba(255,255,255,.18);
+      border-radius:22px;
+      padding:28px;
+      background:rgba(2,6,23,.35);
+      backdrop-filter:blur(8px);
+      box-shadow:0 24px 60px rgba(0,0,0,.35);
+    }
+
+    .kicker{font-size:.86rem;letter-spacing:.12em;text-transform:uppercase;color:#cbd5e1}
+    h1,h2{margin:8px 0 12px;line-height:1.15}
+    h1{font-size:clamp(1.9rem,4vw,3.4rem)}
+    h2{font-size:clamp(1.6rem,3.2vw,2.8rem)}
+    p{margin:0;color:var(--muted);font-size:1rem;line-height:1.75;max-width:72ch}
+
+    .grid{margin-top:18px;display:grid;gap:12px;grid-template-columns:repeat(3,minmax(0,1fr))}
+    .mini{padding:14px;border-radius:14px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12)}
+
+    .stat{
+      margin-top:18px;
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+    .chip{padding:6px 12px;border-radius:999px;font-size:.84rem;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2)}
+
+    .scroll-tip{
+      position:absolute;
+      bottom:20px;
+      left:50%;
+      transform:translateX(-50%);
+      color:#cbd5e1;
+      font-size:.86rem;
+      animation:float 1.5s ease-in-out infinite;
+    }
+
+    @keyframes float{50%{transform:translateX(-50%) translateY(6px)}}
+
+    @media (max-width:900px){
+      .grid{grid-template-columns:1fr}
+      .panel{padding:22px}
+      .dot-nav{display:none}
+      .section{padding:20px}
+    }
+  </style>
+</head>
+<body>
+  <nav class="dot-nav" aria-label="section nav">
+    <a href="#intro" title="首页"></a>
+    <a href="#article" title="文章"></a>
+    <a href="#product" title="产品"></a>
+    <a href="#software" title="软件"></a>
+    <a href="#course" title="课程"></a>
+    <a href="#about" title="关于"></a>
+  </nav>
+
+  <main class="scroll-wrap">
+    <section id="intro" class="section s-intro">
+      <div class="panel">
+        <div class="kicker">JavaPub Portal</div>
+        <h1>一屏一模块，往下滚就是不同业务块</h1>
+        <p>首页不是信息堆叠，而是“分镜头”。每滚动一屏，用户就进入一个独立模块，认知成本低，模块边界非常清晰。</p>
+        <div class="stat">
+          <span class="chip">文章沉淀</span>
+          <span class="chip">产品化输出</span>
+          <span class="chip">软件工具</span>
+          <span class="chip">课程体系</span>
+        </div>
+      </div>
+      <div class="scroll-tip">向下滚动进入模块</div>
+    </section>
+
+    <section id="article" class="section s-article">
+      <div class="panel">
+        <div class="kicker">Module 01</div>
+        <h2>文章</h2>
+        <p>保留原有博客体系，作为 SEO 和流量入口。这里放最新文章、专题合集、学习路线，形成长期内容资产。</p>
+        <div class="grid">
+          <div class="mini">最新技术文章</div>
+          <div class="mini">专题合集</div>
+          <div class="mini">阅读排行榜</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="product" class="section s-product">
+      <div class="panel">
+        <div class="kicker">Module 02</div>
+        <h2>产品</h2>
+        <p>把知识沉淀打包成产品，强调用户痛点、核心价值、版本更新与购买入口。</p>
+        <div class="grid">
+          <div class="mini">核心产品 A</div>
+          <div class="mini">核心产品 B</div>
+          <div class="mini">产品更新日志</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="software" class="section s-software">
+      <div class="panel">
+        <div class="kicker">Module 03</div>
+        <h2>软件</h2>
+        <p>展示软件工具和开源项目，重点突出功能、版本、下载、文档，便于用户直接上手。</p>
+        <div class="grid">
+          <div class="mini">桌面工具</div>
+          <div class="mini">在线工具</div>
+          <div class="mini">GitHub 项目</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="course" class="section s-course">
+      <div class="panel">
+        <div class="kicker">Module 04</div>
+        <h2>课程</h2>
+        <p>课程按阶段拆分，页面重点放课程大纲、适合人群、学习结果与答疑机制。</p>
+        <div class="grid">
+          <div class="mini">入门课程</div>
+          <div class="mini">进阶实战</div>
+          <div class="mini">训练营</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section s-about">
+      <div class="panel">
+        <div class="kicker">Module 05</div>
+        <h2>关于与导航</h2>
+        <p>最后一屏给个人介绍、联系方式、合作方式和快速跳转，作为首页收口。</p>
+        <div class="stat">
+          <span class="chip">关于我</span>
+          <span class="chip">加入社群</span>
+          <span class="chip">合作咨询</span>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
