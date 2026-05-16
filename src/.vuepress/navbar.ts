@@ -29,6 +29,8 @@ export default navbar([
     ],
   },
   "/codex/",
+  "/claude/",
+  "/git/",
   "/book/",
   {
     text: "知识星球",
