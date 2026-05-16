@@ -35,14 +35,14 @@ highlights:
       background-repeat: repeat
       background-size: initial
     features:
-      - title: 技术数据
+      - title: 技术书籍
         icon: clipboard-check
         details: 编程相关书籍整理
         link: /book/
 
-      - title: Codex
+      - title: Codex教程
         icon: box-archive
-        details: Codex
+        details: OpenAI 推出的一款全能型 AI 编程与自动化软件工程智能体
         link: /codex/
 
       - title: GFM 警告
