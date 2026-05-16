@@ -28,6 +28,7 @@ export default navbar([
       },
     ],
   },
+  "/codex/",
   "/book/",
   {
     text: "知识星球",
