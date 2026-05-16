@@ -45,15 +45,15 @@ highlights:
         details: OpenAI 推出的一款全能型 AI 编程与自动化软件工程智能体
         link: /codex/
 
-      - title: GFM 警告
+      - title: Claude教程
         icon: bell
-        details: GFM 风格的警告容器
-        link: https://theme-hope.vuejs.press/zh/guide/markdown/stylize/alert.html
+        details: 人工智能安全公司 Anthropic 开发的前沿大型语言模型
+        link: /claude/
 
-      - title: 选项卡
+      - title: Git教程
         icon: table-columns
-        details: 使用选项卡对相似内容进行分组
-        link: https://theme-hope.vuejs.press/zh/guide/markdown/content/tabs.html
+        details: Git新手入门教程
+        link: /git/
 
       # - title: 代码组
       #   icon: code
