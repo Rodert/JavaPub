@@ -1,6 +1,139 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
 
+const getSeoTitleContext = (pagePath: string): string => {
+  if (pagePath === "/") return "Java、AI 编程与项目实战教程";
+  if (pagePath.startsWith("/star/project/user-center/"))
+    return "Spring Boot 用户中心项目实战";
+  if (pagePath.startsWith("/star/project/")) return "JavaPub 项目实战与源码教程";
+  if (pagePath.startsWith("/posts/special/1v1/"))
+    return "Java 面试专题与核心知识点";
+  if (pagePath.startsWith("/posts/special/havato/"))
+    return "最少必要面试题与面试复习指南";
+  if (pagePath.startsWith("/posts/ai/"))
+    return "AI 编程工具教程与大模型实践";
+  if (pagePath.startsWith("/posts/algorithms_data_structures/data_structures/"))
+    return "数据结构、算法基础与 Java 面试教程";
+  if (pagePath.startsWith("/posts/algorithms_data_structures/algorithms/"))
+    return "算法原理与 Java 实战教程";
+  if (pagePath.startsWith("/posts/database/mysql/"))
+    return "MySQL 数据库教程与实践";
+  if (pagePath.startsWith("/posts/database/hbase/"))
+    return "HBase 数据库入门教程";
+  if (pagePath.startsWith("/posts/database/"))
+    return "数据库、MySQL 与 Redis 性能优化教程";
+  if (pagePath.startsWith("/posts/java/spring/"))
+    return "Spring 框架教程与面试知识";
+  if (pagePath.startsWith("/posts/java/"))
+    return "Java 编程教程与面试知识";
+  if (pagePath.startsWith("/posts/operations/"))
+    return "Linux 运维与 Nginx 实战教程";
+  if (pagePath.startsWith("/posts/blockchain/"))
+    return "区块链与 Solidity 智能合约教程";
+  if (pagePath.startsWith("/posts/spider/"))
+    return "Python 爬虫工具与数据采集实战教程";
+  if (pagePath.startsWith("/posts/bugfix/"))
+    return "开发问题排查与 Bug 修复手册";
+  if (pagePath.startsWith("/posts/must-see/"))
+    return "JavaPub 使用指南与常见问题";
+  if (pagePath.startsWith("/system/about-me/"))
+    return "JavaPub 作者介绍与联系信息";
+  if (pagePath.startsWith("/system/website-record/"))
+    return "JavaPub 网站更新记录";
+  if (pagePath.startsWith("/book/")) return "Java、数据库与程序员成长书单";
+  if (pagePath.startsWith("/posts/")) return "Java 编程、AI 编程与开发实战";
+
+  return "Java 编程、AI 编程与项目实战";
+};
+
+const buildSeoTitle = (pageTitle: string, pagePath: string): string => {
+  const baseTitle = pagePath === "/" ? "JavaPub 官方网站" : pageTitle || "JavaPub";
+  const defaultTitle = `${baseTitle} | JavaPub`;
+
+  if (defaultTitle.length >= 28) return defaultTitle;
+
+  return `${baseTitle}：${getSeoTitleContext(pagePath)} | JavaPub`;
+};
+
+const normalizeText = (text = ""): string =>
+  text
+    .replace(/^---[\s\S]*?---/, "")
+    .replace(/```[\s\S]*?```/g, " ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/!\[[^\]]*]\([^)]*\)/g, " ")
+    .replace(/\[([^\]]+)]\([^)]*\)/g, "$1")
+    .replace(/https?:\/\/\S+/g, " ")
+    .replace(/@[a-z]+\b/gi, " ")
+    .replace(/[#>*_`|~\-[\]{}()]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+
+const sanitizeMetaText = (text = ""): string =>
+  normalizeText(text).replace(/["'“”‘’]/g, "");
+
+const ensureMinLength = (text: string, minLength = 155): string => {
+  if ([...text].length >= minLength) return text;
+
+  return `${text}内容持续围绕开发者学习、面试、项目落地和技术复盘更新，适合长期收藏查阅。`;
+};
+
+const truncateText = (text: string, maxLength = 180): string => {
+  const chars = [...text];
+
+  return chars.length > maxLength ? `${chars.slice(0, maxLength - 1).join("")}…` : text;
+};
+
+const buildSeoDescription = (
+  pageTitle: string,
+  pagePath: string,
+  currentDescription = "",
+  content = "",
+): string => {
+  const sanitizedDescription = sanitizeMetaText(currentDescription);
+
+  if ([...sanitizedDescription].length >= 150)
+    return truncateText(sanitizedDescription, 190);
+
+  const baseTitle = sanitizeMetaText(
+    pagePath === "/" ? "JavaPub 官方网站" : pageTitle || "JavaPub",
+  );
+  const context = getSeoTitleContext(pagePath);
+  const excerpt = sanitizeMetaText(content)
+    .replace(new RegExp(`^${baseTitle}\\s*`), "")
+    .slice(0, 120);
+  const suffix = excerpt ? `文章内容包括：${excerpt}` : "";
+
+  return truncateText(
+    ensureMinLength(
+      `${baseTitle} 是 JavaPub 整理的${context}专题内容，系统覆盖核心概念、原理说明、实践步骤、代码示例、常见问题、面试考点和真实开发场景，帮助开发者快速理解知识脉络，用于系统学习、项目实战、问题排查、技术选型和长期复习查阅。${suffix}`,
+    ),
+    190,
+  );
+};
+
+const seoMetaPlugin = () => ({
+  name: "seo-meta-plugin",
+  extendsPage: (page) => {
+    const title = buildSeoTitle(page.title, page.path);
+    const description = buildSeoDescription(
+      page.title,
+      page.path,
+      page.frontmatter.description,
+      page.content,
+    );
+    const head = page.frontmatter.head ?? [];
+
+    page.frontmatter.head = [
+      ["title", {}, title],
+      ["meta", { name: "description", content: description }],
+      ["meta", { property: "og:description", content: description }],
+      ...head,
+    ];
+    page.frontmatter.description = description;
+    page.data.frontmatter.description = description;
+  },
+});
+
 export default defineUserConfig({
   base: "/",
 
@@ -9,6 +142,8 @@ export default defineUserConfig({
   description: "JavaPub 是王仕宇维护的原创中文技术博客，系统整理 Java、AI 编程、Codex、Claude、Git、数据库、项目实战和开发工具教程，帮助读者持续提升编程能力。",
 
   theme,
+
+  plugins: [seoMetaPlugin()],
 
   head: [
     // 百度统计

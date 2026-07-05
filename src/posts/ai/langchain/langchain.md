@@ -13,7 +13,7 @@ tag:
 ---
 
 
-# LangChain 零基础入门指南
+## LangChain 零基础入门指南
 
 我将练习的代码案例放在仓库：https://github.com/Rodert/langchain-Demo
 
@@ -510,4 +510,3 @@ if __name__ == "__main__":
 - https://python.langchain.com/v0.2/docs/introduction/
 - https://blog.csdn.net/qq_35812205/article/details/131709720
 - https://github.com/langchain-ai/langchain
-

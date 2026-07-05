@@ -32,7 +32,7 @@ tag:
 
 @[toc]
 
-# 缓存
+## 缓存
 
 说到缓存，首先你一定要对 Java容器、和 Redis 有一定了解，建议阅读[《最少必要面试题》](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUzNDUyOTY0Nw==&action=getalbum&album_id=2344061143381508097#wechat_redirect)： [【Java容器篇】](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUzNDUyOTY0Nw==&action=getalbum&album_id=2344061143381508097#wechat_redirect) [【Redis篇】](https://mp.weixin.qq.com/s?__biz=MzUzNDUyOTY0Nw==&mid=2247487032&idx=1&sn=b159a678e4b2c704263d9f1a1389ff2a&chksm=fa921d38cde5942ecc291d64012235bd21c937d7fc8078a15c56be8030f605fd49b9cb81201c&scene=178&cur_album_id=2344061143381508097#rd)
 
@@ -385,4 +385,3 @@ public class LRULinkedMap<K,V> {
 [10道不得不会的Docker面试题](https://mp.weixin.qq.com/s/DTC3gZNHm3Rlf_GK7twlkQ)
 
 [10道不得不会的缓存面试题]()
-
