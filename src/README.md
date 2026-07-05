@@ -2,6 +2,7 @@
 home: true
 icon: home
 title: 项目主页
+description: JavaPub 是王仕宇维护的原创中文技术博客，系统整理 Java、AI 编程、Codex、Claude、Git、数据库、项目实战和开发工具教程，帮助读者从基础入门到工程实践持续提升编程能力。
 heroImage: https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/202406041727899.png
 bgImageStyle:
   background-attachment: fixed

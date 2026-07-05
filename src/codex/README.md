@@ -1,6 +1,7 @@
 ---
-title: Codex 教程
+title: Codex AI 编程教程：安装配置、CLI 命令、IDE 插件与项目实战
 icon: terminal
+description: JavaPub Codex 教程面向想用 AI 辅助编程的开发者，整理 Codex 安装配置、CLI 常用命令、IDE 插件、桌面端、云端使用和项目协作实践，帮助你把 Codex 用到真实开发流程中。
 ---
 
 # Codex 教程

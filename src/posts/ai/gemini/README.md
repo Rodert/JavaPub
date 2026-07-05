@@ -1,6 +1,7 @@
 ---
 title: gemini
 icon: lightbulb
+description: JavaPub Gemini 教程整理 Google Gemini、AI Studio、VS Code 插件和免费 AI 编程工作流，覆盖 API Key 配置、编辑器接入、提示词优化和实际开发使用经验。
 index: false
 author: Wang Shiyu
 date: 2025-02-08
@@ -24,4 +25,3 @@ Gemini 使用
 
 
 <Catalog />
-

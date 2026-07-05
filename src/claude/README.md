@@ -1,6 +1,7 @@
 ---
 title: Claude 教程
 icon: robot
+description: JavaPub Claude 教程整理 Claude 与 Claude Code 的安装配置、常用命令、项目实战、代码审查和常见问题，帮助开发者把 Claude 接入日常编程、重构、文档和自动化工作流。
 ---
 
 # Claude 教程

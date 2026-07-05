@@ -6,7 +6,7 @@ export default defineUserConfig({
 
   lang: "zh-CN",
   title: "JavaPub",
-  description: "致力于帮助每个朋友学好编程、学会编程。",
+  description: "JavaPub 是王仕宇维护的原创中文技术博客，系统整理 Java、AI 编程、Codex、Claude、Git、数据库、项目实战和开发工具教程，帮助读者持续提升编程能力。",
 
   theme,
 
@@ -449,4 +449,3 @@ export default defineUserConfig({
   // 和 PWA 一起启用
   // shouldPrefetch: false,
 });
-

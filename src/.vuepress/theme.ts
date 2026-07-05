@@ -3,7 +3,7 @@ import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
 
 export default hopeTheme({
-  hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
+  hostname: "https://docs.chongplus.plus",
 
   author: {
     name: "Mr.Wang",
@@ -34,7 +34,7 @@ export default hopeTheme({
     "/guide/": "structure",
     "/": [
         "" /* / */,
-        "contact" /* /contact.html */,
+        "contact/" /* /contact/ */,
         "about" /* /about.html */,
       ],
   },
