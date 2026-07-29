@@ -27,7 +27,7 @@ highlights:
   #     - title: 运行 <code>pnpm create vuepress-theme-hope hope-project</code> 以创建一个新的主题项目。
   #     - title: 在已有项目根目录下运行 <code>pnpm create vuepress-theme-hope add .</code> 以在项目中添加主题。
 
-  - header: 王仕宇的官方网站为您提供原创精品中文教程
+  -
     # description: 我们扩展了标准的 CommonMark 规范，为你添加了成吨功能。
     # image: /assets/image/markdown.svg
     # bgImage: https://theme-hope-assets.vuejs.press/bg/2-light.svg
