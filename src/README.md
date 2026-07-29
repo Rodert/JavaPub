@@ -17,6 +17,9 @@ actions:
   - text: 知识星球🌍
     link: ./star/star-introduce/star-introduce.md
 
+  - text: Token/API
+    link: https://chongplus.plus/
+
 
 highlights:
   # - header: 易于安装·
