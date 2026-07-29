@@ -10,7 +10,7 @@ description: JavaPub 教程导航汇总 Java、AI 编程、Codex、Claude、Gemi
 
 ## AI 编程
 
-- [Codex 教程](/codex/)
+- [Codex 教程](https://codex-zh.net/)
 - [Claude 教程](/claude/)
 - [Gemini 教程](/gemini/)
 - [AI 文章合集](/posts/ai/)

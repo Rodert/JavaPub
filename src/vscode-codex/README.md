@@ -10,6 +10,4 @@ description: JavaPub VS Code Codex 教程整理 OpenAI Codex 在 VS Code 中的�
 
 ## 推荐阅读
 
-- [Codex 教程目录](/codex/)
-- [安装 Codex](/codex/install/)
-- [Codex 基本命令](/codex/commands/)
+- [Codex 中文教程](https://codex-zh.net/)

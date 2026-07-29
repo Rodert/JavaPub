@@ -44,7 +44,7 @@ highlights:
       - title: Codex教程
         icon: box-archive
         details: OpenAI 推出的一款全能型 AI 编程与自动化软件工程智能体
-        link: /codex/
+        link: https://codex-zh.net/
 
       - title: Claude教程
         icon: bell
