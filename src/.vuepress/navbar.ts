@@ -108,4 +108,8 @@ export default navbar([
     icon: "route",
     link: "https://code-route-h3xxxsggd-roderts-projects.vercel.app", // 超链接到其他网网站
   },
+  {
+    text: "Token/API",
+    link: "https://chongplus.plus/",
+  },
 ]);
