@@ -28,7 +28,10 @@ export default navbar([
       },
     ],
   },
-  "/codex/",
+  {
+    text: "Codex",
+    link: "https://codex-zh.net/",
+  },
   "/claude/",
   "/git/",
   "/book/",

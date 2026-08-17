@@ -25,7 +25,6 @@ export default hopeTheme({
   // sidebar,
   sidebar: {
     "/posts/": "structure",
-    "/codex/": "structure",
     "/claude/": "structure",
     "/git/": "structure",
     "/book/": "structure",
