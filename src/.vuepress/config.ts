@@ -1,6 +1,10 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
 
+const siteUrl = "https://javapub.net.cn";
+const defaultSocialImage =
+  "https://javapub-common-oss.oss-cn-beijing.aliyuncs.com/javapub/202406041727899.png";
+
 const getSeoTitleContext = (pagePath: string): string => {
   if (pagePath === "/") return "Java、AI 编程与项目实战教程";
   if (pagePath.startsWith("/star/project/user-center/"))
@@ -12,6 +16,8 @@ const getSeoTitleContext = (pagePath: string): string => {
     return "最少必要面试题与面试复习指南";
   if (pagePath.startsWith("/posts/ai/"))
     return "AI 编程工具教程与大模型实践";
+  if (pagePath.startsWith("/posts/robotics/"))
+    return "开源机器人、具身智能与开发实践";
   if (pagePath.startsWith("/posts/algorithms_data_structures/data_structures/"))
     return "数据结构、算法基础与 Java 面试教程";
   if (pagePath.startsWith("/posts/algorithms_data_structures/algorithms/"))
@@ -71,13 +77,7 @@ const normalizeText = (text = ""): string =>
 const sanitizeMetaText = (text = ""): string =>
   normalizeText(text).replace(/["'“”‘’]/g, "");
 
-const ensureMinLength = (text: string, minLength = 155): string => {
-  if ([...text].length >= minLength) return text;
-
-  return `${text}内容持续围绕开发者学习、面试、项目落地和技术复盘更新，适合长期收藏查阅。`;
-};
-
-const truncateText = (text: string, maxLength = 180): string => {
+const truncateText = (text: string, maxLength = 160): string => {
   const chars = [...text];
 
   return chars.length > maxLength ? `${chars.slice(0, maxLength - 1).join("")}…` : text;
@@ -91,8 +91,7 @@ const buildSeoDescription = (
 ): string => {
   const sanitizedDescription = sanitizeMetaText(currentDescription);
 
-  if ([...sanitizedDescription].length >= 150)
-    return truncateText(sanitizedDescription, 190);
+  if (sanitizedDescription) return truncateText(sanitizedDescription);
 
   const baseTitle = sanitizeMetaText(
     pagePath === "/" ? "JavaPub 官方网站" : pageTitle || "JavaPub",
@@ -101,13 +100,9 @@ const buildSeoDescription = (
   const excerpt = sanitizeMetaText(content)
     .replace(new RegExp(`^${baseTitle}\\s*`), "")
     .slice(0, 120);
-  const suffix = excerpt ? `文章内容包括：${excerpt}` : "";
 
   return truncateText(
-    ensureMinLength(
-      `${baseTitle} 是 JavaPub 整理的${context}专题内容，系统覆盖核心概念、原理说明、实践步骤、代码示例、常见问题、面试考点和真实开发场景，帮助开发者快速理解知识脉络，用于系统学习、项目实战、问题排查、技术选型和长期复习查阅。${suffix}`,
-    ),
-    190,
+    `${baseTitle}：JavaPub ${context}内容。${excerpt || "围绕核心概念、实践步骤、常见问题和真实开发场景持续更新。"}`,
   );
 };
 
@@ -115,6 +110,7 @@ const seoMetaPlugin = () => ({
   name: "seo-meta-plugin",
   extendsPage: (page) => {
     const title = buildSeoTitle(page.title, page.path);
+    const canonicalUrl = new URL(page.path, siteUrl).href;
     const description = buildSeoDescription(
       page.title,
       page.path,
@@ -126,7 +122,13 @@ const seoMetaPlugin = () => ({
     page.frontmatter.head = [
       ["title", {}, title],
       ["meta", { name: "description", content: description }],
+      ["link", { rel: "canonical", href: canonicalUrl }],
       ["meta", { property: "og:description", content: description }],
+      ["meta", { property: "og:image", content: defaultSocialImage }],
+      ["meta", { name: "twitter:card", content: "summary_large_image" }],
+      ["meta", { name: "twitter:title", content: title }],
+      ["meta", { name: "twitter:description", content: description }],
+      ["meta", { name: "twitter:image", content: defaultSocialImage }],
       ...head,
     ];
     page.frontmatter.description = description;

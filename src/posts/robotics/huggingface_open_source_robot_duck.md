@@ -1,6 +1,8 @@
 ---
 title: Hugging Face 刚发布的这只开源机器鸭，被全球开发者玩疯了
 icon: robot
+date: 2026-08-30
+description: Hugging Face 开源机器鸭 MicroDuck 售价 399 美元，开发者已通过强化学习、传感器可视化和 AI/AR 等方式探索空翻、倒立等玩法。本文汇总视频、开源仓库与预定入口。
 category:
   - 机器人
 tag:

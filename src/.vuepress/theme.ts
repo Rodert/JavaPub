@@ -3,7 +3,7 @@ import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
 
 export default hopeTheme({
-  hostname: "https://docs.chongplus.plus",
+  hostname: "https://javapub.net.cn",
 
   author: {
     name: "Mr.Wang",
