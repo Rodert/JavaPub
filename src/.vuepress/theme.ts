@@ -39,7 +39,8 @@ export default hopeTheme({
   },
 
   // 页脚
-  footer: '<a href="https://beian.miit.gov.cn/" target="_blank">京ICP备2021007111号-2</a>',
+  footer:
+    '本站内容仅用于技术学习与交流，不构成任何专业建议或承诺。请遵守所在地法律法规及第三方服务条款，不得将本站内容、工具或资源用于违法违规活动；因不当使用产生的后果由使用者自行承担。<br><a href="https://beian.miit.gov.cn/" target="_blank">京ICP备2021007111号-2</a>',
   displayFooter: true,
 
 
