@@ -44,13 +44,19 @@ tag:
 
 [https://muse.ai/join](https://muse.ai/join)
 
+LexMount 远程桌面地址：
+
+[https://www.lexmount.com/](https://www.lexmount.com/)
+
+LexMount 是一个远程桌面服务。如果本地环境不方便操作，可以通过远程桌面连接到合适的远程环境，再打开 Muse 注册页面完成注册。
+
 我这次使用 Gmail 邮箱进行注册。
 
 另外，Muse 对地区和网络环境有一定要求。我录制视频时用的是美国网络环境。
 
-由于本地操作不太方便，所以我借助了 Manus 提供的云端网页环境。
+由于本地操作不太方便，所以我借助了云端网页环境。大家也可以根据自己的实际情况，使用 LexMount 远程桌面进行操作。
 
-这个平台当时可以免费使用，新账号大概会有 100 分钟左右的体验时间，具体以平台当前显示为准。
+远程桌面的可用地区、套餐和使用时长，以 LexMount 平台当前显示为准。
 
 大家可以根据自己的实际情况，选择官方支持的地区和网络环境。
 
@@ -229,6 +235,10 @@ tag:
 **Muse 官方地址：**
 
 [https://muse.ai/join](https://muse.ai/join)
+
+**LexMount 远程桌面地址：**
+
+[https://www.lexmount.com/](https://www.lexmount.com/)
 
 至于 Muse 的视频效果到底怎么样，大家可以自己看看我做的那段视频。
 
