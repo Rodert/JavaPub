@@ -138,6 +138,7 @@ const seoMetaPlugin = () => ({
 
 export default defineUserConfig({
   base: "/",
+  shouldPrefetch: false,
 
   lang: "zh-CN",
   title: "JavaPub",
