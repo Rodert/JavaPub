@@ -189,7 +189,7 @@ export default defineUserConfig({
         display: flex;
         align-items: center;
         justify-content: center;
-        cursor: pointer;
+        cursor: grab;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
         transition: all 0.3s ease;
         color: white;
@@ -200,6 +200,11 @@ export default defineUserConfig({
       .floating-qrcode-btn:hover {
         transform: scale(1.1);
         box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+      }
+
+      .floating-qrcode.dragging .floating-qrcode-btn {
+        cursor: grabbing;
+        transition: none;
       }
 
       /* 二维码容器 */
@@ -424,7 +429,7 @@ export default defineUserConfig({
         /* 优化触摸体验 */
         .floating-qrcode-btn {
           -webkit-tap-highlight-color: transparent;
-          touch-action: manipulation;
+          touch-action: none;
         }
       }
       `
@@ -545,8 +550,76 @@ export default defineUserConfig({
             setOpen(!container.classList.contains('active'));
           }
 
+          // Keep a dragged position only for the current page session.
+          let dragStartX = 0;
+          let dragStartY = 0;
+          let dragStartLeft = 0;
+          let dragStartTop = 0;
+          let dragging = false;
+          let suppressClick = false;
+          const dragThreshold = 6;
+
+          function stopDragging() {
+            if (!dragging) return;
+            dragging = false;
+            container.classList.remove('dragging');
+          }
+
+          btn.addEventListener('pointerdown', function(e) {
+            if (e.button !== undefined && e.button !== 0) return;
+
+            const rect = container.getBoundingClientRect();
+            dragStartX = e.clientX;
+            dragStartY = e.clientY;
+            dragStartLeft = rect.left;
+            dragStartTop = rect.top;
+            dragging = false;
+            btn.setPointerCapture(e.pointerId);
+          });
+
+          btn.addEventListener('pointermove', function(e) {
+            if (!btn.hasPointerCapture(e.pointerId)) return;
+
+            const offsetX = e.clientX - dragStartX;
+            const offsetY = e.clientY - dragStartY;
+            if (!dragging && Math.hypot(offsetX, offsetY) < dragThreshold) return;
+
+            if (!dragging) {
+              dragging = true;
+              suppressClick = true;
+              setOpen(false);
+              container.classList.add('dragging');
+            }
+
+            const rect = container.getBoundingClientRect();
+            const maxLeft = Math.max(0, window.innerWidth - rect.width);
+            const maxTop = Math.max(0, window.innerHeight - rect.height);
+            const nextLeft = Math.min(maxLeft, Math.max(0, dragStartLeft + offsetX));
+            const nextTop = Math.min(maxTop, Math.max(0, dragStartTop + offsetY));
+
+            container.style.left = nextLeft + 'px';
+            container.style.top = nextTop + 'px';
+            container.style.right = 'auto';
+            container.style.bottom = 'auto';
+            container.style.transform = 'none';
+            e.preventDefault();
+          });
+
+          btn.addEventListener('pointerup', function(e) {
+            if (btn.hasPointerCapture(e.pointerId)) btn.releasePointerCapture(e.pointerId);
+            stopDragging();
+          });
+
+          btn.addEventListener('pointercancel', stopDragging);
+
           // 所有端：点击按钮打开/关闭
           btn.addEventListener('click', function(e) {
+            if (suppressClick) {
+              suppressClick = false;
+              e.preventDefault();
+              e.stopPropagation();
+              return;
+            }
             e.stopPropagation();
             toggleOpen();
           });
