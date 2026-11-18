@@ -12,6 +12,8 @@ tag:
   - 书籍检索
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/k-biMmgbU3w?si=kaSta4c8tB7NM3_T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ![保护前额叶多读书：3 个免费电子书网站](./assets/free-ebook-search-sites-cover.png)
 
 短视频能连续刷两个小时，打开一本书，看不到两页，就想摸手机。
