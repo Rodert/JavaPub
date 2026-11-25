@@ -182,3 +182,16 @@ HTTPS_PROXY=http://127.0.0.1:<检测到的端口号>
 4. 希望由 Codex 自动写入 HTTP 代理配置时使用方案四：适合已有本地代理、但不确定端口的场景。
 
 如果配置后仍持续重连，先检查代理端口是否正在监听，再确认代理规则允许访问 OpenAI 域名。
+
+## 视频教程
+
+<div style="position: relative; width: 100%; aspect-ratio: 16 / 9;">
+  <iframe
+    style="position: absolute; inset: 0; width: 100%; height: 100%; border: 0;"
+    src="https://www.youtube.com/embed/n-8lSwSm_tI?si=cXgHL5BGzAl1BZeq"
+    title="Codex WebSocket 代理配置教程"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+  ></iframe>
+</div>
