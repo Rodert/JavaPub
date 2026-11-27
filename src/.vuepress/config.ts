@@ -32,6 +32,8 @@ const getSeoTitleContext = (pagePath: string): string => {
     return "Spring 框架教程与面试知识";
   if (pagePath.startsWith("/posts/java/"))
     return "Java 编程教程与面试知识";
+  if (pagePath.startsWith("/posts/cloud-resources/"))
+    return "云服务器、免费云资源与云应用部署教程";
   if (pagePath.startsWith("/posts/operations/"))
     return "Linux 运维与 Nginx 实战教程";
   if (pagePath.startsWith("/posts/blockchain/"))
